@@ -1,0 +1,124 @@
+'use client';
+
+import Image from 'next/image';
+
+import { Chip } from '@/shared/ui/kit/chip';
+import { Text } from '@/shared/ui/kit/text';
+import { Title } from '@/shared/ui/kit/title';
+
+const getCards = () => [
+  {
+    title: 'Authentic Trading Experiences',
+    description: 'Only verified users contribute — no bots, no paid promotion.',
+    img: {
+      url: '/images/home/i-1.jpg',
+      width: 764,
+      height: 483,
+    },
+  },
+  {
+    title: 'Performance in Practice',
+    description:
+      'Data shows structure, but feedback shows reality. We record how platforms behave when volatility hits.',
+    img: {
+      url: '/images/home/i-2.jpg',
+      width: 1066,
+      height: 600,
+    },
+  },
+];
+
+export const RealInsights = () => {
+  const cards = getCards();
+
+  return (
+    <section className="container flex flex-col gap-10 py-[120px]">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <Chip>
+          <Text size="lg" weight={500}>
+            Authentic experiences that cut through speculation
+          </Text>
+        </Chip>
+        <Title as="h3" size="6xl">
+          Real Insight, <span className="text-blue-70">Real Traders</span>
+        </Title>
+        <Text size="base" color="grey" className="w-[700px] max-md:w-full">
+          Markets are shaped by those who trade them. <br />
+          Renvex brings together verified perspectives from real users —
+          professionals who operate daily within the platforms you compare.
+          Their insights reveal what numbers can’t: consistency, reliability,
+          and user experience under real conditions.
+          <br />
+          <br />
+          <span className="font-bold">What we collect and verify:</span>
+        </Text>
+      </div>
+      <section className="flex flex-col gap-6">
+        <section className="flex gap-5 max-md:flex-col">
+          {cards.map(card => (
+            <Card key={card.title} {...card} />
+          ))}
+        </section>
+        <Footer />
+      </section>
+    </section>
+  );
+};
+
+const Card = ({
+  img,
+  title,
+  description,
+}: {
+  img: {
+    url: string;
+    width: number;
+    height: number;
+  };
+  title: string;
+  description: string;
+}) => {
+  return (
+    <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] px-[100px] py-[60px] text-center max-md:h-[450px] max-md:w-full max-md:p-5">
+      <Title size="3xl" weight={600} className="z-20">
+        {title}
+      </Title>
+      <Text size="base" className="z-20">
+        {description}
+      </Text>
+      <Image
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 transform"
+        src={img.url}
+        alt={title}
+        width={img.width}
+        height={img.height}
+        unoptimized
+      />
+    </article>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="relative flex h-[300px] flex-col justify-center gap-2 rounded-[48px] bg-[linear-gradient(92deg,#4033CC_1.47%,var(--color-blue-70,#776BF8)_96.76%)] px-[100px] max-md:p-5">
+      <Title as="h6" size="3xl" className="max-md:text-2xl">
+        Independent Reviews, <br />
+        Always Curren
+      </Title>
+      <Text size="base" className="z-10 max-md:text-sm">
+        As brokers evolve, our assessments evolve with them — every update is
+        reviewed and validated. <br />
+        Renvex bridges quantitative data with qualitative truth, giving you a
+        complete picture before you commit.
+      </Text>
+      <Image
+        className="absolute right-0 bottom-0 max-md:-bottom-20"
+        src="/images/home/i-3.svg"
+        alt="graph"
+        width={516}
+        height={539}
+        unoptimized
+      />
+    </footer>
+  );
+};
