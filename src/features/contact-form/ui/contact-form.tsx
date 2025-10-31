@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/utils/cn';
@@ -15,7 +16,8 @@ import { getContactFormSchema } from '../model/schema';
 import st from './contact-form.module.css';
 
 export const ContactForm = () => {
-  const schema = useMemo(() => getContactFormSchema(), []);
+  const t = useTranslations('contactForm');
+  const schema = useMemo(() => getContactFormSchema(t), [t]);
 
   const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
@@ -47,7 +49,7 @@ export const ContactForm = () => {
       }}
     >
       <Title as="h6" size="3xl">
-        Contact Form
+        {t('title', { fallback: 'Contact Form' })}
       </Title>
       <section className="flex flex-col gap-5">
         <div className="flex flex-col gap-2.5">
@@ -56,8 +58,10 @@ export const ContactForm = () => {
               {field => (
                 <TextField
                   name={field.name}
-                  label="First Name"
-                  placeholder="Enter your first name"
+                  label={t('firstName.label', { fallback: 'First Name' })}
+                  placeholder={t('firstName.placeholder', {
+                    fallback: 'Enter your first name',
+                  })}
                   value={String(field.state.value)}
                   onBlur={field.handleBlur}
                   onChange={e => field.handleChange(e.target.value)}
@@ -72,7 +76,7 @@ export const ContactForm = () => {
               {field => (
                 <TextField
                   name={field.name}
-                  label="Email Address"
+                  label={t('email.label', { fallback: 'Email Address' })}
                   placeholder="example@gmail.com"
                   value={String(field.state.value)}
                   onBlur={field.handleBlur}
@@ -90,8 +94,10 @@ export const ContactForm = () => {
               {field => (
                 <TextField
                   name={field.name}
-                  label="Last Name"
-                  placeholder="Enter your last name"
+                  label={t('lastName.label', { fallback: 'Last Name' })}
+                  placeholder={t('lastName.placeholder', {
+                    fallback: 'Enter your last name',
+                  })}
                   value={String(field.state.value)}
                   onBlur={field.handleBlur}
                   onChange={e => field.handleChange(e.target.value)}
@@ -106,7 +112,7 @@ export const ContactForm = () => {
               {field => (
                 <TextField
                   name={field.name}
-                  label="Phone Number"
+                  label={t('phone.label', { fallback: 'Phone Number' })}
                   placeholder="+34"
                   value={String(field.state.value)}
                   onBlur={field.handleBlur}
@@ -124,8 +130,10 @@ export const ContactForm = () => {
           {field => (
             <TextArea
               name={field.name}
-              label="Message"
-              placeholder="Enter your message"
+              label={t('message.label', { fallback: 'Message' })}
+              placeholder={t('message.placeholder', {
+                fallback: 'Enter your message',
+              })}
               value={String(field.state.value)}
               onBlur={field.handleBlur}
               onChange={e => field.handleChange(e.target.value)}
@@ -145,7 +153,9 @@ export const ContactForm = () => {
             className="ml-auto max-md:w-full max-md:justify-center"
           >
             <FireIcon />
-            {isSubmitting ? 'Sending...' : 'Send Request'}
+            {isSubmitting
+              ? t('submit.loading', { fallback: 'Sending...' })
+              : t('submit.label', { fallback: 'Send Request' })}
           </Button>
         )}
       </Subscribe>

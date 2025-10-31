@@ -7,22 +7,25 @@ import { cn } from '@/shared/lib/utils/cn';
 
 import st from './button.module.css';
 
-const btnVariants = cva('flex cursor-pointer items-center gap-2.5', {
-  variants: {
-    variant: {
-      primary: 'text-white font-bold',
-      secondary: 'text-white font-bold',
+const btnVariants = cva(
+  'flex cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed items-center gap-2.5',
+  {
+    variants: {
+      variant: {
+        primary: 'text-white font-bold',
+        secondary: 'text-white font-bold',
+      },
+      size: {
+        sm: '',
+        md: 'h-[50px] pl-5 pr-6 text-base',
+      },
     },
-    size: {
-      sm: '',
-      md: 'h-[50px] pl-5 pr-6 text-base',
+    defaultVariants: {
+      variant: 'primary',
+      size: 'md',
     },
   },
-  defaultVariants: {
-    variant: 'primary',
-    size: 'md',
-  },
-});
+);
 
 export type ButtonVariants = VariantProps<typeof btnVariants>;
 
