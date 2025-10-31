@@ -1,0 +1,13 @@
+.bg {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/contact-us/brok.jpg') center / cover no-repeat;
+}
+
+.cardBg {
+  background: radial-gradient(
+    191.04% 100.15% at 15.32% 0%,
+    var(--color-grey-9, #171818) 0%,
+    var(--color-grey-6, #101010) 66.17%
+  );
+}
