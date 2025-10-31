@@ -8,6 +8,7 @@ import {
   ReadyToNavigate,
   RealInsights,
   Strategy,
+  Tools,
 } from './components';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <PrecisionInSelection />
       <RealInsights />
       {/* <Reviews /> */}
+      <Tools />
       <FullControl />
       <Strategy />
       <ClarityInSteps />

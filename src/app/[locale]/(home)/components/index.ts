@@ -9,3 +9,4 @@ export * from './ready-to-navigate';
 export * from './real-insights';
 export * from './reviews';
 export * from './strategy';
+export * from './tools';

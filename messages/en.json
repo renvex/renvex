@@ -32,6 +32,19 @@
       "subtitle": "Your fixed point in a moving market",
       "description": "While others sell promises, Renvex delivers evidence. We connect traders to verified brokers through validated data and independent analysis. Every comparison is factual, structured, and free from external influence."
     },
+    "tools": {
+      "chip": "Technology and expertise aligned to your strategy",
+      "title": {
+        "0": "Strategic Tools for",
+        "1": "Smarter Decisions"
+      },
+      "text": "Renvex unites human insight and adaptive technology to support every step of your decision-making process. Our systems are built to guide, refine, and strengthen.",
+      "text2": "How Renvex supports your trading decisions",
+      "crypto": "Crypto heat map",
+      "stock": "Stock heat map",
+      "forex": "Forex heat map",
+      "market": "Market heat map"
+    },
     "builtOn": {
       "title": {
         "0": "Built on",
