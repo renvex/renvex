@@ -261,5 +261,56 @@
       "label": "Send Request",
       "loading": "Sending..."
     }
+  },
+  "contactUs": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "We’re Here to Support Precision Every Step of the Way",
+      "description2": "Need clarity before you act? Contact Renvex for straightforward answers based on verified information."
+    },
+    "banners": {
+      "title": "Get Expert Support",
+      "cards": {
+        "0": {
+          "title": "Broker Matching Guidance",
+          "subtitle": "Need help selecting the right broker?",
+          "description": "Our team will help you compare verified options tailored to your strategy, risk level, and market focus."
+        },
+        "1": {
+          "title": "Platform Navigation Help",
+          "subtitle": "New to Renvex?",
+          "description": "We’ll guide you through our analytics tools, heatmaps, and comparison systems so you can make data-driven choices confidently."
+        },
+        "2": {
+          "title": "Feedback & Insights",
+          "subtitle": "Want to share your experience or suggest improvements?",
+          "description": "Your feedback helps us refine our platform and maintain transparency across every feature."
+        }
+      }
+    },
+    "support": {
+      "info": {
+        "0": {
+          "label": "Monday to Friday:",
+          "value": "9:00 AM – 6:00 PM (GMT)"
+        },
+        "1": {
+          "label": "Weekend",
+          "value": "Support available via email"
+        }
+      },
+      "cards": {
+        "0": {
+          "title": "Email Support",
+          "subtitle": "Need assistance or have a question?",
+          "description": "Our support team replies within 24 hours with clear, actionable guidance."
+        },
+        "1": {
+          "title": "Phone Consultations",
+          "subtitle": "Prefer a personal conversation?",
+          "description": "Speak directly with a Renvex specialist — no forms, no waiting, just informed answers."
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { cn } from '@/shared/lib/utils/cn';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -7,24 +9,42 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './support.module.css';
 
 export const Support = () => {
+  const t = useTranslations('contactUs.support');
+
   return (
     <section
       className={cn('relative container flex flex-col gap-10 py-20', st.bg)}
     >
       <div className="flex gap-10 max-md:flex-col max-md:gap-5">
-        <InfoCard label="Monday to Friday:" value="9:00 AM – 6:00 PM (GMT)" />
-        <InfoCard label="Weekend" value="Support available via email" />
+        <InfoCard
+          label={t('info.0.label', { fallback: 'Monday to Friday:' })}
+          value={t('info.0.value', { fallback: '9:00 AM – 6:00 PM (GMT)' })}
+        />
+        <InfoCard
+          label={t('info.1.label', { fallback: 'Weekend' })}
+          value={t('info.1.value', { fallback: 'Support available via email' })}
+        />
       </div>
       <div className="flex flex-col gap-5 max-md:flex-col">
         <Card
-          title="Email Support"
-          subtitle="Need assistance or have a question?"
-          description="Our support team replies within 24 hours with clear, actionable guidance."
+          title={t('cards.0.title', { fallback: 'Email Support' })}
+          subtitle={t('cards.0.subtitle', {
+            fallback: 'Need assistance or have a question?',
+          })}
+          description={t('cards.0.description', {
+            fallback:
+              'Our support team replies within 24 hours with clear, actionable guidance.',
+          })}
         />
         <Card
-          title="Phone Consultations"
-          subtitle="Prefer a personal conversation?"
-          description="Speak directly with a Renvex specialist — no forms, no waiting, just informed answers."
+          title={t('cards.1.title', { fallback: 'Phone Consultations' })}
+          subtitle={t('cards.1.subtitle', {
+            fallback: 'Prefer a personal conversation?',
+          })}
+          description={t('cards.1.description', {
+            fallback:
+              'Speak directly with a Renvex specialist — no forms, no waiting, just informed answers.',
+          })}
         />
       </div>
     </section>
