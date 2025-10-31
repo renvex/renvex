@@ -1,1 +1,265 @@
-{}
+{
+  "header": {
+    "importantNotice": {
+      "title": "Important Notice:",
+      "description": "Renvex operates independently and does not hold client funds or provide investment advice."
+    },
+    "navigation": {
+      "home": "Home",
+      "heatmaps": "Heatmaps",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "title": "Markets move fast — we move with precision.",
+    "description": "Renvex ensures every trading decision is informed, verified, and deliberate.",
+    "empowering": "Empowering Trading Clarity Worldwide",
+    "policies": {
+      "0": "Cookie Policy",
+      "1": "Privacy Policy",
+      "2": "Terms of Service"
+    },
+    "navigation": {
+      "0": "Home",
+      "1": "Heatmaps",
+      "2": "About",
+      "3": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Your fixed point in a moving market",
+      "description": "While others sell promises, Renvex delivers evidence. We connect traders to verified brokers through validated data and independent analysis. Every comparison is factual, structured, and free from external influence."
+    },
+    "builtOn": {
+      "title": {
+        "0": "Built on",
+        "1": "Verified Data"
+      },
+      "description": "A foundation of precision and proof",
+      "description2": "We work alongside leading data providers and regulated platforms to maintain reliable, measurable, and unbiased information. Our framework is built on precision and transparency, ensuring every decision begins with trust and clarity."
+    },
+    "ourPartners": {
+      "title": "Our Partners",
+      "subtitle": "Confidence built on evidence",
+      "description": "Renvex collaborates with globally recognized trading platforms and verified data providers to ensure accuracy and transparency in every comparison."
+    },
+    "precisionInSelection": {
+      "subtitle": "A data-driven framework for broker evaluation",
+      "title": {
+        "0": "Precision in",
+        "1": "Selection"
+      },
+      "description": "Renvex applies a continuous monitoring system to assess and verify broker performance in real time. Every platform is analyzed using verified data streams and measurable criteria, ensuring that only the most consistent and transparent brokers remain visible.",
+      "outcome": {
+        "title": "Outcome",
+        "description": "A refined network of brokers that meet institutional-grade standards for performance, transparency, and reliability. Every inclusion is earned — never purchased."
+      },
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Execution",
+            "1": "Latency"
+          },
+          "subtitle": "Consistency and stability under live market conditions.",
+          "description": "We track real-time order processing and system responsiveness during periods of high trading activity."
+        },
+        "1": {
+          "title": {
+            "0": "Fee",
+            "1": "Structures"
+          },
+          "subtitle": "Complete transparency with no hidden costs.",
+          "description": "All spreads, commissions, and overnight charges are documented and compared across providers."
+        },
+        "2": {
+          "title": {
+            "0": "Liquidity",
+            "1": "Consistency"
+          },
+          "subtitle": "Verified depth of market and sustainable execution quality.",
+          "description": "Each platform is tested against volatility events and liquidity fluctuations."
+        },
+        "3": {
+          "title": {
+            "0": "Client",
+            "1": "Satisfaction"
+          },
+          "subtitle": "Insights based on verified user feedback and engagement metrics.",
+          "description": "Ratings are periodically recalibrated to reflect authentic trading experiences."
+        }
+      }
+    },
+    "realInsights": {
+      "chip": "Authentic experiences that cut through speculation",
+      "title": {
+        "0": "Real Insight,",
+        "1": "Real Traders"
+      },
+      "description": {
+        "0": "Markets are shaped by those who trade them.",
+        "1": "Renvex brings together verified perspectives from real users — professionals who operate daily within the platforms you compare. Their insights reveal what numbers can’t: consistency, reliability, and user experience under real conditions."
+      },
+      "description2": "What we collect and verify:",
+      "cards": {
+        "0": {
+          "title": "Authentic Trading Experiences",
+          "description": "Only verified users contribute — no bots, no paid promotion."
+        },
+        "1": {
+          "title": "Performance in Practice",
+          "description": "Data shows structure, but feedback shows reality. We record how platforms behave when volatility hits."
+        }
+      },
+      "footer": {
+        "title": {
+          "0": "Independent Reviews,",
+          "1": "Always Current"
+        },
+        "description": {
+          "0": "As brokers evolve, our assessments evolve with them — every update is reviewed and validated.",
+          "1": "Renvex bridges quantitative data with qualitative truth, giving you a complete picture before you commit."
+        }
+      }
+    },
+    "reviews": {
+      "chip": "Verified reputation through independent insight",
+      "title": {
+        "0": "Partners Rated by",
+        "1": "Traders"
+      },
+      "description": {
+        "0": "Our broker network is validated not only through Renvex analytics but through transparent public feedback.",
+        "1": "See how our verified partners perform on Trustpilot — rated by traders who use them every day."
+      }
+    },
+    "fullControl": {
+      "worldMap": {
+        "title": "The Principle",
+        "description": {
+          "0": "Freedom builds confidence.",
+          "1": "You steer the direction — we keep the signal steady."
+        }
+      },
+      "chip": "Independence is the rule",
+      "title": {
+        "0": "Full Control.",
+        "1": "No Surprises."
+      },
+      "description": {
+        "0": "Your",
+        "1": "strategy",
+        "2": "defines the path. Your platform follows it. Your",
+        "3": "rules",
+        "4": "stay intact.",
+        "5": "Renvex stands for complete financial autonomy — no hidden terms, no restrictions, no interference. You trade on your own terms; we ensure the framework is transparent and reliable."
+      },
+      "subtitle": "How Renvex supports your trading decisions",
+      "cards": {
+        "0": {
+          "title": "Zero Commissions",
+          "description": "We take nothing from your trades or profits."
+        },
+        "1": {
+          "title": "Unrestricted Access",
+          "description": "Your platform, your pace — Renvex never intervenes."
+        },
+        "2": {
+          "title": "Transparent Costs",
+          "description": "Every fee is visible, every charge documented."
+        }
+      }
+    },
+    "strategy": {
+      "heading": {
+        "chip": "Forecast your growth with clarity and control.",
+        "title": {
+          "0": "Strategy",
+          "1": "Before Commitment"
+        },
+        "description": "Before execution comes preparation. Renvex turns assumptions into structured projections, giving you a measurable view of risk, return, and potential growth."
+      },
+      "cards": {
+        "0": {
+          "title": "Performance Modeling",
+          "description": "Simulate multiple strategies side-by-side to understand how each behaves under real market conditions."
+        },
+        "1": {
+          "title": "Market Shift Scenarios",
+          "description": "Test how volatility, liquidity changes, and trend reversals affect long-term performance."
+        },
+        "2": {
+          "title": "Compounding Analysis",
+          "description": "Visualize the cumulative effect of reinvestment and position scaling over time."
+        },
+        "3": {
+          "title": "Risk-to-Reward Calibrations",
+          "description": "Adjust exposure, compare ratios, and define thresholds for sustainable profitability."
+        }
+      },
+      "subtitle": "Every decision deserves evidence — we provide the model."
+    },
+    "clarityInSteps": {
+      "chip": "Built for structured decision-making",
+      "title": "Clarity in Three Moves",
+      "subtitle": "Three steps. Infinite control.",
+      "cards": {
+        "0": {
+          "title": "Align",
+          "description": "Connect with a Renvex market strategist to define your objectives, risk tolerance, and target performance metrics. We help you establish a foundation of clarity — translating goals into actionable parameters before any capital moves."
+        },
+        "1": {
+          "title": "Analyze",
+          "description": "Access your personalized broker matrix, ranked by verified data streams, execution speed, and liquidity strength. Compare real-time metrics, client feedback, and platform reliability — all consolidated into one transparent view."
+        },
+        "2": {
+          "title": "Act",
+          "description": "Activate your tools, monitor volatility, and dynamically adjust your execution framework. Set alerts, refine your strategy with live analytics, and evolve your decisions as markets shift."
+        }
+      }
+    },
+    "letsTalk": {
+      "title": "Let's Talk",
+      "description": "Our experts understand how markets move, how platforms perform, and how traders decide.",
+      "description2": "From broker fit to strategy calibration and tooling, we will help you move with precision."
+    },
+    "readyToNavigate": {
+      "title": "Ready to Navigate the Markets with Confidence?",
+      "description": "Your path to informed trading starts here.",
+      "buttons": {
+        "0": "Request a Call",
+        "1": "Explore Verified Brokers"
+      }
+    }
+  },
+  "contactForm": {
+    "errors": {
+      "thisFieldIsRequired": "This field is required.",
+      "validEmail": "Please enter a valid email address."
+    },
+    "title": "Contact Form",
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Enter your first name"
+    },
+    "email": {
+      "label": "Email Address"
+    },
+    "phone": {
+      "label": "Phone Number"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Enter your message"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Enter your last name"
+    },
+    "submit": {
+      "label": "Send Request",
+      "loading": "Sending..."
+    }
+  }
+}

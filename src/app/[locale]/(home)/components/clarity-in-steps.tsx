@@ -1,50 +1,59 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { Chip } from '@/shared/ui/kit/chip';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getCards = () => [
+const getCards = (t: ReturnType<typeof useTranslations>) => [
   {
     number: 1,
-    title: 'Align',
-    description:
-      'Connect with a Renvex market strategist to define your objectives, risk tolerance, and target performance metrics. We help you establish a foundation of clarity — translating goals into actionable parameters before any capital moves.',
+    title: t('cards.0.title', { fallback: 'Align' }),
+    description: t('cards.0.description', {
+      fallback:
+        'Connect with a Renvex market strategist to define your objectives, risk tolerance, and target performance metrics. We help you establish a foundation of clarity — translating goals into actionable parameters before any capital moves.',
+    }),
     imgUrl: '/images/home/step-1.jpg',
   },
   {
     number: 2,
-    title: 'Analyze',
-    description:
-      'Access your personalized broker matrix, ranked by verified data streams, execution speed, and liquidity strength. Compare real-time metrics, client feedback, and platform reliability — all consolidated into one transparent view.',
+    title: t('cards.1.title', { fallback: 'Analyze' }),
+    description: t('cards.1.description', {
+      fallback:
+        'Access your personalized broker matrix, ranked by verified data streams, execution speed, and liquidity strength. Compare real-time metrics, client feedback, and platform reliability — all consolidated into one transparent view.',
+    }),
     imgUrl: '/images/home/step-2.jpg',
     main: true,
   },
   {
     number: 3,
-    title: 'Act',
-    description:
-      'Activate your tools, monitor volatility, and dynamically adjust your execution framework. Set alerts, refine your strategy with live analytics, and evolve your decisions as markets shift.',
+    title: t('cards.2.title', { fallback: 'Act' }),
+    description: t('cards.2.description', {
+      fallback:
+        'Activate your tools, monitor volatility, and dynamically adjust your execution framework. Set alerts, refine your strategy with live analytics, and evolve your decisions as markets shift.',
+    }),
     imgUrl: '/images/home/step-3.jpg',
   },
 ];
 
 export const ClarityInSteps = () => {
-  const cards = getCards();
+  const t = useTranslations('home.clarityInSteps');
+
+  const cards = getCards(t);
 
   return (
     <section className="container flex flex-col gap-10 py-[120px]">
       <div className="flex flex-col items-center gap-4 text-center">
         <Chip>
           <Text size="lg" weight={500}>
-            Built for structured decision-making
+            {t('chip', { fallback: 'Built for structured decision-making' })}
           </Text>
         </Chip>
         <Title as="h3" size="6xl">
-          Clarity in Three Moves
+          {t('title', { fallback: 'Clarity in Three Moves' })}
         </Title>
       </div>
       <section className="flex flex-col items-center gap-6">
@@ -54,7 +63,7 @@ export const ClarityInSteps = () => {
           ))}
         </div>
         <Text size="2xl" color="primary" className="text-center max-md:text-lg">
-          Three steps. Infinite control.
+          {t('subtitle', { fallback: 'Three steps. Infinite control.' })}
         </Text>
       </section>
     </section>

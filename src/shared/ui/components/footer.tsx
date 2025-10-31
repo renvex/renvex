@@ -1,26 +1,39 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { Link } from '@/i18n/navigation';
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getPolicies = () => [
-  { label: 'Cookie Policy', href: '/cookie-policy' },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms of Service', href: '/terms-of-service' },
+const getPolicies = (t: ReturnType<typeof useTranslations>) => [
+  {
+    label: t('policies.0', { fallback: 'Cookie Policy' }),
+    href: '/cookie-policy',
+  },
+  {
+    label: t('policies.1', { fallback: 'Privacy Policy' }),
+    href: '/privacy-policy',
+  },
+  {
+    label: t('policies.2', { fallback: 'Terms of Service' }),
+    href: '/terms-of-service',
+  },
 ];
 
-const getNavigation = () => [
-  { label: 'Home', href: '/' },
-  { label: 'Heatmaps', href: '/heatmaps' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+const getNavigation = (t: ReturnType<typeof useTranslations>) => [
+  { label: t('navigation.0', { fallback: 'Home' }), href: '/' },
+  { label: t('navigation.1', { fallback: 'Heatmaps' }), href: '/heatmaps' },
+  { label: t('navigation.2', { fallback: 'About' }), href: '/about' },
+  { label: t('navigation.3', { fallback: 'Contact' }), href: '/contact' },
 ];
 
 export const Footer = () => {
-  const policies = getPolicies();
-  const navigation = getNavigation();
+  const t = useTranslations('footer');
+
+  const policies = getPolicies(t);
+  const navigation = getNavigation(t);
 
   return (
     <footer className="container flex flex-col gap-20 py-10">
@@ -30,11 +43,15 @@ export const Footer = () => {
             Renvex
           </Title>
           <Title as="h4" size="lg" color="primary" weight={600}>
-            Markets move fast — we move with precision.
+            {t('title', {
+              fallback: 'Markets move fast — we move with precision.',
+            })}
           </Title>
           <Text>
-            Renvex ensures every trading decision is informed, verified, and
-            deliberate.
+            {t('description', {
+              fallback:
+                'Renvex ensures every trading decision is informed, verified, and deliberate.',
+            })}
           </Text>
         </div>
         <div>
@@ -49,7 +66,9 @@ export const Footer = () => {
         <Text>
           © {new Date().getFullYear()} Renvex {' '}
           <span className="text-white/50">
-            Empowering Trading Clarity Worldwide
+            {t('empowering', {
+              fallback: 'Empowering Trading Clarity Worldwide',
+            })}
           </span>
         </Text>
         <div className="flex items-center gap-4">

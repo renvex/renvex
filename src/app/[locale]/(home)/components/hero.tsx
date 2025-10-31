@@ -1,11 +1,14 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const Hero = () => {
+  const t = useTranslations('home.hero');
+
   return (
     <section className="relative flex h-[94vh] flex-col items-center justify-center gap-4 overflow-hidden max-md:h-[475px]">
       <Image
@@ -48,13 +51,13 @@ export const Hero = () => {
         RenveX
       </Title>
       <Text color="primary" size="lg" weight={600} className="z-30">
-        Your fixed point in a moving market
+        {t('subtitle', { fallback: 'Your fixed point in a moving market' })}
       </Text>
       <Text color="grey" className="z-30 w-[600px] text-center max-md:w-full">
-        While others sell promises, Renvex delivers evidence. We connect traders
-        to verified brokers through validated data and independent analysis.
-        Every comparison is factual, structured, and free from external
-        influence.
+        {t('description', {
+          fallback:
+            'While others sell promises, Renvex delivers evidence. We connect traders to verified brokers through validated data and independent analysis. Every comparison is factual, structured, and free from external influence.',
+        })}
       </Text>
     </section>
   );

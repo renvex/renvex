@@ -1,71 +1,75 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Heading } from '@/shared/ui/components/heading';
-import { Chip } from '@/shared/ui/kit/chip';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getCards = () => [
+const getCards = (t: ReturnType<typeof useTranslations>) => [
   {
-    title: 'Zero Commissions',
-    description: 'We take nothing from your trades or profits.',
+    title: t('cards.0.title', { fallback: 'Zero Commissions' }),
+    description: t('cards.0.description', {
+      fallback: 'We take nothing from your trades or profits.',
+    }),
   },
   {
-    title: 'Unrestricted Access',
-    description: 'Your platform, your pace — Renvex never intervenes.',
+    title: t('cards.1.title', { fallback: 'Unrestricted Access' }),
+    description: t('cards.1.description', {
+      fallback: 'Your platform, your pace — Renvex never intervenes.',
+    }),
   },
   {
-    title: 'Transparent Costs',
-    description: 'Every fee is visible, every charge documented.',
+    title: t('cards.2.title', { fallback: 'Transparent Costs' }),
+    description: t('cards.2.description', {
+      fallback: 'Every fee is visible, every charge documented.',
+    }),
   },
 ];
 
 export const FullControl = () => {
-  const cards = getCards();
+  const t = useTranslations('home.fullControl');
+
+  const cards = getCards(t);
 
   return (
     <section className="container flex flex-col gap-10 py-[120px]">
       <Heading
-        chip="Independence is the rule"
+        chip={t('chip', { fallback: 'Independence is the rule' })}
         title={
           <>
-            Full Control. <span className="text-blue-70">No Surprises.</span>
+            {t('title.0', { fallback: 'Full Control.' })}{' '}
+            <span className="text-blue-70">
+              {t('title.1', { fallback: 'No Surprises.' })}
+            </span>
           </>
         }
         description={
           <>
-            Your <span className="font-bold">strategy</span> defines the path.
-            Your platform follows it. Your{' '}
-            <span className="font-bold">rules</span> stay intact. <br /> <br />{' '}
-            Renvex stands for complete financial autonomy — no hidden terms, no
-            restrictions, no interference. You trade on your own terms; we
-            ensure the framework is transparent and reliable.
+            {t('description.0', { fallback: 'Your' })}{' '}
+            <span className="font-bold">
+              {t('description.1', { fallback: 'strategy' })}
+            </span>{' '}
+            {t('description.2', {
+              fallback: 'defines the path. Your platform follows it. Your',
+            })}{' '}
+            <span className="font-bold">
+              {t('description.3', { fallback: 'rules' })}
+            </span>{' '}
+            {t('description.4', { fallback: 'stay intact.' })} <br /> <br />{' '}
+            {t('description.5', {
+              fallback:
+                'Renvex stands for complete financial autonomy — no hidden terms, no restrictions, no interference. You trade on your own terms; we ensure the framework is transparent and reliable.',
+            })}
           </>
         }
       />
-      {/* <div className="flex flex-col items-center gap-4 text-center">
-        <Chip>
-          <Text size="lg" weight={500}>
-            Independence is the rule
-          </Text>
-        </Chip>
-        <Title as="h3" size="6xl">
-          Full Control. <span className="text-blue-70">No Surprises.</span>
-        </Title>
-        <Text color="grey" size="base" className="w-[700px] max-md:w-full">
-          Your <span className="font-bold">strategy</span> defines the path.
-          Your platform follows it. Your{' '}
-          <span className="font-bold">rules</span> stay intact. <br />
-          <br /> Renvex stands for complete financial autonomy — no hidden
-          terms, no restrictions, no interference. You trade on your own terms;
-          we ensure the framework is transparent and reliable.
-        </Text>
-      </div> */}
       <section className="flex flex-col gap-6">
         <Text size="2xl" color="primary" className="text-center max-md:text-lg">
-          How Renvex supports your trading decisions
+          {t('subtitle', {
+            fallback: 'How Renvex supports your trading decisions',
+          })}
         </Text>
         <div className="flex gap-6 max-md:flex-col">
           <WorldMap />
@@ -98,14 +102,18 @@ const Card = ({
 };
 
 const WorldMap = () => {
+  const t = useTranslations('home.fullControl.worldMap');
+
   return (
     <section className="relative flex w-1/2 flex-col gap-2.5 overflow-hidden rounded-[48px] bg-[radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-grey-9,#171818)_0%,var(--color-grey-6,#101010)_66.17%)] pt-[64px] text-center max-md:h-[400px] max-md:w-full max-md:px-20 max-md:pt-10">
       <Title size="3xl" weight={600} className="max-md:text-2xl">
-        The Principle
+        {t('title', { fallback: 'The Principle' })}
       </Title>
       <Text size="base" className="max-md:text-sm">
-        Freedom builds confidence. <br />
-        You steer the direction — we keep the signal steady.
+        {t('description.0', { fallback: 'Freedom builds confidence.' })} <br />
+        {t('description.1', {
+          fallback: 'You steer the direction — we keep the signal steady.',
+        })}
       </Text>
       <Image
         className="absolute bottom-10 left-1/2 h-[373px] w-full -translate-x-1/2 object-cover max-md:bottom-5 max-md:h-[200px]"
