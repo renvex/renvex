@@ -6,6 +6,8 @@ import { Link } from '@/i18n/navigation';
 
 import { Text } from '@/shared/ui/kit/text';
 
+import { Dropdown, DropdownItem } from '../kit/dropdown';
+
 const getLinks = (t: ReturnType<typeof useTranslations>) => [
   { label: t('home', { fallback: 'Home' }), href: '/' },
   { label: t('heatmaps', { fallback: 'Heatmaps' }), href: '/heatmaps' },
@@ -25,6 +27,27 @@ export const Navigation = () => {
           <Text weight={600}>{link.label}</Text>
         </Link>
       ))}
+      <Dropdown label="Legal">
+        {({ setOpen }) => (
+          <>
+            <Link href="/terms-of-use">
+              <DropdownItem onClick={() => setOpen(false)}>
+                <Text weight={600}>Terms of Use</Text>
+              </DropdownItem>
+            </Link>
+            <Link href="/privacy-policy">
+              <DropdownItem onClick={() => setOpen(false)}>
+                <Text weight={600}>Privacy Policy</Text>
+              </DropdownItem>
+            </Link>
+            <Link href="/cookie-policy">
+              <DropdownItem onClick={() => setOpen(false)}>
+                <Text weight={600}>Cookie Policy</Text>
+              </DropdownItem>
+            </Link>
+          </>
+        )}
+      </Dropdown>
     </nav>
   );
 };
