@@ -1,3 +1,5 @@
+'use client';
+
 import { memo, useEffect, useRef } from 'react';
 import { useLocale } from 'next-intl';
 
