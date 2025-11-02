@@ -325,5 +325,68 @@
         }
       }
     }
+  },
+  "thankYou": {
+    "title": {
+      "0": "Thank you for reaching out to Renvex.",
+      "1": "Our team will contact you shortly."
+    },
+    "button": "Return to home page"
+  },
+  "letsTalkCta": {
+    "title": "Let’s Talk",
+    "description": "Connect directly with our team.",
+    "text": {
+      "0": "Our specialists understand how markets move and how platforms perform under real conditions.",
+      "1": "We’ll help you move forward with precision."
+    },
+    "buttons": {
+      "0": "Send a Message"
+    }
+  },
+  "heatmaps": {
+    "hero": {
+      "title": "Renvex Market Heatmaps",
+      "subtitle": "Live Intelligence. Structured for Precision.",
+      "description": {
+        "0": "Gain a real-time visual overview of global markets — all in one analytical space. Renvex Heatmaps translate complex data into clear visual signals, helping traders identify liquidity shifts, performance clusters, and volatility hotspots across forex, equities, crypto, and other key assets.",
+        "1": "Clarity at speed. Insight at scale."
+      }
+    },
+    "markets": {
+      "0": {
+        "chip": "Currency Flow, Mapped in Real Time",
+        "title": "Forex Overview Map",
+        "text": {
+          "0": "Watch currency strength evolve tick by tick.",
+          "1": "Analyze momentum between major pairs, identify relative performance, and detect volatility clusters instantly.",
+          "2": "A live visual matrix designed to turn macro movements into actionable signals."
+        }
+      },
+      "1": {
+        "chip": "See Market Leaders and Laggards Instantly",
+        "title": "Equity Performance Grid",
+        "text": {
+          "0": "Visualize equity strength and sector rotation across global exchanges. Track capital flow between industries, compare performance ratios, and pinpoint where momentum is accelerating or fading — all in one dynamic interface."
+        }
+      },
+      "2": {
+        "chip": "Real-Time View of the Crypto Ecosystem",
+        "title": "Digital Asset Matrix",
+        "text": {
+          "0": "Capture market shifts across digital currencies with precision.",
+          "1": "Monitor live volatility, price deviation, and liquidity movements to spot structural patterns in the crypto landscape before they unfold.",
+          "2": "Perfect for traders who move where momentum meets data."
+        }
+      },
+      "3": {
+        "chip": "A Complete Visual Breakdown of Market Activity",
+        "title": "Asset Analytics Board",
+        "text": {
+          "0": "Go beyond price charts — explore live data on performance variation, volatility range, and percentage changes across instruments.",
+          "1": "The Renvex Asset Board consolidates this data into a single, intuitive view to empower evidence-based portfolio decisions."
+        }
+      }
+    }
   }
 }
