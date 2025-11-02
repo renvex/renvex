@@ -34,13 +34,17 @@ export const TextArea = ({
   intent,
   variant,
   hint,
+  layoutClassName,
   ...args
 }: TextareaHTMLAttributes<HTMLTextAreaElement> & {
   label?: string;
   hint?: string;
+  layoutClassName?: string;
 } & TextAreaVariants) => {
   return (
-    <label className="relative flex w-full flex-col gap-1">
+    <label
+      className={cn('relative flex w-full flex-col gap-1', layoutClassName)}
+    >
       <Text size="xs" color={!hint ? 'white' : 'danger'} className="px-6">
         {hint ? hint : label}
       </Text>
