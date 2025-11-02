@@ -4,16 +4,27 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { ContactForm } from '@/features/contact-form/ui/contact-form';
+import { ThankYou } from '@/features/contact-form/ui/thank-you';
 
+import { useDialogStore } from '@/shared/ui/kit/dialog';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const LetsTalk = () => {
+  const { registerContent, setIsOpen } = useDialogStore();
+
+  const onSuccessForm = () => {
+    registerContent({
+      content: <ThankYou />,
+    });
+    setIsOpen(true);
+  };
+
   return (
     <section className="container flex gap-10 py-20 max-lg:flex-col">
       <Banner />
       <section className="w-1/2 max-lg:w-full">
-        <ContactForm />
+        <ContactForm onSuccess={onSuccessForm} />
       </section>
     </section>
   );

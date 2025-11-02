@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import { useContactDialog } from '@/features/contact-form/model/use-contact-dialog';
+
 import { PhoneIcon } from '@/shared/ui/icons/phone';
 import { SearchIcon } from '@/shared/ui/icons/search';
 import { Button } from '@/shared/ui/kit/button';
@@ -11,6 +13,8 @@ import { Title } from '@/shared/ui/kit/title';
 
 export const ReadyToNavigate = () => {
   const t = useTranslations('home.readyToNavigate');
+
+  const { open } = useContactDialog();
 
   return (
     <section className="relative container flex h-[733px] flex-col gap-5 overflow-hidden py-20 max-lg:h-auto">
@@ -44,7 +48,7 @@ export const ReadyToNavigate = () => {
           })}
         </Text>
         <div className="z-20 flex items-center gap-4 max-md:flex-col max-md:items-start">
-          <Button variant="secondary" className="z-20">
+          <Button variant="secondary" className="z-20" onClick={open}>
             <PhoneIcon />
             {t('buttons.0', { fallback: 'Request a Call' })}
           </Button>
