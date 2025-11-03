@@ -5,6 +5,7 @@ import {
   Hero,
   LetsTalk,
   PrecisionInSelection,
+  Quantify,
   ReadyToNavigate,
   RealInsights,
   Strategy,
@@ -24,6 +25,7 @@ export default function Home() {
       <FullControl />
       <Strategy />
       <ClarityInSteps />
+      <Quantify />
       <LetsTalk />
       <ReadyToNavigate />
     </main>

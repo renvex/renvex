@@ -1,0 +1,11 @@
+.bg {
+  border-radius: 19.161px;
+  border: 1.369px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    249deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  box-shadow: 0 -1.514px 0.757px 0 rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(41.059600830078125px);
+}

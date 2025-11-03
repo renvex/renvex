@@ -5,6 +5,7 @@ export * from './hero';
 export * from './lets-talk';
 export * from './our-partners';
 export * from './precision-in-selection';
+export * from './quantify';
 export * from './ready-to-navigate';
 export * from './real-insights';
 export * from './reviews';
