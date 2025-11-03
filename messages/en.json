@@ -512,5 +512,299 @@
         "footer": "Where systems align, confidence follows."
       }
     }
+  },
+  "policyHero": {
+    "title": "Last Updated:"
+  },
+  "termsOfUse": {
+    "title": "Terms of Use",
+    "0": {
+      "0": "These Terms of Use (“Terms”) govern the use of the Renvex website. By accessing or using this Website, you agree to comply with these Terms. Please read them carefully."
+    },
+    "1": {
+      "0": "Coverage and Applicability",
+      "1": {
+        "0": "These Terms govern your access to and use of the Renvex website and its related tools, services, and content available at",
+        "1": "(“Website”). They outline the rights and obligations between Renvex (“we,” “us,” or “our”) and you as the user."
+      }
+    },
+    "2": {
+      "0": "Company Information",
+      "1": "The Website is operated by Renvex, a registered private company. For questions, assistance, or collaboration inquiries, please contact us at [Insert: official email]."
+    },
+    "3": {
+      "0": "Agreement to the Terms",
+      "1": {
+        "0": "By using the Website or its services, you confirm that you have read, understood, and accepted these Terms and any referenced documents. If you disagree, you must stop using the Website.",
+        "1": "You are responsible for ensuring compliance by anyone accessing the Website via your connection.",
+        "2": "To use the Website, you must:",
+        "3": "Be at least 18 years old.",
+        "4": "Not have previously violated these Terms or any applicable laws."
+      }
+    },
+    "4": {
+      "0": "Related Policies",
+      "1": "Your use of the Website is also subject to:",
+      "2": {
+        "0": "Privacy Policy",
+        "1": "explains how Renvex collects and manages your data.",
+        "2": "Cookie Policy",
+        "3": "outlines how cookies are used to enhance experience.",
+        "4": "Acceptable Use Policy",
+        "5": "details permitted and prohibited activities."
+      },
+      "3": "All referenced policies form part of this agreement."
+    },
+    "5": {
+      "0": "Changes to These Terms",
+      "1": "Renvex reserves the right to modify or update these Terms of Use at any time. Updated versions will be published on the Website with the revised effective date. All changes become effective upon posting.",
+      "2": "We encourage users to review these Terms periodically. If you do not agree with any updates, you must stop using the Website immediately."
+    },
+    "6": {
+      "title": "Website Updates and Modifications",
+      "0": "Renvex may modify or expand the Website and its content to reflect operational, business, or regulatory needs. While we aim to maintain a seamless experience, we do not guarantee continuous or error-free access.",
+      "1": "We may restrict or suspend access to certain parts of the Website for maintenance or other operational reasons. Where possible, advance notice will be provided. Renvex is not liable for any temporary or permanent unavailability of the Website."
+    },
+    "7": {
+      "0": "Assignment of Rights",
+      "1": "Renvex may transfer its rights and obligations under these Terms to another entity. If this occurs, users will be notified, and their rights will remain unaffected.",
+      "2": "You may not assign or transfer any of your rights or obligations under these Terms without prior written consent."
+    },
+    "8": {
+      "0": "Authorized Use of Website Content",
+      "1": "All intellectual property on the Website — including data, materials, software, algorithms, and design — is owned or licensed by Renvex and protected by copyright and intellectual property laws.",
+      "2": "You are granted a limited, non-transferable, personal license to view and download Website content for personal, non-commercial use, provided you comply with these Terms.",
+      "3": "You may not:",
+      "4": "Copy, distribute, sell, or modify Website content.",
+      "5": "Use Website materials for commercial, educational, or promotional purposes without authorization.",
+      "6": "Embed or frame Website content within another site.",
+      "7": "Separate media (images, videos, graphics) from accompanying text.",
+      "8": "Any unauthorized use revokes your license and may require removal or destruction of misused materials."
+    },
+    "9": {
+      "title": "Restriction on Automated Data Collection",
+      "0": "Automated data extraction, including text mining, scraping, or the use of bots, spiders, or similar tools, is strictly prohibited. This restriction constitutes an explicit reservation of rights under Article 4(3) of the Digital Copyright Directive (EU 2019/790).",
+      "1": "These limitations do not apply where prohibited by applicable law."
+    },
+    "10": {
+      "0": "No Advisory Services",
+      "1": "All data, materials, and tools on the Renvex Website are provided for informational purposes only. Renvex does not offer investment, legal, tax, or financial advice and does not endorse any specific broker or financial product.",
+      "2": "Users are solely responsible for evaluating risks and should seek professional advice before making trading or investment decisions.",
+      "3": "While Renvex strives for accuracy and reliability, we do not guarantee that all content is complete, up to date, or error-free."
+    },
+    "11": {
+      "0": "Limitation of Liability",
+      "1": "For Individual Users",
+      "2": "The Website is intended for personal, non-commercial use. Renvex is not liable for any:",
+      "3": "Loss of profits, income, or savings;",
+      "4": "Missed business opportunities;",
+      "5": "Indirect or consequential damages.",
+      "6": "For Business Users",
+      "7": "Renvex is not liable for:",
+      "8": "Financial or operational losses;",
+      "9": "Business interruption or reduced performance;",
+      "10": "Damage to reputation or goodwill.",
+      "11": "For All Users",
+      "12": "Nothing in these Terms limits liability where it would be unlawful to do so, including liability for death, personal injury, or damages caused by negligence."
+    },
+    "12": {
+      "0": "Business User Indemnification",
+      "1": "Suppose you use the Renvex Website for business or professional purposes. In that case, you agree to indemnify and hold harmless Renvex, its affiliates, shareholders, officers, employees, and agents from any third-party claims, losses, or expenses arising from:",
+      "2": "Your use or misuse of the Website;",
+      "3": "Unauthorized access to your account or data;",
+      "4": "Violation of these Terms of Use;",
+      "5": "Infringement of third-party rights or intellectual property.",
+      "6": "This indemnification includes all legal fees and related costs resulting from such actions."
+    },
+    "13": {
+      "0": "Website Security and Misuse",
+      "1": "Security",
+      "2": "Renvex implements strict security measures but cannot guarantee that the Website is free from viruses or cyber threats. You are responsible for using reliable antivirus software and protecting your devices and systems when accessing our platform.",
+      "3": "Prohibited Conduct",
+      "4": "You must not:",
+      "5": "Introduce viruses, malware, or harmful code;",
+      "6": "Attempt unauthorized access to our servers or databases;",
+      "7": "Launch denial-of-service (DoS) or distributed DoS attacks;",
+      "8": "Disrupt or compromise Website functionality.",
+      "9": "Any such actions may constitute a criminal offense. Renvex will report violations to relevant authorities and cooperate fully in investigations. Your access to the Website will be terminated immediately upon breach."
+    },
+    "14": {
+      "0": "External Links and Third-Party Content",
+      "1": "External Links",
+      "2": "The Website may contain links to external resources or partner platforms. These links are provided for informational purposes only and do not imply endorsement by Renvex.",
+      "3": "Renvex has no control over third-party sites and assumes no responsibility for their content, accuracy, or security once you leave our domain.",
+      "4": "Third-Party Content",
+      "5": "Certain sections of the Website may include data, tools, or opinions supplied by third parties (“Third-Party Content”). Such materials reflect the views of their respective providers and not necessarily those of Renvex.",
+      "6": "We do not guarantee the accuracy or completeness of this information. Use of third-party content is at your own risk."
+    },
+    "15": {
+      "0": "Additional Provisions",
+      "1": "Headings",
+      "2": "Section titles are for convenience only and do not affect interpretation.",
+      "3": "No Waiver",
+      "4": "Failure by Renvex to enforce any right or term does not constitute a waiver of that right.",
+      "5": "Force Majeure",
+      "6": "Renvex is not liable for failure to perform obligations due to causes beyond its control, including natural disasters, network outages, government actions, or other unforeseen events.",
+      "7": "Independent Relationship",
+      "8": "These Terms do not create any partnership, agency, or joint venture between you and Renvex. Neither party may act on behalf of the other.",
+      "9": "Severability",
+      "10": "If any clause is deemed unlawful or unenforceable, the remaining provisions remain valid and in effect."
+    },
+    "16": {
+      "0": "Appendix 1 – Acceptable Use Policy",
+      "1": "Purpose",
+      "2": "This Policy defines acceptable behavior when using the Renvex Website and applies to all user activities, including communication, data use, and interaction with platform features.",
+      "3": "User Responsibilities",
+      "4": "Users must:",
+      "5": "Refrain from copying or reselling Website materials without authorization;",
+      "6": "Avoid unauthorized access to Renvex systems or networks;",
+      "7": "Ensure their actions do not harm other users or disrupt Website performance.",
+      "8": "Violations and Consequences",
+      "9": "Renvex may take the following actions in response to violations:",
+      "10": "Immediate suspension or permanent termination of access;",
+      "11": "Issuing formal warnings;",
+      "12": "Legal proceedings to recover damages and costs;",
+      "13": "Reporting violations to law enforcement authorities.",
+      "14": "These actions are not exhaustive. Renvex reserves the right to apply any other measures deemed appropriate."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "0": "Welcome to Renvex. Your privacy and the protection of your personal data are fundamental to how we operate. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our Website.",
+    "1": {
+      "0": "Our Role as a Data Processor",
+      "1": "Renvex acts as a data processor for personal data collected through our Website. This means we handle our clients' information in accordance with applicable data protection laws."
+    },
+    "2": {
+      "0": "Company Information",
+      "1": "Renvex is responsible for managing personal data under this Privacy Policy and in line with applicable data agreements."
+    },
+    "3": {
+      "0": "Our Commitments to Data Protection",
+      "1": "We adhere to the following principles when processing personal information:",
+      "2": "Processing Under Direction",
+      "3": "Data is handled strictly according to client instructions and within agreed legal frameworks.",
+      "4": "Data Security",
+      "5": "We maintain technical and organizational safeguards to protect against unauthorized access, loss, or alteration.",
+      "6": "Data Subject Rights",
+      "7": "We support requests related to access, correction, or deletion of personal data in compliance with privacy regulations."
+    },
+    "4": {
+      "0": "Third-Party Service Partners",
+      "1": "To support our operations, Renvex may engage vetted third-party providers under strict contractual obligations. These partners are required to maintain confidentiality and apply equivalent levels of data protection."
+    },
+    "5": {
+      "0": "Data Processing Agreements",
+      "1": "All processing activities are governed by formal Data Processing Agreements (DPAs) that define how personal data is handled, stored, and protected according to relevant laws and industry standards."
+    },
+    "6": {
+      "0": "Data We Collect",
+      "1": "When using the Renvex Website, we may collect:",
+      "2": "Personal Information",
+      "3": "such as your name, email address, phone number, or details provided via contact forms.",
+      "4": "Technical Information",
+      "5": "including browser type, IP address, device identifiers, and general location data to enhance performance and usability."
+    },
+    "7": {
+      "0": "How We Use Your Data",
+      "1": "We process the collected data to:",
+      "2": "Respond to Inquiries",
+      "3": "Provide customer support and respond to service-related questions.",
+      "4": "Improve Performance",
+      "5": "Analyze usage trends and optimize the Website experience.",
+      "6": "Ensure Security & Compliance",
+      "7": "Detect and prevent unauthorized activity or potential threats."
+    },
+    "8": {
+      "0": "Sharing of Personal Data",
+      "1": "Renvex does not sell or rent personal information. However, data may be shared in limited cases with:",
+      "2": "Authorized Service Providers",
+      "3": "Trusted third parties that assist in operations, bound by confidentiality agreements.",
+      "4": "Legal or Regulatory Bodies",
+      "5": "When disclosure is required by law or necessary to protect the rights and safety of Renvex or its users."
+    },
+    "9": {
+      "0": "Protection of Your Data",
+      "1": "Renvex uses advanced technical and organizational measures to protect your personal information from unauthorized access, alteration, or misuse. These include encryption, restricted access protocols, and continuous system monitoring.",
+      "2": "While we maintain industry-level safeguards, no online system can guarantee absolute security. We encourage users to take precautions when submitting sensitive data online."
+    },
+    "10": {
+      "0": "Your Data Rights",
+      "1": "Depending on applicable data protection laws, you may have the right to:",
+      "2": "Access",
+      "3": "Obtain a copy of the personal data held about you.",
+      "4": "Correction",
+      "5": "Request rectification of inaccurate or incomplete information.",
+      "6": "Deletion",
+      "7": "Request removal of your personal data, subject to legal or contractual retention obligations.",
+      "8": "Objection",
+      "9": "Restrict or object to specific data processing activities."
+    },
+    "11": {
+      "0": "Updates to This Policy",
+      "1": "Renvex may update this Privacy Policy from time to time to reflect changes in legal, operational, or regulatory requirements. Revised versions will be published on our Website with an updated effective date.",
+      "2": "Continued use of the Website after changes are posted constitutes acceptance of the revised Policy."
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "0": {
+      "0": "This Cookie Policy describes how Renvex",
+      "1": "uses cookies and similar technologies to improve functionality, analyze performance, and enhance your experience on our Website."
+    },
+    "1": {
+      "0": "What Are Cookies",
+      "1": "Cookies are small text files placed on your device when you visit a website. They help websites remember user preferences, improve navigation, and collect analytical information.",
+      "2": "Cookies play a key role in ensuring that our platform operates efficiently and provides a more personalized user experience.",
+      "3": "Cookies may be used to:",
+      "4": "Support website functionality and security;",
+      "5": "Measure traffic, engagement, and performance;",
+      "6": "Deliver relevant content and marketing messages.",
+      "7": "Cookies can be categorized by their function, duration, or source."
+    },
+    "2": {
+      "0": "Types of Cookies Used by Renvex",
+      "1": "1. Essential Cookies",
+      "2": "These cookies are required for the website to function properly. They support features such as:",
+      "3": "Page navigation and secure access;",
+      "4": "Session management;",
+      "5": "Authentication of restricted areas.",
+      "6": "Without these cookies, certain parts of the site may not operate as intended.",
+      "7": "2. Analytical / Performance Cookies",
+      "8": "These cookies collect aggregated, anonymous information on how users interact with the Website — such as:",
+      "9": "Most visited sections;",
+      "10": "Navigation patterns;",
+      "11": "Loading errors or slow pages.",
+      "12": "The data helps us improve the platform’s performance and usability. No personal information is stored.",
+      "13": "3. Functionality Cookies",
+      "14": "Functionality cookies store user preferences to make your experience more consistent and personalized, for example:",
+      "15": "Remembering language or region settings;",
+      "16": "Saving display preferences or form inputs.",
+      "17": "4. Targeting / Advertising Cookies",
+      "18": "These cookies support the delivery of content and ads relevant to your interests. They help us:",
+      "19": "Understand user interaction with our marketing materials;",
+      "20": "Measure the effectiveness of campaigns;",
+      "21": "Improve the relevance of displayed ads across other websites."
+    },
+    "3": {
+      "0": "Managing Cookies",
+      "1": "You can manage or disable cookies through your browser settings at any time. Most browsers allow you to:",
+      "2": "View which cookies are stored;",
+      "3": "Delete existing cookies;",
+      "4": "Block future cookies from being placed;",
+      "5": "Receive notifications before a cookie is stored.",
+      "6": "Please note that disabling certain cookies may limit website functionality or degrade your browsing experience.",
+      "7": "For more detailed instructions on managing cookies, refer to your browser’s help documentation."
+    },
+    "4": {
+      "0": "Third-Party Cookies and Services",
+      "1": "Some cookies on the Renvex Website may be set by third-party analytics or advertising providers. These cookies help us measure performance, track engagement, or deliver relevant advertising content.",
+      "2": "Renvex does not control these third-party cookies directly and encourages users to review the privacy and cookie policies of respective providers for more information."
+    },
+    "5": {
+      "0": "Policy Updates",
+      "1": "Renvex may update this Cookie Policy from time to time to reflect changes in technology, regulations, or our business operations.",
+      "2": "Any revisions will be published on this page with an updated effective date. Continued use of the Website after such updates constitutes acceptance of the revised Policy."
+    }
   }
 }
