@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
@@ -6,6 +7,21 @@ import { PolicyList } from '@/features/policies/ui/policy-list';
 import { PolicyMain } from '@/features/policies/ui/policy-main';
 import { PolicySection } from '@/features/policies/ui/policy-section';
 import { PolicyText } from '@/features/policies/ui/policy-text';
+
+export const metadata: Metadata = {
+  title: 'Terms of Use | Renvex',
+  openGraph: {
+    title: 'Terms of Use | Renvex',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Use | Renvex',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function TermsOfUse() {
   const t = await getTranslations('termsOfUse');

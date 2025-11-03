@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
@@ -6,6 +7,21 @@ import { PolicyList } from '@/features/policies/ui/policy-list';
 import { PolicyMain } from '@/features/policies/ui/policy-main';
 import { PolicySection } from '@/features/policies/ui/policy-section';
 import { PolicyText } from '@/features/policies/ui/policy-text';
+
+export const metadata: Metadata = {
+  title: 'Cookie Policy | Renvex',
+  openGraph: {
+    title: 'Cookie Policy | Renvex',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cookie Policy | Renvex',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function CookiePolicy() {
   const t = await getTranslations('cookiePolicy');

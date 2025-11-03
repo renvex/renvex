@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { CryptoHeatmap } from '@/shared/ui/components/crypto-heatmap';
@@ -7,6 +8,26 @@ import { MarketHeatmap } from '@/shared/ui/components/market-heatmap';
 import { StockHeatmap } from '@/shared/ui/components/stock-heatmap';
 
 import { Hero, Market } from './components';
+
+export const metadata: Metadata = {
+  title:
+    'Renvex Market Heatmaps | Live Data Visualization for Forex, Stocks & Crypto',
+  description:
+    'Access live trading heatmaps for forex, equities, and cryptocurrencies. Renvex Heatmaps turn market volatility into visual clarity — helping traders analyze liquidity, performance, and trends in real time.',
+  openGraph: {
+    title:
+      'Renvex Market Heatmaps | Live Data Visualization for Forex, Stocks & Crypto',
+    description:
+      'Access live trading heatmaps for forex, equities, and cryptocurrencies. Renvex Heatmaps turn market volatility into visual clarity — helping traders analyze liquidity, performance, and trends in real time.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Renvex Market Heatmaps | Live Data Visualization for Forex, Stocks & Crypto',
+    description:
+      'Access live trading heatmaps for forex, equities, and cryptocurrencies. Renvex Heatmaps turn market volatility into visual clarity — helping traders analyze liquidity, performance, and trends in real time.',
+  },
+};
 
 export default async function Heatmaps() {
   const t = await getTranslations('heatmaps.markets');
