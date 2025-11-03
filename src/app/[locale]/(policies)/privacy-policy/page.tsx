@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { PolicyHero } from '@/features/policies/ui/policy-hero';
@@ -5,6 +6,21 @@ import { PolicyList } from '@/features/policies/ui/policy-list';
 import { PolicyMain } from '@/features/policies/ui/policy-main';
 import { PolicySection } from '@/features/policies/ui/policy-section';
 import { PolicyText } from '@/features/policies/ui/policy-text';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Renvex',
+  openGraph: {
+    title: 'Privacy Policy | Renvex',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Renvex',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function PrivacyPolicy() {
   const t = await getTranslations('privacyPolicy');
