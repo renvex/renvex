@@ -1,0 +1,9 @@
+.ball {
+  border-radius: 816px;
+  background: linear-gradient(
+    180deg,
+    var(--color-blue-70, #776bf8) 0%,
+    var(--color-blue-47, #544da1) 86.35%
+  );
+  filter: blur(200px);
+}

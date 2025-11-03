@@ -10,7 +10,7 @@ import { Navigation } from '@/shared/ui/components/navigation';
 export const Header = () => {
   return (
     <header className="relative z-50 flex flex-col">
-      <section className="container flex items-center justify-between gap-5 py-2">
+      <section className="container flex items-center justify-between gap-5 bg-[#000001] py-2">
         <ImportantNotice />
         <LangSwitcher />
       </section>
