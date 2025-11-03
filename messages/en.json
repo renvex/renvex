@@ -388,5 +388,124 @@
         }
       }
     }
+  },
+  "about": {
+    "hero": {
+      "title": "About Renvex",
+      "subtitle": "Built on precision. Driven by verification",
+      "description": "Our purpose is clear: to make every trading decision informed, traceable, and accountable."
+    },
+    "ourFoundation": {
+      "chip": "Where clarity meets accountability",
+      "title": "Our Foundation",
+      "description": {
+        "0": "Each Renvex assessment is based on verified data and real market behavior.  We combine independent audits, compliance reviews, and live performance tracking to ensure only credible, consistent brokers remain in our network.",
+        "1": "We combine independent audits, compliance reviews, and live performance tracking to ensure only credible, consistent brokers remain in our network."
+      },
+      "corePillars": "Core Pillars",
+      "cards": {
+        "0": {
+          "title": "Verification First",
+          "description": "Every broker is validated through regulatory checks, live data, and performance testing."
+        },
+        "1": {
+          "title": "Transparency Always",
+          "description": "No paid listings or hidden incentives — placement is earned through verified results."
+        },
+        "2": {
+          "title": "Evidence-Based Tools",
+          "description": "Heatmaps, analytics, and comparison dashboards built for measurable decisions."
+        },
+        "3": {
+          "title": "User Trust",
+          "description": "Insights and reviews from verified traders are regularly verified and updated."
+        }
+      }
+    },
+    "ourRole": {
+      "chip": "Independent. Analytical. Unbiased.",
+      "title": "Our Role",
+      "description": {
+        "0": "Renvex does not handle funds, execute trades, or provide investment advice.",
+        "1": "Our focus is on delivering independent intelligence — tools and evaluations that give traders a verified foundation for every decision."
+      },
+      "appendix": {
+        "0": "We operate at the intersection of",
+        "1": "data",
+        "2": "and",
+        "3": "decision-making",
+        "4": "ensuring transparency in an industry that demands it most."
+      },
+      "list": {
+        "0": {
+          "title": "No Fund Handling",
+          "description": "Renvex never holds client funds or intermediates transactions."
+        },
+        "1": {
+          "title": "No Execution",
+          "description": "We do not execute trades or influence trading activity."
+        },
+        "2": {
+          "title": "No Advisory Services",
+          "description": "Our insights are analytical — never financial advice."
+        },
+        "3": {
+          "title": "Independent Analysis",
+          "description": "All evaluations are based on data, compliance, and real market performance."
+        },
+        "4": {
+          "title": "Decision Support Tools",
+          "description": "Our systems translate raw information into measurable, actionable insight."
+        },
+        "5": {
+          "title": "Transparency at Core",
+          "description": "Every comparison and recommendation is structured, traceable, and free from bias."
+        }
+      }
+    },
+    "ourCommitment": {
+      "title": "Our Commitment",
+      "subtitle": "Trust is proven, not promised",
+      "description": {
+        "0": "We continuously monitor all listed brokers, updating data and recalibrating metrics as market conditions evolve.",
+        "1": "Our standards are built to exceed regulation — prioritizing reliability, data integrity, and user security."
+      },
+      "appendix": "At Renvex, every statement can be traced, every recommendation justified. That is how precision becomes trust."
+    },
+    "outMethodology": {
+      "heading": {
+        "chip": "Data that works, systems that adapt",
+        "title": "Our Methodology",
+        "description": {
+          "0": "The Renvex approach combines automated intelligence with human oversight. Our analysts validate algorithmic outputs, while our systems track fluctuations in liquidity, execution quality, and user feedback in real time. This hybrid process ensures that every broker presented remains current, compliant, and competitive — not by promise, but by performance.",
+          "1": "This hybrid process ensures that every broker presented remains current, compliant, and competitive — not by promise, but by performance."
+        }
+      },
+      "keyAspects": "Key aspects of our process:",
+      "cards": {
+        "0": {
+          "title": "Continuous data flow from multiple verified providers."
+        },
+        "1": {
+          "title": "Manual verification of anomalies and outliers."
+        },
+        "2": {
+          "title": "Performance scoring is recalculated monthly."
+        },
+        "3": {
+          "title": "Integration of user sentiment from verified sources."
+        }
+      },
+      "ourVision": {
+        "title": "Our Vision",
+        "subtitle": "Engineering transparency for the next generation of traders",
+        "description": {
+          "0": "Technology moves fast, but integrity must move faster.",
+          "1": "Renvex develops systems that convert complex financial data into usable, verified intelligence — built for clarity, performance, and independence.",
+          "2": "We aim to expand our analytical infrastructure globally, providing traders with institutional-level validation tools designed for a transparent financial future."
+        },
+        "footer": "Where systems align, confidence follows."
+      }
+    }
   }
 }
