@@ -1,7 +1,14 @@
 'use client';
 
-import { type ReactNode, useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
+import {
+  type ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -11,19 +18,43 @@ import { Text } from '@/shared/ui/kit/text';
 
 import st from './lang-switcher.module.css';
 
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'es', name: 'Español' },
+];
+
 export const LangSwitcher = () => {
   const [open, setOpen] = useState(false);
 
   const pathname = usePathname();
+  const router = useRouter();
 
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setOpen(false), [pathname]);
+
+  const locale = useLocale();
+
+  const switchLanguage = useCallback(
+    (newLocale: string) => {
+      if (newLocale === 'es') {
+        router.replace(`${pathname.replace('/en', '')}`);
+      } else {
+        router.replace(`/${newLocale}${pathname}`);
+      }
+    },
+    [router, pathname],
+  );
+
+  const currentLanguage = useMemo(
+    () => languages.find(language => language.code === locale)?.name,
+    [locale],
+  );
 
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="outline-0">
         <span className="flex h-[32px] items-center justify-center rounded-2xl bg-white/10 px-6 text-center">
-          <Text>English</Text>
+          <Text>{currentLanguage}</Text>
         </span>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
@@ -33,11 +64,21 @@ export const LangSwitcher = () => {
           alignOffset={100}
         >
           <section className="flex flex-col gap-1">
-            <DropdownItem onClick={() => setOpen(false)}>
+            <DropdownItem
+              onClick={() => {
+                setOpen(false);
+                switchLanguage('en');
+              }}
+            >
               <GbIcon />
               <Text size="xs">EN</Text>
             </DropdownItem>
-            <DropdownItem onClick={() => setOpen(false)}>
+            <DropdownItem
+              onClick={() => {
+                setOpen(false);
+                switchLanguage('es');
+              }}
+            >
               <EsIcon />
               <Text size="xs">ES</Text>
             </DropdownItem>
