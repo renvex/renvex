@@ -45,6 +45,11 @@
       "forex": "Forex heat map",
       "market": "Market heat map"
     },
+    "quantify": {
+      "chip": "Planning starts with clarity",
+      "title": "Quantify What’s Ahead",
+      "description": "The Renvex Compound Interest Calculator helps you model capital performance under real market conditions — so every decision you make is grounded in measurable data, not assumptions."
+    },
     "builtOn": {
       "title": {
         "0": "Built on",
