@@ -39,6 +39,18 @@ export default async function CookiePolicy() {
             fallback:
               'uses cookies and similar technologies to improve functionality, analyze performance, and enhance your experience on our Website.',
           })}
+          <br />
+          <br />
+          {t('0.2', {
+            fallback:
+              'By continuing to browse or interact with our site, you consent to the use of cookies in accordance with this Policy.',
+          })}
+          <br />
+          <br />
+          {t('0.3', {
+            fallback:
+              'We encourage you to review this Policy carefully to understand how Renvex uses, manages, and controls cookies.',
+          })}
         </PolicyText>
         <PolicySection title={t('1.0', { fallback: 'What Are Cookies' })}>
           <PolicyText>

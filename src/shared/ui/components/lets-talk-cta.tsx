@@ -4,14 +4,14 @@ import { useTranslations } from 'next-intl';
 
 import { useContactDialog } from '@/features/contact-form/model/use-contact-dialog';
 
+import { Link } from '@/i18n/navigation';
+
 import { MessageIcon } from '../icons/message';
 import { Button } from '../kit/button';
 import { CallToAction } from './call-to-action';
 
 export const LetsTalkCta = () => {
   const t = useTranslations('letsTalkCta');
-
-  const { open } = useContactDialog();
 
   return (
     <CallToAction
@@ -33,10 +33,12 @@ export const LetsTalkCta = () => {
       }
       buttons={
         <>
-          <Button variant="secondary" className="z-20" onClick={open}>
-            <MessageIcon />
-            {t('buttons.0', { fallback: 'Send a Message' })}
-          </Button>
+          <Link href="/contact-us">
+            <Button variant="secondary" className="z-20">
+              <MessageIcon />
+              {t('buttons.0', { fallback: 'Send a Message' })}
+            </Button>
+          </Link>
         </>
       }
     />

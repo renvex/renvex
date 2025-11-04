@@ -12,7 +12,7 @@ const getLinks = (t: ReturnType<typeof useTranslations>) => [
   { label: t('home', { fallback: 'Home' }), href: '/' },
   { label: t('heatmaps', { fallback: 'Heatmaps' }), href: '/heatmaps' },
   { label: t('about', { fallback: 'About' }), href: '/about' },
-  { label: t('contact', { fallback: 'Contact' }), href: '/contact' },
+  { label: t('contact', { fallback: 'Contact' }), href: '/contact-us' },
 ];
 
 export const Navigation = () => {

@@ -6,7 +6,7 @@ import { useContactDialog } from '@/features/contact-form/model/use-contact-dial
 
 import { CallToAction } from '@/shared/ui/components/call-to-action';
 import { PhoneIcon } from '@/shared/ui/icons/phone';
-import { SearchIcon } from '@/shared/ui/icons/search';
+// import { SearchIcon } from '@/shared/ui/icons/search';
 import { Button } from '@/shared/ui/kit/button';
 
 export const ReadyToNavigate = () => {
@@ -28,10 +28,10 @@ export const ReadyToNavigate = () => {
             <PhoneIcon />
             {t('buttons.0', { fallback: 'Request a Call' })}
           </Button>
-          <Button variant="secondary" className="z-20">
+          {/* <Button variant="secondary" className="z-20">
             <SearchIcon />
             {t('buttons.1', { fallback: 'Explore Verified Brokers' })}
-          </Button>
+          </Button> */}
         </>
       }
     />
