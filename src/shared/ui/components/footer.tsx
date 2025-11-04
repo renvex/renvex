@@ -18,7 +18,7 @@ const getPolicies = (t: ReturnType<typeof useTranslations>) => [
   },
   {
     label: t('policies.2', { fallback: 'Terms of Service' }),
-    href: '/terms-of-service',
+    href: '/terms-of-use',
   },
 ];
 
@@ -26,7 +26,7 @@ const getNavigation = (t: ReturnType<typeof useTranslations>) => [
   { label: t('navigation.0', { fallback: 'Home' }), href: '/' },
   { label: t('navigation.1', { fallback: 'Heatmaps' }), href: '/heatmaps' },
   { label: t('navigation.2', { fallback: 'About' }), href: '/about' },
-  { label: t('navigation.3', { fallback: 'Contact' }), href: '/contact' },
+  { label: t('navigation.3', { fallback: 'Contact' }), href: '/contact-us' },
 ];
 
 export const Footer = () => {

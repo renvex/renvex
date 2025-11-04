@@ -88,10 +88,18 @@ export const Quantify = () => {
       <Heading
         chip={t('chip', { fallback: 'Planning starts with clarity' })}
         title={t('title', { fallback: 'Quantify What’s Ahead' })}
-        description={t('description', {
-          fallback:
-            'The Renvex Compound Interest Calculator helps you model capital performance under real market conditions — so every decision you make is grounded in measurable data, not assumptions.',
-        })}
+        description=<>
+          {t('description.0', { fallback: 'The' })}{' '}
+          <span className="font-bold">
+            {t('description.1', {
+              fallback: 'Renvex Compound Interest Calculator',
+            })}
+          </span>{' '}
+          {t('description.2', {
+            fallback:
+              'helps you model capital performance under real market conditions — so every decision you make is grounded in measurable data, not assumptions.',
+          })}
+        </>
       />
       <article
         className={cn(

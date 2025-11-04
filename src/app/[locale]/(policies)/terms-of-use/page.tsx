@@ -53,14 +53,14 @@ export default async function TermsOfUse() {
             })}
           </PolicyText>
         </PolicySection>
-        <PolicySection title={t('2.0', { fallback: 'Company Information' })}>
+        {/* <PolicySection title={t('2.0', { fallback: 'Company Information' })}>
           <PolicyText>
             {t('2.1', {
               fallback:
                 'The Website is operated by Renvex, a registered private company. For questions, assistance, or collaboration inquiries, please contact us at [Insert: official email].',
             })}
           </PolicyText>
-        </PolicySection>
+        </PolicySection> */}
         <PolicySection title={t('3.0', { fallback: 'Agreement to the Terms' })}>
           <PolicyText>
             {t('3.1.0', {
@@ -349,7 +349,9 @@ export default async function TermsOfUse() {
         <PolicySection
           title={t('13.0', { fallback: 'Website Security and Misuse' })}
         >
-          <PolicyText>{t('13.1', { fallback: 'Security' })}</PolicyText>
+          <PolicyText className="font-bold">
+            {t('13.1', { fallback: 'Security' })}
+          </PolicyText>
           <PolicyText>
             {t('13.2', {
               fallback:

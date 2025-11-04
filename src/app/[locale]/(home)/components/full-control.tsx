@@ -68,7 +68,7 @@ export const FullControl = () => {
       <section className="flex flex-col gap-6">
         <Text size="2xl" color="primary" className="text-center max-md:text-lg">
           {t('subtitle', {
-            fallback: 'How Renvex supports your trading decisions',
+            fallback: 'We Commit To:',
           })}
         </Text>
         <div className="flex gap-6 max-md:flex-col">

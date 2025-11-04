@@ -43,8 +43,8 @@ export default function Home() {
       <Tools />
       <FullControl />
       <Strategy />
-      <ClarityInSteps />
       <Quantify />
+      <ClarityInSteps />
       <LetsTalk />
       <ReadyToNavigate />
     </main>
