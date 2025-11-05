@@ -32,7 +32,7 @@ export const OurPartners = () => {
   const partners = getPartners();
 
   return (
-  <section className="container py-20" id="verified-brokers">
+    <section className="container py-20" id="verified-brokers">
       <div className="flex flex-col gap-[55px]">
         <section className="flex flex-col items-center gap-4 text-center">
           <Chip>
@@ -51,7 +51,7 @@ export const OurPartners = () => {
           </Text>
         </section>
         <section className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-10">
+          <div className="flex">
             {partners.map(partner => (
               <div
                 key={partner.text}
@@ -69,7 +69,7 @@ export const OurPartners = () => {
 
 const PartnerCard = ({ imgUrl, text }: { imgUrl: string; text: string }) => {
   return (
-    <div className="flex flex-col items-center gap-1.5 px-1 text-center">
+    <div className="flex flex-col items-center gap-1.5 px-1 px-5 text-center">
       <Image src={imgUrl} alt={text} width={220} height={80} unoptimized />
       <Text size="lg">{text}</Text>
     </div>
