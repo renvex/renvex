@@ -90,11 +90,11 @@ export const Quantify = () => {
         title={t('title', { fallback: 'Quantify What’s Ahead' })}
         description=<>
           {t('description.0', { fallback: 'The' })}{' '}
-          <span className="font-bold">
+          <strong>
             {t('description.1', {
               fallback: 'Renvex Compound Interest Calculator',
             })}
-          </span>{' '}
+          </strong>{' '}
           {t('description.2', {
             fallback:
               'helps you model capital performance under real market conditions — so every decision you make is grounded in measurable data, not assumptions.',
