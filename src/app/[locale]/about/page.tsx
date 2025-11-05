@@ -38,7 +38,7 @@ export default function AboutPage() {
       <OurRole />
       <OurCommitment />
       <OurMethodology />
-      <LetsTalkCta />
+      <LetsTalkCta submitLabel="contact-us" />
     </main>
   );
 }

@@ -1,0 +1,7 @@
+.bg {
+  background: linear-gradient(
+    152deg,
+    var(--color-grey-20, #333) 13.56%,
+    var(--color-grey-7, #121412) 80.96%
+  );
+}

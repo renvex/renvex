@@ -350,7 +350,8 @@
       "1": "We’ll help you move forward with precision."
     },
     "buttons": {
-      "0": "Send a Message"
+      "0": "Send a Message",
+      "1": "Contact Us"
     }
   },
   "heatmaps": {
@@ -755,7 +756,7 @@
     "0": {
       "0": "This Cookie Policy describes how Renvex",
       "1": "uses cookies and similar technologies to improve functionality, analyze performance, and enhance your experience on our Website.",
-      "2": "By continuing to browse or interact with our site, you consent to the use of cookies in accordance with this Policy.",
+      "2": "letsTalkCta",
       "3": "We encourage you to review this Policy carefully to understand how Renvex uses, manages, and controls cookies."
     },
     "1": {

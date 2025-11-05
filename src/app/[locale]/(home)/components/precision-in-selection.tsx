@@ -79,7 +79,6 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
 
 export const PrecisionInSelection = () => {
   const t = useTranslations('home.precisionInSelection');
-
   const cards = getCards(t);
 
   return (
@@ -109,12 +108,14 @@ export const PrecisionInSelection = () => {
           })}
         </Text>
       </section>
-      <ul className="flex flex-col gap-6">
-        {cards.map(card => (
-          <Card key={card.subtitle} {...card} />
-        ))}
+      <div className="flex flex-col gap-10">
+        <ul className="relative flex flex-col gap-10">
+          {cards.map((card, index) => (
+            <Card key={card.subtitle} {...card} index={index} />
+          ))}
+        </ul>
         <Outcome />
-      </ul>
+      </div>
     </section>
   );
 };
@@ -124,13 +125,21 @@ const Card = ({
   imgUrl,
   subtitle,
   title,
+  index,
 }: {
   imgUrl: string;
   title: ReactNode;
   subtitle: string;
   description: string;
+  index: number;
 }) => (
-  <li className="relative flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5">
+  <li
+    className="sticky flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5 max-md:!relative max-md:!top-0"
+    style={{
+      top: `${index * 60}px`, // how much each card stacks down
+      zIndex: index,
+    }}
+  >
     <Image
       className="object-cover"
       src={imgUrl}
@@ -144,9 +153,11 @@ const Card = ({
         background: `linear-gradient(276deg, rgba(0, 0, 0, 0.00) 63.15%, #000 99.89%), linear-gradient(129deg, rgba(51, 51, 51, 0.00) 13.56%, var(--color-grey-7, #121412) 80.96%)`,
       }}
     ></div>
+
     <Title as="h3" size="6xl" className="z-20 max-md:text-[52px]">
       {title}
     </Title>
+
     <section className="ml-auto flex w-[351px] flex-col gap-5 max-md:ml-0 max-md:w-full">
       <Title
         as="h6"

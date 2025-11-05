@@ -564,7 +564,8 @@
   },
   "letsTalkCta": {
     "buttons": {
-      "0": "Enviar un mensaje"
+      "0": "Enviar un mensaje",
+      "1": "Contacte con nosotros"
     },
     "description": "Conecte directamente con nuestro equipo.",
     "text": {
