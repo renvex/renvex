@@ -10,7 +10,11 @@ import { MessageIcon } from '../icons/message';
 import { Button } from '../kit/button';
 import { CallToAction } from './call-to-action';
 
-export const LetsTalkCta = () => {
+export const LetsTalkCta = ({
+  submitLabel = 'send-message',
+}: {
+  submitLabel?: 'send-message' | 'contact-us';
+}) => {
   const t = useTranslations('letsTalkCta');
 
   return (
@@ -36,7 +40,9 @@ export const LetsTalkCta = () => {
           <Link href="/contact-us">
             <Button variant="secondary" className="z-20">
               <MessageIcon />
-              {t('buttons.0', { fallback: 'Send a Message' })}
+              {submitLabel === 'send-message'
+                ? t('buttons.0', { fallback: 'Send a Message' })
+                : t('buttons.1', { fallback: 'Contact Us' })}
             </Button>
           </Link>
         </>

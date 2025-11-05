@@ -48,7 +48,7 @@ export const RealInsights = () => {
             })}
           </Text>
         </Chip>
-        <Title as="h3" size="6xl">
+        <Title as="h3" size="6xl" className="max-md:text-[52px]">
           {t('title.0', { fallback: 'Real Insight,' })}{' '}
           <span className="text-blue-70">
             {t('title.1', { fallback: 'Real Traders' })}

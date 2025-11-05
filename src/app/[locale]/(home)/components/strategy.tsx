@@ -66,7 +66,7 @@ export const Strategy = () => {
       </div>
       <div className="mr-[72px] flex gap-20 max-md:mr-0 max-md:flex-col max-md:items-center max-md:px-4">
         <Image
-          className="h-[848px] w-[56%] max-md:h-[343px] max-md:w-full"
+          className="h-[848px] w-[56%] object-contain max-md:h-[343px] max-md:w-full"
           src="/images/home/phone-frame.png"
           alt="phone frame"
           width={500}

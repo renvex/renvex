@@ -52,7 +52,7 @@ export const ClarityInSteps = () => {
             {t('chip', { fallback: 'Built for structured decision-making' })}
           </Text>
         </Chip>
-        <Title as="h3" size="6xl">
+        <Title as="h3" size="6xl" className="max-md:text-[52px]">
           {t('title', { fallback: 'Clarity in Three Moves' })}
         </Title>
       </div>

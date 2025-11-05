@@ -92,7 +92,7 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-[linear-gradient(149deg,var(--color-grey-20,#333)_13.56%,var(--color-grey-7,#121412)_80.96%)] p-10 transition duration-300 ease-in-out hover:bg-[linear-gradient(92deg,#4033CC_1.47%,var(--color-blue-70,#776BF8)_96.76%)] max-md:h-[90px] max-md:text-center">
+    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-[linear-gradient(149deg,var(--color-grey-20,#333)_13.56%,var(--color-grey-7,#121412)_80.96%)] p-10 transition duration-300 ease-in-out last:bg-[linear-gradient(92deg,#4033CC_1.47%,var(--color-blue-70,#776BF8)_96.76%)] max-md:h-[90px] max-md:h-auto max-md:text-center">
       <Title size="3xl" weight={600} className="max-md:text-2xl">
         {title}
       </Title>

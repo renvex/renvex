@@ -28,6 +28,10 @@ body {
   font-family: 'Nacelle', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   @apply mx-auto w-[1240px] max-[1240px]:w-full max-[1024px]:px-4;
 }

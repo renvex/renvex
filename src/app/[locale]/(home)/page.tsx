@@ -6,10 +6,12 @@ import {
   FullControl,
   Hero,
   LetsTalk,
+  OurPartners,
   PrecisionInSelection,
   Quantify,
   ReadyToNavigate,
   RealInsights,
+  Reviews,
   Strategy,
   Tools,
 } from './components';
@@ -36,10 +38,10 @@ export default function Home() {
     <main>
       <Hero />
       <BuiltOn />
-      {/* <OurPartners /> */}
+      <OurPartners />
       <PrecisionInSelection />
       <RealInsights />
-      {/* <Reviews /> */}
+      <Reviews />
       <Tools />
       <FullControl />
       <Strategy />
