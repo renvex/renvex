@@ -8,6 +8,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { FiveStarsIcon } from '@/shared/ui/icons/five-stars';
+import { TrustPilotIcon } from '@/shared/ui/icons/trust-pilot';
 import { Chip } from '@/shared/ui/kit/chip';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -15,78 +16,12 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './reviews.module.css';
 
 const getReviews = () => [
-  {
-    description: (
-      <>
-        <span className="font-bold">
-          Good customer support-Although the Vanguard platform is…
-        </span>
-        <br />
-        <br />
-        Although the Vanguard platform is complicated for me to navigate being a
-        novice in this investment game- Teigan has helped me for months and
-        provides an outstanding service with no complaints- always happy to help
-        me and responses are pretty fast! I will invest in the future but I
-        can...
-      </>
-    ),
-    personName: 'Eddie',
-    date: '23 jul 2025',
-  },
-  {
-    description: (
-      <>
-        <span className="font-bold">
-          Good customer support-Although the Vanguard platform is…
-        </span>
-        <br />
-        <br />
-        Although the Vanguard platform is complicated for me to navigate being a
-        novice in this investment game- Teigan has helped me for months and
-        provides an outstanding service with no complaints- always happy to help
-        me and responses are pretty fast! I will invest in the future but I
-        can...
-      </>
-    ),
-    personName: 'Eddie',
-    date: '23 jul 2025',
-  },
-  {
-    description: (
-      <>
-        <span className="font-bold">
-          Good customer support-Although the Vanguard platform is…
-        </span>
-        <br />
-        <br />
-        Although the Vanguard platform is complicated for me to navigate being a
-        novice in this investment game- Teigan has helped me for months and
-        provides an outstanding service with no complaints- always happy to help
-        me and responses are pretty fast! I will invest in the future but I
-        can...
-      </>
-    ),
-    personName: 'Eddie',
-    date: '23 jul 2025',
-  },
-  {
-    description: (
-      <>
-        <span className="font-bold">
-          Good customer support-Although the Vanguard platform is…
-        </span>
-        <br />
-        <br />
-        Although the Vanguard platform is complicated for me to navigate being a
-        novice in this investment game- Teigan has helped me for months and
-        provides an outstanding service with no complaints- always happy to help
-        me and responses are pretty fast! I will invest in the future but I
-        can...
-      </>
-    ),
-    personName: 'Eddie',
-    date: '23 jul 2025',
-  },
+  '/images/home/partner-1.png',
+  '/images/home/partner-2.png',
+  '/images/home/partner-3.png',
+  '/images/home/partner-4.png',
+  '/images/home/partner-5.png',
+  '/images/home/partner-6.png',
 ];
 
 export const Reviews = () => {
@@ -136,49 +71,52 @@ export const Reviews = () => {
             })}
           </Text>
         </section>
-        <section className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-5 max-md:gap-1">
-            {reviews.map((review, index) => (
-              <div
-                key={`${review.personName}-${index}`}
-                className="flex min-w-[400px] shrink-0 justify-center"
-              >
-                <ReviewCard {...review} />
-              </div>
-            ))}
-          </div>
-        </section>
+        <div className="relative">
+          <Image
+            className="pointer-events-none absolute top-0 left-0 z-10 max-md:hidden"
+            src="/images/home/r-faded-l.svg"
+            alt="reviews-bg"
+            width={725}
+            height={136}
+            unoptimized
+          />
+          <section className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-5 max-md:gap-0">
+              {reviews.map(reviewImgUrl => (
+                <div
+                  key={reviewImgUrl}
+                  className="flex min-w-[400px] shrink-0 justify-center max-md:min-w-[330px]"
+                >
+                  <ReviewCard imgUrl={reviewImgUrl} />
+                </div>
+              ))}
+            </div>
+          </section>
+          <Image
+            className="pointer-events-none absolute top-0 right-0 z-10 max-md:hidden"
+            src="/images/home/r-faded-r.svg"
+            alt="reviews-right-bg"
+            width={725}
+            height={136}
+            unoptimized
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-const ReviewCard = ({
-  date,
-  description,
-  personName,
-}: {
-  description: ReactNode;
-  personName: string;
-  date: string;
-}) => (
+const ReviewCard = ({ imgUrl }: { imgUrl: string }) => (
   <article
     className={cn(
       st.bg,
-      'relative flex h-[500px] w-[400px] flex-col justify-between overflow-hidden rounded-[48px] px-10 pt-10 pb-[120px] max-md:w-full max-md:max-w-[330px] max-md:px-6 max-md:pt-6 max-md:pb-[72px]',
+      'relative flex h-[329px] w-[400px] flex-col gap-5 overflow-hidden rounded-[48px] px-10 pt-10 pb-[120px] max-md:mx-2 max-md:w-full max-md:max-w-[350px] max-md:px-5 max-md:pt-6 max-md:pb-[72px]',
     )}
   >
-    <FiveStarsIcon />
-    <Text size="base" className="max-md:text-xs">
-      {description}
-    </Text>
+    <Image src={imgUrl} alt="review" width={300} height={85} unoptimized />
     <div className="flex items-center justify-between">
-      <Text size="2xl" className="max-md:text-base">
-        {personName}
-      </Text>
-      <Text size="base" className="max-md:text-xs">
-        {date}
-      </Text>
+      <FiveStarsIcon />
+      <TrustPilotIcon />
     </div>
     <Image
       className="absolute bottom-0 left-10 opacity-10 max-md:left-6 max-md:h-[70px] max-md:w-[70px]"
