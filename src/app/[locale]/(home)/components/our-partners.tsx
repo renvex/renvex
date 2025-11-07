@@ -10,12 +10,12 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 const getPartners = () => [
-  { imgUrl: '/images/home/partner-1.png', text: 'Fxpro' },
-  { imgUrl: '/images/home/partner-2.png', text: 'Xtb' },
-  { imgUrl: '/images/home/partner-3.png', text: 'Swissquote' },
-  { imgUrl: '/images/home/partner-4.png', text: 'IC Markets' },
-  { imgUrl: '/images/home/partner-5.png', text: 'IG Group' },
-  { imgUrl: '/images/home/partner-6.png', text: 'Pepperstone' },
+  { imgUrl: '/images/home/partner-1.svg', text: 'Fxpro' },
+  { imgUrl: '/images/home/partner-2.svg', text: 'Xtb' },
+  { imgUrl: '/images/home/partner-3.svg', text: 'Swissquote' },
+  { imgUrl: '/images/home/partner-4.svg', text: 'IC Markets' },
+  { imgUrl: '/images/home/partner-5.svg', text: 'IG Group' },
+  { imgUrl: '/images/home/partner-6.svg', text: 'Pepperstone' },
 ];
 
 export const OurPartners = () => {

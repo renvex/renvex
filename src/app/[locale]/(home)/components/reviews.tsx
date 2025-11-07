@@ -16,12 +16,12 @@ import { Title } from '@/shared/ui/kit/title';
 import st from './reviews.module.css';
 
 const getReviews = () => [
-  '/images/home/partner-1.png',
-  '/images/home/partner-2.png',
-  '/images/home/partner-3.png',
-  '/images/home/partner-4.png',
-  '/images/home/partner-5.png',
-  '/images/home/partner-6.png',
+  '/images/home/partner-1.svg',
+  '/images/home/partner-2.svg',
+  '/images/home/partner-3.svg',
+  '/images/home/partner-4.svg',
+  '/images/home/partner-5.svg',
+  '/images/home/partner-6.svg',
 ];
 
 export const Reviews = () => {
