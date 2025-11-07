@@ -14,8 +14,8 @@ const getPartners = () => [
   { imgUrl: '/images/home/partner-2.svg', text: 'Xtb' },
   { imgUrl: '/images/home/partner-3.svg', text: 'Swissquote' },
   { imgUrl: '/images/home/partner-4.svg', text: 'IC Markets' },
-  { imgUrl: '/images/home/partner-5.svg', text: 'IG Group' },
-  { imgUrl: '/images/home/partner-6.svg', text: 'Pepperstone' },
+  { imgUrl: '/images/home/partner-5.svg', text: 'Trade Republic' },
+  { imgUrl: '/images/home/partner-6.svg', text: 'Revolut' },
 ];
 
 export const OurPartners = () => {
