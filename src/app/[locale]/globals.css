@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #000001;
+  --background: #ffffff;
   --text: #ffffff;
   --danger: #fb4b4e;
   --blue-70: #776bf8;
@@ -10,6 +10,7 @@
   --grey-9: #171818;
   --grey-6: #101010;
   --blue-70: #776bf8;
+  --blue-46: #2841c1;
 }
 
 @theme inline {
@@ -19,6 +20,7 @@
   --color-grey-9: var(--grey-9);
   --color-grey-6: var(--grey-6);
   --color-blue-70: var(--blue-70);
+  --color-blue-46: var(--blue-46);
   --color-danger: var(--danger);
 }
 

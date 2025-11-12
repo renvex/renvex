@@ -19,9 +19,10 @@ const titleVariants = cva('transition duration-300 ease-in-out', {
     },
     color: {
       white: 'text-white',
-      primary: 'text-blue-70',
+      primary: 'text-blue-46',
       grey: 'text-grey-47',
       white50: 'text-white/50',
+      black: 'text-black',
     },
     weight: {
       400: 'font-normal',
@@ -48,12 +49,14 @@ export const Title = ({
   as = 'h2',
   capitalize = false,
   uppercase = false,
+  style,
 }: PropsWithChildren<
   {
     className?: string;
     as?: ElementType;
     capitalize?: boolean;
     uppercase?: boolean;
+    style?: React.CSSProperties;
   } & TitleVariants
 >) => {
   const Tag = as as keyof JSX.IntrinsicElements;
@@ -66,6 +69,7 @@ export const Title = ({
         uppercase && 'uppercase',
         className,
       )}
+      style={style}
     >
       {children}
     </Tag>

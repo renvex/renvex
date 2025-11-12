@@ -34,53 +34,57 @@ export const FullControl = () => {
   const cards = getCards(t);
 
   return (
-    <section className="container flex flex-col gap-10 py-[120px]">
-      <Heading
-        chip={t('chip', { fallback: 'Independence is the rule' })}
-        title={
-          <>
-            {t('title.0', { fallback: 'Full Control.' })}{' '}
-            <span className="text-blue-70">
-              {t('title.1', { fallback: 'No Surprises.' })}
+    <div className="bg-white">
+      <section className="container flex flex-col gap-10 py-[120px]">
+        <Heading
+          chip={t('chip', { fallback: 'Independence is the rule' })}
+          title={
+            <span className="text-black">
+              {t('title.0', { fallback: 'Full Control.' })}{' '}
+              <span>{t('title.1', { fallback: 'No Surprises.' })}</span>
             </span>
-          </>
-        }
-        description={
-          <>
-            {t('description.0', { fallback: 'Your' })}{' '}
-            <span className="font-bold">
-              {t('description.1', { fallback: 'strategy' })}
-            </span>{' '}
-            {t('description.2', {
-              fallback: 'defines the path. Your platform follows it. Your',
-            })}{' '}
-            <span className="font-bold">
-              {t('description.3', { fallback: 'rules' })}
-            </span>{' '}
-            {t('description.4', { fallback: 'stay intact.' })} <br /> <br />{' '}
-            {t('description.5', {
-              fallback:
-                'Renvex stands for complete financial autonomy — no hidden terms, no restrictions, no interference. You trade on your own terms; we ensure the framework is transparent and reliable.',
+          }
+          description={
+            <span className="text-black/90">
+              {t('description.0', { fallback: 'Your' })}{' '}
+              <span className="font-bold">
+                {t('description.1', { fallback: 'strategy' })}
+              </span>{' '}
+              {t('description.2', {
+                fallback: 'defines the path. Your platform follows it. Your',
+              })}{' '}
+              <span className="font-bold">
+                {t('description.3', { fallback: 'rules' })}
+              </span>{' '}
+              {t('description.4', { fallback: 'stay intact.' })} <br /> <br />{' '}
+              {t('description.5', {
+                fallback:
+                  'Renvex stands for complete financial autonomy — no hidden terms, no restrictions, no interference. You trade on your own terms; we ensure the framework is transparent and reliable.',
+              })}
+            </span>
+          }
+        />
+        <section className="flex flex-col gap-6">
+          <Text
+            size="2xl"
+            color="primary"
+            className="text-center max-md:text-lg"
+          >
+            {t('subtitle', {
+              fallback: 'We Commit To:',
             })}
-          </>
-        }
-      />
-      <section className="flex flex-col gap-6">
-        <Text size="2xl" color="primary" className="text-center max-md:text-lg">
-          {t('subtitle', {
-            fallback: 'We Commit To:',
-          })}
-        </Text>
-        <div className="flex gap-6 max-md:flex-col">
-          <WorldMap />
-          <section className="flex w-1/2 flex-col gap-6 max-md:w-full">
-            {cards.map(card => (
-              <Card key={card.title} {...card} />
-            ))}
-          </section>
-        </div>
+          </Text>
+          <div className="flex gap-6 max-md:flex-col">
+            <WorldMap />
+            <section className="flex w-1/2 flex-col gap-6 max-md:w-full">
+              {cards.map(card => (
+                <Card key={card.title} {...card} />
+              ))}
+            </section>
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   );
 };
 
@@ -92,11 +96,16 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-[linear-gradient(149deg,var(--color-grey-20,#333)_13.56%,var(--color-grey-7,#121412)_80.96%)] p-10 transition duration-300 ease-in-out last:bg-[linear-gradient(92deg,#4033CC_1.47%,var(--color-blue-70,#776BF8)_96.76%)] max-md:h-[90px] max-md:h-auto max-md:text-center">
-      <Title size="3xl" weight={600} className="max-md:text-2xl">
+    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-white p-10 shadow-[219px_185px_80px_0_rgba(41,66,193,0.00),140px_119px_73px_0_rgba(41,66,193,0.01),79px_67px_62px_0_rgba(41,66,193,0.05),35px_30px_46px_0_rgba(41,66,193,0.08),9px_7px_25px_0_rgba(41,66,193,0.09)] transition duration-300 ease-in-out max-md:h-[90px] max-md:h-auto max-md:text-center">
+      <Title
+        weight={600}
+        className="text-[52px] text-[#2841C1] max-md:text-2xl"
+      >
         {title}
       </Title>
-      <Text size="base">{description}</Text>
+      <Text size="base" className="text-black/90">
+        {description}
+      </Text>
     </article>
   );
 };
@@ -105,7 +114,7 @@ const WorldMap = () => {
   const t = useTranslations('home.fullControl.worldMap');
 
   return (
-    <section className="relative flex w-1/2 flex-col gap-2.5 overflow-hidden rounded-[48px] bg-[radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-grey-9,#171818)_0%,var(--color-grey-6,#101010)_66.17%)] pt-[64px] text-center max-md:h-[400px] max-md:w-full max-md:px-20 max-md:pt-10">
+    <section className="relative flex w-1/2 flex-col gap-2.5 overflow-hidden rounded-[48px] pt-[64px] text-center [background:radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-blue-30,#6885ED)_0%,var(--color-blue-46,#2841C1)_66.17%)] max-md:h-[400px] max-md:w-full max-md:px-20 max-md:pt-10">
       <Title size="3xl" weight={600} className="max-md:text-2xl">
         {t('title', { fallback: 'The Principle' })}
       </Title>
@@ -116,10 +125,10 @@ const WorldMap = () => {
         })}
       </Text>
       <Image
-        className="absolute bottom-10 left-1/2 h-[373px] w-full -translate-x-1/2 object-cover max-md:bottom-5 max-md:h-[200px]"
-        src="/images/home/w-map.png"
+        className="absolute bottom-0 left-1/2 h-[450px] w-full -translate-x-1/2 object-cover max-md:bottom-5 max-md:h-[200px]"
+        src="/images/home/w-map.svg"
         alt="world map"
-        width={500}
+        width={827}
         height={413}
         unoptimized
       />

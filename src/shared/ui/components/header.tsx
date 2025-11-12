@@ -10,10 +10,12 @@ import { Navigation } from '@/shared/ui/components/navigation';
 export const Header = () => {
   return (
     <header className="relative z-50 flex flex-col">
-      <section className="container flex items-center justify-between gap-5 bg-[#000001] py-2">
-        <ImportantNotice />
-        <LangSwitcher />
-      </section>
+      <div className="bg-[#2841C1]">
+        <section className="container flex items-center justify-between gap-5 py-2">
+          <ImportantNotice />
+          <LangSwitcher />
+        </section>
+      </div>
       <section className="absolute top-10 left-1/2 container flex -translate-x-1/2 items-center justify-between py-5 max-md:top-20">
         <Link href="/">
           <Image

@@ -21,12 +21,14 @@ export const LetsTalk = () => {
   };
 
   return (
-    <section className="container flex gap-10 py-20 max-lg:flex-col">
-      <Banner />
-      <section className="w-1/2 max-lg:w-full">
-        <ContactForm onSuccess={onSuccessForm} />
+    <div className="bg-white">
+      <section className="container flex gap-10 py-20 max-lg:flex-col">
+        <Banner />
+        <section className="w-1/2 max-lg:w-full">
+          <ContactForm onSuccess={onSuccessForm} showPrivacyNote />
+        </section>
       </section>
-    </section>
+    </div>
   );
 };
 
@@ -38,16 +40,17 @@ const Banner = () => {
       <Title
         weight={600}
         className="z-10 text-[120px] leading-[100%] max-md:text-[60px]"
+        color="black"
       >
         {t('title', { fallback: "Let's Talk" })}
       </Title>
-      <Text size="lg" color="primary" weight={600} className="z-10">
+      <Text size="lg" color="blue" weight={600} className="z-10">
         {t('description', {
           fallback:
             'Our experts understand how markets move, how platforms perform, and how traders decide.',
         })}
       </Text>
-      <Text color="grey" className="z-10">
+      <Text className="z-10 text-black/90">
         {t('description2', {
           fallback:
             'From broker fit to strategy calibration and tooling, we will help you move with precision.',

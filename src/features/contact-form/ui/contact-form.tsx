@@ -58,7 +58,7 @@ export const ContactForm = ({
         handleSubmit().catch(console.error);
       }}
     >
-      <Title as="h6" size="3xl">
+      <Title as="h6" size="3xl" color="black">
         {t('title', { fallback: 'Contact Form' })}
       </Title>
       <div className="flex w-full flex-col gap-2.5">
@@ -74,6 +74,7 @@ export const ContactForm = ({
                 {field => (
                   <TextField
                     name={field.name}
+                    variant="secondary"
                     label={t('firstName.label', { fallback: 'First Name' })}
                     placeholder={t('firstName.placeholder', {
                       fallback: 'Enter your first name',
@@ -94,6 +95,7 @@ export const ContactForm = ({
                 {field => (
                   <TextField
                     name={field.name}
+                    variant="secondary"
                     label={t('email.label', { fallback: 'Email Address' })}
                     placeholder="example@gmail.com"
                     value={String(field.state.value)}
@@ -114,6 +116,7 @@ export const ContactForm = ({
                 {field => (
                   <TextField
                     name={field.name}
+                    variant="secondary"
                     label={t('lastName.label', { fallback: 'Last Name' })}
                     placeholder={t('lastName.placeholder', {
                       fallback: 'Enter your last name',
@@ -134,6 +137,7 @@ export const ContactForm = ({
                 {field => (
                   <TextField
                     name={field.name}
+                    variant="secondary"
                     label={t('phone.label', { fallback: 'Phone Number' })}
                     placeholder="+34"
                     value={String(field.state.value)}
@@ -154,6 +158,7 @@ export const ContactForm = ({
             {field => (
               <TextArea
                 name={field.name}
+                variant="secondary"
                 label={t('message.label', { fallback: 'Message' })}
                 placeholder={t('message.placeholder', {
                   fallback: 'Enter your message',
@@ -173,7 +178,7 @@ export const ContactForm = ({
           </Field>
         </section>
         <Activity mode={showPrivacyNote ? 'visible' : 'hidden'}>
-          <Text size="xs" weight={600}>
+          <Text size="xs" weight={600} color="black50">
             Renvex never shares personal information or uses it beyond the scope
             of your request.
           </Text>

@@ -20,9 +20,12 @@ const textVariants = cva('transition duration-300 ease-in-out', {
     },
     color: {
       white: 'text-white',
-      primary: 'text-blue-70',
+      primary: 'text-blue-46',
       grey: 'text-grey-47',
       danger: 'text-danger',
+      black: 'text-black',
+      blue: 'text-blue-46',
+      black50: 'text-black/50',
     },
     weight: {
       300: 'font-light',

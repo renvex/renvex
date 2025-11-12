@@ -26,12 +26,12 @@ export const ReadyToNavigate = () => {
       })}
       buttons={
         <>
-          <Button variant="secondary" className="z-20" onClick={open}>
+          <Button className="z-20" onClick={open}>
             <PhoneIcon />
             {t('buttons.0', { fallback: 'Request a Call' })}
           </Button>
           <Link href="#verified-brokers">
-            <Button variant="secondary" className="z-20">
+            <Button className="z-20">
               <SearchIcon />
               {t('buttons.1', { fallback: 'Explore Verified Brokers' })}
             </Button>

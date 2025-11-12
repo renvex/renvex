@@ -82,41 +82,42 @@ export const PrecisionInSelection = () => {
   const cards = getCards(t);
 
   return (
-    <section className="container flex flex-col gap-10 py-20">
-      <section className="flex flex-col items-center gap-4 text-center">
-        <Chip>
-          <Text
-            size="lg"
-            weight={500}
-            className="max-md:text-base max-md:wrap-break-word"
-          >
-            {t('subtitle', {
-              fallback: 'A data-driven framework for broker evaluation',
+    <div className="bg-white">
+      <section className="container flex flex-col gap-10 py-20">
+        <section className="flex flex-col items-center gap-4 text-center">
+          <Chip variant="light">
+            <Text
+              size="lg"
+              weight={500}
+              className="max-md:text-base max-md:wrap-break-word"
+              color="blue"
+            >
+              {t('subtitle', {
+                fallback: 'A data-driven framework for broker evaluation',
+              })}
+            </Text>
+          </Chip>
+          <Title as="h3" size="6xl" color="black">
+            {t('title.0', { fallback: 'Precision in' })}{' '}
+            <span>{t('title.1', { fallback: 'Selection' })}</span>
+          </Title>
+          <Text className="w-[700px] text-center text-black/90 max-md:w-full">
+            {t('description', {
+              fallback:
+                'Renvex applies a continuous monitoring system to assess and verify broker performance in real time. Every platform is analyzed using verified data streams and measurable criteria, ensuring that only the most consistent and transparent brokers remain visible.',
             })}
           </Text>
-        </Chip>
-        <Title as="h3" size="6xl">
-          {t('title.0', { fallback: 'Precision in' })}{' '}
-          <span className="text-blue-70">
-            {t('title.1', { fallback: 'Selection' })}
-          </span>
-        </Title>
-        <Text color="grey" className="w-[700px] text-center max-md:w-full">
-          {t('description', {
-            fallback:
-              'Renvex applies a continuous monitoring system to assess and verify broker performance in real time. Every platform is analyzed using verified data streams and measurable criteria, ensuring that only the most consistent and transparent brokers remain visible.',
-          })}
-        </Text>
+        </section>
+        <div className="flex flex-col gap-10">
+          <ul className="relative flex flex-col gap-10">
+            {cards.map((card, index) => (
+              <Card key={card.subtitle} {...card} index={index} />
+            ))}
+          </ul>
+          <Outcome />
+        </div>
       </section>
-      <div className="flex flex-col gap-10">
-        <ul className="relative flex flex-col gap-10">
-          {cards.map((card, index) => (
-            <Card key={card.subtitle} {...card} index={index} />
-          ))}
-        </ul>
-        <Outcome />
-      </div>
-    </section>
+    </div>
   );
 };
 
@@ -150,7 +151,7 @@ const Card = ({
     <div
       className="absolute inset-0"
       style={{
-        background: `linear-gradient(276deg, rgba(0, 0, 0, 0.00) 63.15%, #000 99.89%), linear-gradient(129deg, rgba(51, 51, 51, 0.00) 13.56%, var(--color-grey-7, #121412) 80.96%)`,
+        background: `linear-gradient(276deg, rgba(0, 0, 0, 0.00) 63.15%, #000 99.89%), linear-gradient(129deg, rgba(51, 51, 51, 0.00) 13.56%, var(--color-blue-46, #2841C1) 80.96%)`,
       }}
     ></div>
 
@@ -162,13 +163,13 @@ const Card = ({
       <Title
         as="h6"
         size="3xl"
-        color="grey"
+        color="white"
         weight={400}
         className="z-20 leading-[120%] max-md:text-2xl"
       >
         {subtitle}
       </Title>
-      <Text size="base" className="z-20">
+      <Text size="base" className="z-20" color="white">
         {description}
       </Text>
     </section>
@@ -179,7 +180,7 @@ const Outcome = () => {
   const t = useTranslations('home.precisionInSelection.outcome');
 
   return (
-    <li className="relative flex flex-col items-center justify-center gap-5 overflow-hidden rounded-[48px] bg-[radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-grey-9,#171818)_0%,var(--color-grey-6,#101010)_66.17%)] px-20 py-10 text-center max-md:px-4">
+    <li className="relative flex flex-col items-center justify-center gap-5 overflow-hidden rounded-[48px] px-20 py-10 text-center [background:radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-blue-30,#6885ED)_0%,var(--color-blue-49,#5064AA)_66.17%)] max-md:px-4">
       <Title as="h3" size="6xl" className="max-lg:text-[52px]">
         {t('title', { fallback: 'Outcome' })}
       </Title>
