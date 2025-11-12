@@ -18,7 +18,7 @@ export const CallToAction = ({
   buttons: ReactNode;
 }) => {
   return (
-    <div className="py-20">
+    <div className="bg-white py-20">
       <section className="relative container flex h-[733px] flex-col gap-5 overflow-hidden max-lg:h-auto">
         <DashboardsImage />
         <Image
@@ -30,7 +30,7 @@ export const CallToAction = ({
         />
         <Image
           className="absolute bottom-0 z-10 w-full max-lg:hidden"
-          src="/images/home/faded.svg"
+          src="/images/home/faded-light.svg"
           alt="faded"
           width={100}
           height={560}
@@ -38,11 +38,17 @@ export const CallToAction = ({
         <section className="mt-auto flex flex-col gap-4">
           <Title
             as="h2"
+            color="black"
             className="z-20 text-[80px] leading-[88px] max-lg:text-3xl max-lg:leading-[120%]"
           >
             {title}
           </Title>
-          <Text size="lg" color="primary" weight={600} className="z-20">
+          <Text
+            size="lg"
+            color="black"
+            className="z-20 opacity-90"
+            weight={600}
+          >
             {description}
           </Text>
           <Activity mode={text ? 'visible' : 'hidden'}>
@@ -70,7 +76,7 @@ const DashboardsImage = () => (
     />
     <Image
       className="absolute bottom-0 z-10 w-full"
-      src="/images/home/faded.svg"
+      src="/images/home/faded-light.svg"
       alt="faded"
       width={100}
       height={356}

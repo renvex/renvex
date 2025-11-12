@@ -43,66 +43,71 @@ export const Reviews = () => {
   );
 
   return (
-    <section className="container py-20">
-      <div className="flex flex-col gap-10">
-        <section className="flex flex-col items-center gap-4 text-center">
-          <Chip>
-            <Text size="lg" weight={500}>
-              {t('chip', {
-                fallback: 'Verified reputation through independent insight',
+    <div className="bg-white">
+      <section className="container py-20">
+        <div className="flex flex-col gap-10">
+          <section className="flex flex-col items-center gap-4 text-center">
+            <Chip variant="light">
+              <Text size="lg" weight={500} color="blue">
+                {t('chip', {
+                  fallback: 'Verified reputation through independent insight',
+                })}
+              </Text>
+            </Chip>
+            <Title
+              as="h3"
+              size="6xl"
+              color="black"
+              className="max-md:text-[52px]"
+            >
+              {t('title.0', { fallback: 'Partners Rated by' })}{' '}
+              <span>{t('title.1', { fallback: 'Traders' })}</span>
+            </Title>
+            <Text className="text-black/90">
+              {t('description.0', {
+                fallback:
+                  'Our broker network is validated not only through Renvex analytics but through transparent public feedback.',
+              })}
+              <br />
+              {t('description.1', {
+                fallback:
+                  'See how our verified partners perform on Trustpilot — rated by traders who use them every day.',
               })}
             </Text>
-          </Chip>
-          <Title as="h3" size="6xl" className="max-md:text-[52px]">
-            {t('title.0', { fallback: 'Partners Rated by' })}{' '}
-            <span className="text-blue-70">
-              {t('title.1', { fallback: 'Traders' })}
-            </span>
-          </Title>
-          <Text color="grey">
-            {t('description.0', {
-              fallback:
-                'Our broker network is validated not only through Renvex analytics but through transparent public feedback.',
-            })}
-            <br />
-            {t('description.1', {
-              fallback:
-                'See how our verified partners perform on Trustpilot — rated by traders who use them every day.',
-            })}
-          </Text>
-        </section>
-        <div className="relative">
-          <Image
-            className="pointer-events-none absolute top-0 left-0 z-10 max-md:hidden"
-            src="/images/home/r-faded-l.svg"
-            alt="reviews-bg"
-            width={725}
-            height={136}
-            unoptimized
-          />
-          <section className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-5 max-md:gap-0">
-              {reviews.map(reviewImgUrl => (
-                <div
-                  key={reviewImgUrl}
-                  className="flex min-w-[400px] shrink-0 justify-center max-md:min-w-[330px]"
-                >
-                  <ReviewCard imgUrl={reviewImgUrl} />
-                </div>
-              ))}
-            </div>
           </section>
-          <Image
-            className="pointer-events-none absolute top-0 right-0 z-10 max-md:hidden"
-            src="/images/home/r-faded-r.svg"
-            alt="reviews-right-bg"
-            width={725}
-            height={136}
-            unoptimized
-          />
+          <div className="relative">
+            <Image
+              className="pointer-events-none absolute top-0 left-0 z-10 max-md:hidden"
+              src="/images/home/r-faded-l-light.svg"
+              alt="reviews-bg"
+              width={725}
+              height={136}
+              unoptimized
+            />
+            <section className="overflow-hidden" ref={emblaRef}>
+              <div className="flex max-md:gap-0">
+                {reviews.map(reviewImgUrl => (
+                  <div
+                    key={reviewImgUrl}
+                    className="flex min-w-[400px] shrink-0 justify-center max-md:min-w-[330px]"
+                  >
+                    <ReviewCard imgUrl={reviewImgUrl} />
+                  </div>
+                ))}
+              </div>
+            </section>
+            <Image
+              className="pointer-events-none absolute top-0 right-0 z-10 max-md:hidden"
+              src="/images/home/r-faded-r-light.svg"
+              alt="reviews-right-bg"
+              width={725}
+              height={136}
+              unoptimized
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
@@ -110,7 +115,7 @@ const ReviewCard = ({ imgUrl }: { imgUrl: string }) => (
   <article
     className={cn(
       st.bg,
-      'relative flex h-[329px] w-[400px] flex-col gap-5 overflow-hidden rounded-[48px] px-10 pt-10 pb-[120px] max-md:mx-2 max-md:w-full max-md:max-w-[350px] max-md:px-5 max-md:pt-6 max-md:pb-[72px]',
+      'relative mx-2.5 flex h-[329px] w-[400px] flex-col gap-5 overflow-hidden rounded-[48px] px-10 pt-10 pb-[120px] max-md:mx-2 max-md:w-full max-md:max-w-[350px] max-md:px-5 max-md:pt-6 max-md:pb-[72px]',
     )}
   >
     <Image src={imgUrl} alt="review" width={300} height={85} unoptimized />

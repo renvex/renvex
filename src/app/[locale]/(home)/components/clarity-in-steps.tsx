@@ -45,28 +45,35 @@ export const ClarityInSteps = () => {
   const cards = getCards(t);
 
   return (
-    <section className="container flex flex-col gap-10 py-[120px]">
-      <div className="flex flex-col items-center gap-4 text-center">
-        <Chip>
-          <Text size="lg" weight={500}>
-            {t('chip', { fallback: 'Built for structured decision-making' })}
-          </Text>
-        </Chip>
-        <Title as="h3" size="6xl" className="max-md:text-[52px]">
-          {t('title', { fallback: 'Clarity in Three Moves' })}
-        </Title>
-      </div>
-      <section className="flex flex-col items-center gap-6">
-        <div className="flex items-center gap-6 max-md:flex-col">
-          {cards.map(card => (
-            <Card key={card.number} {...card} />
-          ))}
+    <div className="bg-white">
+      <section className="container flex flex-col gap-10 py-[120px]">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <Chip variant="light">
+            <Text size="lg" weight={500} color="blue">
+              {t('chip', { fallback: 'Built for structured decision-making' })}
+            </Text>
+          </Chip>
+          <Title
+            as="h3"
+            size="6xl"
+            color="black"
+            className="max-md:text-[52px]"
+          >
+            {t('title', { fallback: 'Clarity in Three Moves' })}
+          </Title>
         </div>
-        <Text size="2xl" color="primary" className="text-center max-md:text-lg">
-          {t('subtitle', { fallback: 'Three steps. Infinite control.' })}
-        </Text>
+        <section className="flex flex-col items-center gap-6">
+          <div className="flex items-center gap-6 max-md:flex-col">
+            {cards.map(card => (
+              <Card key={card.number} {...card} />
+            ))}
+          </div>
+          <Text size="2xl" color="blue" className="text-center max-md:text-lg">
+            {t('subtitle', { fallback: 'Three steps. Infinite control.' })}
+          </Text>
+        </section>
       </section>
-    </section>
+    </div>
   );
 };
 
@@ -97,9 +104,9 @@ const Card = ({
         fill
         unoptimized
       />
-      <div className="absolute inset-0 z-10 bg-[linear-gradient(276deg,rgba(0,0,0,0)_54.14%,#000_99.89%),linear-gradient(129deg,rgba(51,51,51,0)_13.56%,var(--color-grey-7,#121412)_80.96%)]" />
+      <div className="absolute inset-0 z-10 bg-[linear-gradient(276deg,rgba(0,0,0,0.00)_54.14%,#000_99.89%),linear-gradient(129deg,rgba(11,85,177,0.00)_13.56%,#0B55B1_80.96%)]" />
       <section className="flex flex-col gap-2.5">
-        <span className="bg-blue-70 z-20 flex h-[56px] w-[73px] items-center justify-center rounded-[48px] shadow-[inset_1px_1px_2px_0_rgba(255,255,255,0.24),0_1px_3px_0_rgba(119,107,248,0.24),0_2px_6px_0_rgba(119,107,248,0.24),0_4px_8px_0_rgba(119,107,248,0.12),0_16px_32px_-8px_rgba(119,107,248,0.48)]">
+        <span className="bg-blue-46 z-20 flex h-[56px] w-[73px] items-center justify-center rounded-[48px]">
           <Text size="lg" weight={500}>
             0{number}
           </Text>

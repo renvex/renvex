@@ -44,24 +44,28 @@ export const Strategy = () => {
   const cards = getCards(t);
 
   return (
-    <section className="flex flex-col gap-10 py-[120px]">
+    <section className="flex flex-col gap-10 bg-white py-[120px]">
       <div className="container">
         <Heading
           chip={t('heading.chip', {
             fallback: 'Forecast your growth with clarity and control.',
           })}
           title={
-            <>
+            <span className="text-black">
               {t('heading.title.0', { fallback: 'Strategy' })}{' '}
-              <span className="text-blue-70">
+              <span>
                 {t('heading.title.1', { fallback: 'Before Commitment' })}
               </span>
-            </>
+            </span>
           }
-          description={t('heading.description', {
-            fallback:
-              'Before execution comes preparation. Renvex turns assumptions into structured projections, giving you a measurable view of risk, return, and potential growth.',
-          })}
+          description={
+            <span className="text-black/90">
+              {t('heading.description', {
+                fallback:
+                  'Before execution comes preparation. Renvex turns assumptions into structured projections, giving you a measurable view of risk, return, and potential growth.',
+              })}
+            </span>
+          }
         />
       </div>
       <div className="mr-[72px] flex gap-20 max-md:mr-0 max-md:flex-col max-md:items-center max-md:px-4">
@@ -77,7 +81,7 @@ export const Strategy = () => {
           {cards.map(card => (
             <Card key={card.title} {...card} />
           ))}
-          <Title as="h6" size="2xl" color="primary">
+          <Title as="h6" size="2xl" className="text-blue-46">
             {t('subtitle', {
               fallback:
                 'Every decision deserves evidence — we provide the model.',
@@ -91,11 +95,19 @@ export const Strategy = () => {
 
 const Card = ({ text, title }: { title: string; text: string }) => {
   return (
-    <article className="flex flex-col gap-4 border-b border-white/10 pt-5 pb-2.5">
-      <Title as="h6" size="3xl" weight={600} className="max-md:text-2xl">
+    <article className="flex flex-col gap-4 border-b border-black/30 pt-5 pb-2.5">
+      <Title
+        as="h6"
+        size="3xl"
+        weight={600}
+        color="black"
+        className="max-md:text-2xl"
+      >
         {title}
       </Title>
-      <Text size="base">{text}</Text>
+      <Text color="black" size="base">
+        {text}
+      </Text>
     </article>
   );
 };

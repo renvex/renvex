@@ -31,7 +31,9 @@ export const Dropdown = ({
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="outline-0">
         <span className="flex cursor-pointer items-center gap-1 py-1.5 outline-0">
-          <Text weight={600}>{label}</Text>
+          <Text weight={600} color="black">
+            {label}
+          </Text>
           <ChevronDownIcon />
         </span>
       </DropdownMenu.Trigger>

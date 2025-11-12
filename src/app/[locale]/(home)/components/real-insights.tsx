@@ -14,9 +14,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
       fallback: 'Only verified users contribute — no bots, no paid promotion.',
     }),
     img: {
-      url: '/images/home/i-1.jpg',
-      width: 764,
-      height: 483,
+      url: '/images/home/i-1.svg',
+      width: 630,
+      height: 600,
     },
   },
   {
@@ -26,9 +26,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
         'Data shows structure, but feedback shows reality. We record how platforms behave when volatility hits.',
     }),
     img: {
-      url: '/images/home/i-2.jpg',
-      width: 1066,
-      height: 600,
+      url: '/images/home/i-2.svg',
+      width: 630,
+      height: 430,
     },
   },
 ];
@@ -39,46 +39,51 @@ export const RealInsights = () => {
   const cards = getCards(t);
 
   return (
-    <section className="container flex flex-col gap-10 py-[120px]">
-      <div className="flex flex-col items-center gap-4 text-center">
-        <Chip>
-          <Text size="lg" weight={500}>
-            {t('chip', {
-              fallback: 'Authentic experiences that cut through speculation',
+    <div className="bg-white">
+      <section className="container flex flex-col gap-10 py-[120px]">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <Chip variant="light">
+            <Text size="lg" weight={500} color="blue">
+              {t('chip', {
+                fallback: 'Authentic experiences that cut through speculation',
+              })}
+            </Text>
+          </Chip>
+          <Title
+            as="h3"
+            size="6xl"
+            color="black"
+            className="max-md:text-[52px]"
+          >
+            {t('title.0', { fallback: 'Real Insight,' })}{' '}
+            <span>{t('title.1', { fallback: 'Real Traders' })}</span>
+          </Title>
+          <Text size="base" className="w-[700px] text-black/90 max-md:w-full">
+            {t('description.0', {
+              fallback: 'Markets are shaped by those who trade them.',
             })}
+            <br />
+            {t('description.1', {
+              fallback:
+                'Renvex brings together verified perspectives from real users — professionals who operate daily within the platforms you compare. Their insights reveal what numbers can’t: consistency, reliability, and user experience under real conditions.',
+            })}
+            <br />
+            <br />
+            <span className="font-bold">
+              {t('description2', { fallback: 'What we collect and verify:' })}
+            </span>
           </Text>
-        </Chip>
-        <Title as="h3" size="6xl" className="max-md:text-[52px]">
-          {t('title.0', { fallback: 'Real Insight,' })}{' '}
-          <span className="text-blue-70">
-            {t('title.1', { fallback: 'Real Traders' })}
-          </span>
-        </Title>
-        <Text size="base" color="grey" className="w-[700px] max-md:w-full">
-          {t('description.0', {
-            fallback: 'Markets are shaped by those who trade them.',
-          })}
-          <br />
-          {t('description.1', {
-            fallback:
-              'Renvex brings together verified perspectives from real users — professionals who operate daily within the platforms you compare. Their insights reveal what numbers can’t: consistency, reliability, and user experience under real conditions.',
-          })}
-          <br />
-          <br />
-          <span className="font-bold">
-            {t('description2', { fallback: 'What we collect and verify:' })}
-          </span>
-        </Text>
-      </div>
-      <section className="flex flex-col gap-6">
-        <section className="flex gap-5 max-md:flex-col">
-          {cards.map(card => (
-            <Card key={card.title} {...card} />
-          ))}
+        </div>
+        <section className="flex flex-col gap-6">
+          <section className="flex gap-5 max-md:flex-col">
+            {cards.map(card => (
+              <Card key={card.title} {...card} />
+            ))}
+          </section>
+          <Footer />
         </section>
-        <Footer />
       </section>
-    </section>
+    </div>
   );
 };
 
@@ -96,7 +101,7 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] px-[100px] py-[60px] text-center max-md:h-[450px] max-md:w-full max-md:p-5">
+    <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] bg-[#6885ED] px-[100px] py-[60px] text-center max-md:h-[450px] max-md:w-full max-md:p-5">
       <Title size="3xl" weight={600} className="z-20">
         {title}
       </Title>
@@ -119,7 +124,13 @@ const Footer = () => {
   const t = useTranslations('home.realInsights.footer');
 
   return (
-    <footer className="relative flex h-[300px] flex-col justify-center gap-2 rounded-[48px] bg-[linear-gradient(92deg,#4033CC_1.47%,var(--color-blue-70,#776BF8)_96.76%)] px-[100px] max-md:p-5">
+    <footer
+      className="relative flex h-[300px] flex-col justify-center gap-2 overflow-hidden rounded-[48px] px-[100px] max-md:p-5"
+      style={{
+        background:
+          'linear-gradient(92deg, #6885ED 1.47%, var(--color-blue-46, #2841C1) 96.76%)',
+      }}
+    >
       <Title as="h6" size="3xl" className="max-md:text-2xl">
         {t('title.0', { fallback: 'Independent Reviews,' })} <br />
         {t('title.1', { fallback: 'Always Current' })}

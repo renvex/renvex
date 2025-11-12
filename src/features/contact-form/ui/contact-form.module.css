@@ -1,8 +1,10 @@
 .bg {
   border-radius: 48px;
-  background: linear-gradient(
-    149deg,
-    var(--color-grey-20, #333) 13.56%,
-    var(--color-grey-7, #121412) 80.96%
-  );
+  background: var(--color-white-solid, #fff);
+  box-shadow:
+    70px 223px 65px 0 rgba(56, 84, 202, 0),
+    45px 143px 60px 0 rgba(56, 84, 202, 0.02),
+    25px 80px 50px 0 rgba(56, 84, 202, 0.08),
+    11px 36px 37px 0 rgba(56, 84, 202, 0.14),
+    3px 9px 21px 0 rgba(56, 84, 202, 0.16);
 }

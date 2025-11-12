@@ -21,10 +21,10 @@ export const Navigation = () => {
   const links = getLinks(t);
 
   return (
-    <nav className="bg-grey-8 flex items-center gap-4 rounded-2xl px-6 py-1.5">
+    <nav className="flex items-center gap-4 rounded-2xl bg-[#F6F6F6] px-6 py-1.5">
       {links.map(link => (
         <Link key={link.href} href={link.href} className="py-1.5">
-          <Text weight={600}>{link.label}</Text>
+          <Text weight={600} color="black">{link.label}</Text>
         </Link>
       ))}
       <Dropdown label="Legal">

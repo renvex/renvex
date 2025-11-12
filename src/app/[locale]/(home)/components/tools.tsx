@@ -45,74 +45,79 @@ export const Tools = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="container flex flex-col gap-10 py-[120px]">
-      <section className="flex flex-col items-center gap-4 text-center">
-        <Chip>
-          <Text size="lg" weight={500}>
-            {t('chip', {
-              fallback: 'Technology and expertise aligned to your strategy',
+    <div className="bg-white">
+      <section className="container flex flex-col gap-10 py-[120px]">
+        <section className="flex flex-col items-center gap-4 text-center">
+          <Chip variant="light">
+            <Text size="lg" weight={500} color="blue">
+              {t('chip', {
+                fallback: 'Technology and expertise aligned to your strategy',
+              })}
+            </Text>
+          </Chip>
+          <Title
+            as="h3"
+            size="6xl"
+            color="black"
+            className="max-md:text-[52px]"
+          >
+            {t('title.0', { fallback: 'Strategic Tools for' })}{' '}
+            <span>{t('title.1', { fallback: 'Smarter Decisions' })}</span>
+          </Title>
+          <Text size="base" className="w-[800px] text-black/90 max-md:w-full">
+            {t('text', {
+              fallback:
+                'Renvex unites human insight and adaptive technology to support every step of your decision-making process. Our systems are built to guide, refine, and strengthen.',
             })}
           </Text>
-        </Chip>
-        <Title as="h3" size="6xl" className="max-md:text-[52px]">
-          {t('title.0', { fallback: 'Strategic Tools for' })}{' '}
-          <span className="text-blue-70">
-            {t('title.1', { fallback: 'Smarter Decisions' })}
-          </span>
-        </Title>
-        <Text size="base" color="grey" className="w-[800px] max-md:w-full">
-          {t('text', {
-            fallback:
-              'Renvex unites human insight and adaptive technology to support every step of your decision-making process. Our systems are built to guide, refine, and strengthen.',
-          })}
-        </Text>
-      </section>
-      <section className="flex flex-col gap-5">
-        <Text
-          size="2xl"
-          color="primary"
-          className="text-center max-md:text-base"
-        >
-          {t('text2', {
-            fallback: 'How Renvex supports your trading decisions',
-          })}
-        </Text>
-        <div
-          className="overflow-hidden rounded-xl bg-[rgba(242,242,242,0.08)] p-4 max-md:p-2"
-          ref={emblaRef}
-        >
-          <div className="flex">
-            <SlideLayout>
-              <ForexWidget />
-            </SlideLayout>
-            <SlideLayout>
-              <StockWidget />
-            </SlideLayout>
-            <SlideLayout>
-              <CryptoWidget />
-            </SlideLayout>
-            <SlideLayout>
-              <MarketWidget />
-            </SlideLayout>
+        </section>
+        <section className="flex flex-col gap-5">
+          <Text
+            size="2xl"
+            color="primary"
+            className="text-center max-md:text-base"
+          >
+            {t('text2', {
+              fallback: 'How Renvex supports your trading decisions',
+            })}
+          </Text>
+          <div
+            className="overflow-hidden rounded-xl bg-white p-4 [box-shadow:0_209px_59px_0_rgba(0,0,0,0),0_134px_54px_0_rgba(0,0,0,0.01),0_75px_45px_0_rgba(0,0,0,0.05),0_33px_33px_0_rgba(0,0,0,0.09),0_8px_18px_0_rgba(0,0,0,0.10)] max-md:p-2"
+            ref={emblaRef}
+          >
+            <div className="flex">
+              <SlideLayout>
+                <ForexWidget />
+              </SlideLayout>
+              <SlideLayout>
+                <StockWidget />
+              </SlideLayout>
+              <SlideLayout>
+                <CryptoWidget />
+              </SlideLayout>
+              <SlideLayout>
+                <MarketWidget />
+              </SlideLayout>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center gap-2 pt-2">
-          {scrollSnaps.map((_, index) =>
-            index === selectedIndex ? (
-              <ActiveDot key={index} />
-            ) : (
-              <button
-                key={index}
-                className="cursor-pointer"
-                onClick={() => emblaApi?.scrollTo(index)}
-              >
-                <Dot />
-              </button>
-            ),
-          )}
-        </div>
+          <div className="flex justify-center gap-2 pt-2">
+            {scrollSnaps.map((_, index) =>
+              index === selectedIndex ? (
+                <ActiveDot key={index} />
+              ) : (
+                <button
+                  key={index}
+                  className="cursor-pointer"
+                  onClick={() => emblaApi?.scrollTo(index)}
+                >
+                  <Dot />
+                </button>
+              ),
+            )}
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   );
 };
 
@@ -121,9 +126,11 @@ const ForexWidget = () => (
     <HeatmapLayout>
       <ForexHeatmap />
     </HeatmapLayout>
-    <Property>
+    <Property variant="light">
       <TrendUpIcon />
-      <Text size="lg">Forex heat map</Text>
+      <Text size="lg" color="black">
+        Forex heat map
+      </Text>
     </Property>
   </>
 );
@@ -136,9 +143,11 @@ const CryptoWidget = () => {
       <HeatmapLayout>
         <CryptoHeatmap />
       </HeatmapLayout>
-      <Property>
+      <Property variant="light">
         <BitcoinCardIcon />
-        <Text size="lg">{t('crypto', { fallback: 'Crypto heat map' })}</Text>
+        <Text size="lg" color="black">
+          {t('crypto', { fallback: 'Crypto heat map' })}
+        </Text>
       </Property>
     </>
   );
@@ -152,9 +161,11 @@ const StockWidget = () => {
       <HeatmapLayout>
         <StockHeatmap />
       </HeatmapLayout>
-      <Property>
+      <Property variant="light">
         <TrendUpIcon />
-        <Text size="lg">{t('stock', { fallback: 'Stock heat map' })}</Text>
+        <Text size="lg" color="black">
+          {t('stock', { fallback: 'Stock heat map' })}
+        </Text>
       </Property>
     </>
   );
@@ -168,9 +179,9 @@ const MarketWidget = () => {
       <HeatmapLayout>
         <MarketHeatmap />
       </HeatmapLayout>
-      <Property>
+      <Property variant="light">
         <ShoppingCartIcon />
-        <Text size="lg">
+        <Text size="lg" color="black">
           {t('market', { fallback: 'Asset Market Performance' })}
         </Text>
       </Property>
@@ -209,6 +220,6 @@ const Dot = () => (
     viewBox="0 0 8 8"
     fill="none"
   >
-    <rect width="8" height="8" rx="3" fill="#292929" />
+    <rect width="8" height="8" rx="3" fill="white" />
   </svg>
 );

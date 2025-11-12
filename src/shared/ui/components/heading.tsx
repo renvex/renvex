@@ -16,8 +16,8 @@ export const Heading = ({
   description: ReactNode;
 }) => (
   <section className="flex flex-col items-center gap-4 text-center">
-    <Chip>
-      <Text size="lg" weight={500}>
+    <Chip variant="light">
+      <Text size="lg" weight={500} color="primary">
         {chip}
       </Text>
     </Chip>
