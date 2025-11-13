@@ -33,7 +33,7 @@ const titleVariants = cva('transition duration-300 ease-in-out', {
   },
   defaultVariants: {
     size: '7xl',
-    color: 'white',
+    color: 'black',
     weight: 600,
   },
 });

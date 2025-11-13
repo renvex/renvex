@@ -14,17 +14,17 @@ export const OurFoundation = () => {
   const t = useTranslations('about.ourFoundation');
 
   return (
-    <section className="container flex flex-col gap-10 py-20">
+    <section className="container flex flex-col gap-10 overflow-hidden py-20">
       <div className="flex flex-col items-center gap-4 text-center">
         <Chip>
-          <Text size="lg">
+          <Text size="lg" color="primary">
             {t('chip', { fallback: 'Where clarity meets accountability' })}
           </Text>
         </Chip>
-        <Title as="h3" size="6xl">
+        <Title as="h3" size="6xl" color="black">
           {t('title', { fallback: 'Our Foundation' })}
         </Title>
-        <Text color="grey" className="w-[700px] max-md:w-full">
+        <Text className="w-[700px] text-black/90 max-md:w-full">
           {t('description.0', {
             fallback:
               'Each Renvex assessment is based on verified data and real market behavior. ',
@@ -40,14 +40,7 @@ export const OurFoundation = () => {
         <Text size="2xl" color="primary" className="z-20 text-center">
           {t('corePillars', { fallback: 'Core Pillars' })}
         </Text>
-        <Image
-          className="absolute top-1/2 left-1/2 h-[916px] w-[916px] -translate-x-1/2 -translate-y-1/2"
-          src="/images/about/el.svg"
-          alt="el"
-          width={816}
-          height={816}
-          unoptimized
-        />
+        <Ellipse />
         <div className="z-20 flex gap-6 max-md:flex-col">
           <Card
             title={t('cards.0.title', { fallback: 'Verification First' })}
@@ -55,7 +48,7 @@ export const OurFoundation = () => {
               fallback:
                 'Every broker is validated through regulatory checks, live data, and performance testing.',
             })}
-            imgUrl="/images/about/f1.png"
+            imgUrl="/images/about/f1.svg"
           />
           <Card
             title={t('cards.1.title', { fallback: 'Transparency Always' })}
@@ -63,7 +56,7 @@ export const OurFoundation = () => {
               fallback:
                 'No paid listings or hidden incentives — placement is earned through verified results.',
             })}
-            imgUrl="/images/about/f2.png"
+            imgUrl="/images/about/f2.svg"
           />
         </div>
         <div className="z-20 ml-auto flex gap-6 max-md:ml-0 max-md:flex-col">
@@ -73,7 +66,7 @@ export const OurFoundation = () => {
               fallback:
                 'Heatmaps, analytics, and comparison dashboards built for measurable decisions.',
             })}
-            imgUrl="/images/about/f3.png"
+            imgUrl="/images/about/f3.svg"
           />
           <Card
             title={t('cards.3.title', { fallback: 'User Trust' })}
@@ -81,13 +74,22 @@ export const OurFoundation = () => {
               fallback:
                 'Insights and reviews from verified traders are regularly verified and updated.',
             })}
-            imgUrl="/images/about/f4.png"
+            imgUrl="/images/about/f4.svg"
           />
         </div>
       </section>
     </section>
   );
 };
+
+const Ellipse = () => (
+  <span
+    className={cn(
+      st.ellipse,
+      'absolute top-1/2 left-1/2 h-[1023px] w-[1023px] -translate-x-1/2 -translate-y-1/2',
+    )}
+  />
+);
 
 const Card = ({
   title,
@@ -107,15 +109,16 @@ const Card = ({
     <Title
       size="5xl"
       weight={600}
+      color="black"
       className="leading-[120%] tracking-[-1.12px]"
     >
       {title}
     </Title>
-    <Text size="base" weight={600} className="leading-[140%]">
+    <Text size="base" weight={600} color="black" className="leading-[140%]">
       {description}
     </Text>
     <Image
-      className="absolute right-0 -bottom-20 h-[300px] w-[300px] max-lg:-right-20 max-lg:-bottom-46"
+      className="absolute right-0 -bottom-10 h-[300px] w-[300px] max-lg:-right-20 max-lg:-bottom-46"
       src={imgUrl}
       alt={title}
       width={300}

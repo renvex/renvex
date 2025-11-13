@@ -45,6 +45,13 @@ export const OurCommitment = () => {
         fill
         unoptimized
       />
+      <Image
+        className="absolute bottom-0 left-0 z-10 h-full w-full object-cover max-md:h-[700px]"
+        src="/images/faded-light-l.svg"
+        alt="faded"
+        width={100}
+        height={560}
+      />
     </section>
   );
 };

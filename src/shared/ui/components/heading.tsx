@@ -25,9 +25,8 @@ export const Heading = ({
       {title}
     </Title>
     <Text
-      color="grey"
       size="base"
-      className="w-[700px] text-center max-md:w-full"
+      className="w-[700px] text-center text-black/90 max-md:w-full"
     >
       {description}
     </Text>
