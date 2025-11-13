@@ -1,13 +1,13 @@
-.bg {
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/contact-us/brok.jpg') center / cover no-repeat;
-}
-
 .cardBg {
-  background: radial-gradient(
-    191.04% 100.15% at 15.32% 0%,
-    var(--color-grey-9, #171818) 0%,
-    var(--color-grey-6, #101010) 66.17%
+  background: linear-gradient(
+    149deg,
+    var(--color-white-solid, #fff) 13.56%,
+    var(--color-grey-96, #f6f6f6) 80.96%
   );
+  box-shadow:
+    219px 185px 80px 0 rgba(41, 66, 193, 0),
+    140px 119px 73px 0 rgba(41, 66, 193, 0.01),
+    79px 67px 62px 0 rgba(41, 66, 193, 0.05),
+    35px 30px 46px 0 rgba(41, 66, 193, 0.08),
+    9px 7px 25px 0 rgba(41, 66, 193, 0.09);
 }

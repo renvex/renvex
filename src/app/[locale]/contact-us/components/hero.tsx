@@ -10,7 +10,7 @@ export const Hero = () => {
   const t = useTranslations('contactUs.hero');
 
   return (
-    <section className="relative flex h-[450px] flex-col max-md:h-[700px]">
+    <section className="relative flex h-[550px] flex-col max-md:h-[700px]">
       <Image
         className="z-0 object-cover"
         src="/images/contact-us/hero.jpg"
@@ -20,7 +20,7 @@ export const Hero = () => {
       />
       <Image
         className="absolute bottom-0 z-10 w-full max-md:h-[600px] max-md:object-cover"
-        src="/images/home/faded.svg"
+        src="/images/faded-light-b.svg"
         alt="faded"
         width={100}
         height={560}

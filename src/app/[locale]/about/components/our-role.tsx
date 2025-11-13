@@ -78,7 +78,7 @@ export const OurRole = () => {
       <section className="flex flex-col gap-10">
         <div className="relative h-[600px] w-full overflow-hidden rounded-[40px]">
           <Image
-            className="scale-x-[-1] object-cover"
+            className="z-0 scale-x-[-1] object-cover"
             src="/images/about/role.jpg"
             alt="role"
             fill
@@ -86,7 +86,7 @@ export const OurRole = () => {
           />
           <Image
             className="absolute bottom-0 z-10 w-full max-md:object-cover"
-            src="/images/home/faded.svg"
+            src="/images/faded-light-b.svg"
             alt="faded"
             width={100}
             height={560}
@@ -135,6 +135,8 @@ const ListItem = ({
     <Title as="h6" size="2xl" weight={600}>
       {title}
     </Title>
-    <Text size="base">{description}</Text>
+    <Text size="base" color="black">
+      {description}
+    </Text>
   </li>
 );

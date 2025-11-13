@@ -1,7 +1,23 @@
 .bg {
   background: linear-gradient(
-    152deg,
-    var(--color-grey-20, #333) 13.56%,
-    var(--color-grey-7, #121412) 80.96%
+    149deg,
+    var(--color-white-solid, #fff) 13.56%,
+    var(--color-grey-96, #f6f6f6) 80.96%
   );
+  box-shadow:
+    219px 185px 80px 0 rgba(41, 66, 193, 0),
+    140px 119px 73px 0 rgba(41, 66, 193, 0.01),
+    79px 67px 62px 0 rgba(41, 66, 193, 0.05),
+    35px 30px 46px 0 rgba(41, 66, 193, 0.08),
+    9px 7px 25px 0 rgba(41, 66, 193, 0.09);
+}
+
+.ellipse {
+  border-radius: 1023px;
+  background: linear-gradient(
+    180deg,
+    var(--color-blue-30, #6885ed) 0%,
+    var(--color-blue-46, #2841c1) 86.35%
+  );
+  filter: blur(200px);
 }

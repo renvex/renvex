@@ -8,7 +8,7 @@ import st from './chip.module.css';
 
 export const Chip = ({
   children,
-  variant = 'dark',
+  variant = 'light',
 }: {
   children: ReactNode;
   variant?: 'dark' | 'light';

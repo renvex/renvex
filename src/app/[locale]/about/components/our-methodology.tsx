@@ -78,16 +78,21 @@ export const OurMethodology = () => {
         className={cn(st.visionBg, 'flex h-[600px] flex-col rounded-4xl p-10')}
       >
         <div className="mt-auto flex w-[700px] flex-col gap-4 max-md:w-full">
-          <Title as="h3" size="6xl" className="max-md:text-[52px]">
+          <Title
+            as="h3"
+            size="6xl"
+            color="white"
+            className="max-md:text-[52px]"
+          >
             {t('ourVision.title', { fallback: 'Our Vision' })}
           </Title>
-          <Text color="primary" size="lg">
+          <Text color="black" size="lg">
             {t('ourVision.subtitle', {
               fallback:
                 'Engineering transparency for the next generation of traders',
             })}
           </Text>
-          <Text className="leading-[140%] text-white/50">
+          <Text color="white" className="leading-[140%]">
             {t('ourVision.description.0', {
               fallback:
                 'Technology moves fast, but integrity must move faster.',
@@ -103,7 +108,7 @@ export const OurMethodology = () => {
                 'We aim to expand our analytical infrastructure globally, providing traders with institutional-level validation tools designed for a transparent financial future.',
             })}
           </Text>
-          <Text size="lg">
+          <Text size="lg" color="white">
             {t('ourVision.footer', {
               fallback: 'Where systems align, confidence follows.',
             })}
@@ -128,7 +133,11 @@ const Card = ({
         color === 'purple' ? st.purpleBg : st.blackBg,
       )}
     >
-      <Title as="h5" size="3xl">
+      <Title
+        as="h5"
+        size="3xl"
+        color={color === 'purple' ? 'white' : 'primary'}
+      >
         {title}
       </Title>
       <Activity mode={color === 'purple' ? 'visible' : 'hidden'}>

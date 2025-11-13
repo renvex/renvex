@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils/cn';
@@ -12,10 +13,22 @@ export const Support = () => {
   const t = useTranslations('contactUs.support');
 
   return (
-    <section
-      className={cn('relative container flex flex-col gap-10 py-20', st.bg)}
-    >
-      <div className="flex gap-10 max-md:flex-col max-md:gap-5">
+    <section className={cn('relative container flex flex-col gap-10 py-20')}>
+      <Image
+        className="object-cover"
+        src="/images/contact-us/brok.jpg"
+        alt="support"
+        fill
+        unoptimized
+      />
+      <Image
+        className="absolute bottom-0 z-10 w-full max-md:object-cover"
+        src="/images/faded-light-b.svg"
+        alt="faded"
+        width={100}
+        height={560}
+      />
+      <div className="z-20 flex gap-10 max-md:flex-col max-md:gap-5">
         <InfoCard
           label={t('info.0.label', { fallback: 'Monday to Friday:' })}
           value={t('info.0.value', { fallback: '9:00 AM – 6:00 PM (GMT)' })}
@@ -25,7 +38,7 @@ export const Support = () => {
           value={t('info.1.value', { fallback: 'Support available via email' })}
         />
       </div>
-      <div className="flex flex-col gap-5 max-md:flex-col">
+      <div className="z-20 flex flex-col gap-5 max-md:flex-col">
         <Card
           title={t('cards.0.title', { fallback: 'Email Support' })}
           subtitle={t('cards.0.subtitle', {
@@ -91,6 +104,7 @@ const Card = ({
     <Text
       size="2xl"
       weight={400}
+      color="black"
       className="w-[716px] max-lg:w-full max-md:text-base"
     >
       {description}

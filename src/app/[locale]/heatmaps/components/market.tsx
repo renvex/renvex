@@ -21,7 +21,9 @@ export const Market = ({
     <section className="container flex flex-col gap-10 py-20">
       <section className="flex flex-col items-center gap-4 text-center">
         <Chip>
-          <Text size="lg">{chip}</Text>
+          <Text size="lg" color="primary">
+            {chip}
+          </Text>
         </Chip>
         <Title as="h3" size="6xl">
           {title}

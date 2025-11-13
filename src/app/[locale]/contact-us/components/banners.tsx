@@ -59,8 +59,18 @@ export const Banners = () => {
           unoptimized
           className="z-0 object-cover"
         />
-        <div className={cn('pointer-events-none absolute z-10', st.overlay)} />
-        <Title as="h3" size="6xl" className="z-20 max-md:text-[52px]">
+        <div
+          className={cn(
+            'pointer-events-none absolute inset-0 z-10 rounded-4xl',
+            st.overlay,
+          )}
+        />
+        <Title
+          as="h3"
+          size="6xl"
+          color="white"
+          className="z-20 max-md:text-[52px]"
+        >
           {t('title', { fallback: 'Get Expert Support' })}
         </Title>
       </div>
@@ -91,13 +101,24 @@ const Card = ({
         color === 'purple' ? st.purpleBg : st.blackBg,
       )}
     >
-      <Title as="h5" size="4xl" className="max-md:text-3xl">
+      <Title
+        as="h5"
+        size="4xl"
+        color={color === 'purple' ? 'white' : 'primary'}
+        className="max-md:text-3xl"
+      >
         {title}
       </Title>
-      <Text size="lg" weight={600}>
+      <Text
+        size="lg"
+        weight={600}
+        color={color === 'purple' ? 'white' : 'primary'}
+      >
         {subtitle}
       </Text>
-      <Text>{description}</Text>
+      <Text color={color === 'purple' ? 'white' : 'primary'}>
+        {description}
+      </Text>
       <Activity mode={color === 'purple' ? 'visible' : 'hidden'}>
         <Image
           className="absolute right-0 bottom-0 max-lg:hidden"

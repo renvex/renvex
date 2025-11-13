@@ -71,7 +71,9 @@ export const LangSwitcher = () => {
               }}
             >
               <GbIcon />
-              <Text size="xs">EN</Text>
+              <Text size="xs" color="black">
+                EN
+              </Text>
             </DropdownItem>
             <DropdownItem
               onClick={() => {
@@ -80,7 +82,9 @@ export const LangSwitcher = () => {
               }}
             >
               <EsIcon />
-              <Text size="xs">ES</Text>
+              <Text size="xs" color="black">
+                ES
+              </Text>
             </DropdownItem>
           </section>
         </DropdownMenu.Content>

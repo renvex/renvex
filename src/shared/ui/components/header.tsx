@@ -1,4 +1,9 @@
+'use client';
+
+import { useMemo } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
 
@@ -8,6 +13,14 @@ import { MobileMenu } from '@/shared/ui/components/mobile-menu';
 import { Navigation } from '@/shared/ui/components/navigation';
 
 export const Header = () => {
+  const pathname = usePathname();
+  const locale = useLocale();
+
+  const isLightLogo = useMemo(
+    () => pathname === `/${locale}/contact-us` || pathname === '/contact-us',
+    [pathname, locale],
+  );
+
   return (
     <header className="relative z-50 flex flex-col">
       <div className="bg-[#2841C1]">
@@ -20,7 +33,7 @@ export const Header = () => {
         <Link href="/">
           <Image
             className="max-md:h-[31px] max-md:w-[85px]"
-            src="/logo.svg"
+            src={isLightLogo ? '/logo-light.svg' : '/logo.svg'}
             alt="Renvex Logo"
             width={113}
             height={32}

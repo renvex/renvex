@@ -6,7 +6,7 @@ import { Text } from '@/shared/ui/kit/text';
 
 export const PolicyList = ({ values }: { values: ReactNode[] }) => {
   return (
-    <ul className="list-disc pl-4">
+    <ul className="list-disc pl-4 text-black">
       {values.map((value, i) => (
         <ListItem key={i}>{value}</ListItem>
       ))}
@@ -16,6 +16,8 @@ export const PolicyList = ({ values }: { values: ReactNode[] }) => {
 
 const ListItem = ({ children }: { children: ReactNode }) => (
   <li>
-    <Text size="base">{children}</Text>
+    <Text size="base" color="black">
+      {children}
+    </Text>
   </li>
 );
