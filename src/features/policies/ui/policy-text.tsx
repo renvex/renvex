@@ -9,7 +9,7 @@ export const PolicyText = ({
   children,
   className,
 }: PropsWithChildren & { className?: string }) => (
-  <Text size="base" className={cn(className, 'max-md:text-sm')}>
+  <Text size="base" color="black" className={cn(className, 'max-md:text-sm')}>
     {children}
   </Text>
 );

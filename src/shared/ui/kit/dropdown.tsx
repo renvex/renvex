@@ -40,7 +40,7 @@ export const Dropdown = ({
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           className={cn(
-            'z-50 flex w-[172px] flex-col rounded-xl bg-[#141414] p-4',
+            'z-50 flex w-[172px] flex-col rounded-xl bg-white p-4',
             contentClassName,
           )}
           sideOffset={10}
@@ -68,7 +68,7 @@ export const DropdownItem = ({
     <DropdownMenu.Item
       onSelect={onClick}
       className={cn(
-        'flex cursor-pointer justify-center rounded-2xl p-4 outline-0 transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.10)]',
+        'flex cursor-pointer justify-center rounded-2xl p-4 outline-0 transition duration-300 ease-in-out hover:bg-white/10',
         className,
       )}
     >
