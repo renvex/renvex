@@ -102,7 +102,7 @@ const Card = ({
 }) => {
   return (
     <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] bg-[#6885ED] px-[100px] py-[60px] text-center max-md:h-[450px] max-md:w-full max-md:p-5">
-      <Title size="3xl" weight={600} className="z-20">
+      <Title size="3xl" weight={600} color="white" className="z-20">
         {title}
       </Title>
       <Text size="base" className="z-20">
@@ -131,7 +131,7 @@ const Footer = () => {
           'linear-gradient(92deg, #6885ED 1.47%, var(--color-blue-46, #2841C1) 96.76%)',
       }}
     >
-      <Title as="h6" size="3xl" className="max-md:text-2xl">
+      <Title as="h6" size="3xl" color="white" className="max-md:text-2xl">
         {t('title.0', { fallback: 'Independent Reviews,' })} <br />
         {t('title.1', { fallback: 'Always Current' })}
       </Title>
