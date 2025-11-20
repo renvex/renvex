@@ -115,7 +115,7 @@ const WorldMap = () => {
 
   return (
     <section className="relative flex w-1/2 flex-col gap-2.5 overflow-hidden rounded-[48px] pt-[64px] text-center [background:radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-blue-30,#6885ED)_0%,var(--color-blue-46,#2841C1)_66.17%)] max-md:h-[400px] max-md:w-full max-md:px-20 max-md:pt-10">
-      <Title size="3xl" weight={600} className="max-md:text-2xl">
+      <Title size="3xl" color="white" weight={600} className="max-md:text-2xl">
         {t('title', { fallback: 'The Principle' })}
       </Title>
       <Text size="base" className="max-md:text-sm">

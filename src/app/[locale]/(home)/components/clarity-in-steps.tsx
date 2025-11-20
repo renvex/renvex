@@ -111,7 +111,12 @@ const Card = ({
             0{number}
           </Text>
         </span>
-        <Title as="h3" size="3xl" className="z-20">
+        <Title
+          as="h3"
+          size="3xl"
+          color="white"
+          className="z-20 text-[60px] max-md:text-[32px]"
+        >
           {title}
         </Title>
       </section>

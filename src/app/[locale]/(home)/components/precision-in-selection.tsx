@@ -155,7 +155,7 @@ const Card = ({
       }}
     ></div>
 
-    <Title as="h3" size="6xl" className="z-20 max-md:text-[52px]">
+    <Title as="h3" size="6xl" color="white" className="z-20 max-md:text-[52px]">
       {title}
     </Title>
 
@@ -181,7 +181,7 @@ const Outcome = () => {
 
   return (
     <li className="relative flex flex-col items-center justify-center gap-5 overflow-hidden rounded-[48px] px-20 py-10 text-center [background:radial-gradient(191.04%_100.15%_at_15.32%_0%,var(--color-blue-30,#6885ED)_0%,var(--color-blue-49,#5064AA)_66.17%)] max-md:px-4">
-      <Title as="h3" size="6xl" className="max-lg:text-[52px]">
+      <Title as="h3" size="6xl" color="white" className="max-lg:text-[52px]">
         {t('title', { fallback: 'Outcome' })}
       </Title>
       <Text size="2xl" className="w-[700px] max-lg:text-lg max-md:w-full">

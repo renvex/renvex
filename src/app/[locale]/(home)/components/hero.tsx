@@ -42,6 +42,7 @@ export const Hero = () => {
       <Title
         as="h1"
         weight={600}
+        color="white"
         className="z-30 text-[265px] leading-[100%] tracking-[-4.956px] max-lg:text-[100px]"
         style={{
           textShadow:

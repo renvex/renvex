@@ -45,8 +45,8 @@ export default function Home() {
       <Tools />
       <FullControl />
       <Strategy />
-      <Quantify />
       <ClarityInSteps />
+      <Quantify />
       <LetsTalk />
       <ReadyToNavigate />
     </main>
