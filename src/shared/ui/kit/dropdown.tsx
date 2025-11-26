@@ -13,12 +13,14 @@ export const Dropdown = ({
   label,
   children,
   contentClassName,
+  titleClassName,
 }: {
   label: ReactNode;
   children:
     | ReactNode
     | ((props: { setOpen: (open: boolean) => void }) => ReactNode);
   contentClassName?: string;
+  titleClassName?: string;
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -31,7 +33,7 @@ export const Dropdown = ({
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="outline-0">
         <span className="flex cursor-pointer items-center gap-1 py-1.5 outline-0">
-          <Text weight={600} color="black">
+          <Text weight={600} color="black" className={titleClassName}>
             {label}
           </Text>
           <ChevronDownIcon />
@@ -40,7 +42,7 @@ export const Dropdown = ({
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           className={cn(
-            'z-50 flex w-[172px] flex-col rounded-xl bg-white p-4',
+            'z-999 flex w-[172px] flex-col rounded-xl bg-white p-4 max-md:shadow-sm',
             contentClassName,
           )}
           sideOffset={10}

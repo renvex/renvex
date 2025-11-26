@@ -14,12 +14,15 @@ import {
   Trigger,
 } from '@radix-ui/react-dialog';
 
-import { Link as NavLink } from '@/i18n/navigation';
+import { Link, Link as NavLink } from '@/i18n/navigation';
 
 import { cn } from '@/shared/lib/utils/cn';
 import { CategoryIcon } from '@/shared/ui/icons/category';
 import { CloseIcon } from '@/shared/ui/icons/close';
 import { Title } from '@/shared/ui/kit/title';
+
+import { Dropdown, DropdownItem } from '../kit/dropdown';
+import { Text } from '../kit/text';
 
 const getNavigation = (t: ReturnType<typeof useTranslations>) => [
   { label: t('home', { fallback: 'Home' }), href: '/' },
@@ -56,7 +59,7 @@ export const MobileMenu = () => {
         </button>
       </Trigger>
       <Portal>
-        <Content className="fixed top-[45%] left-1/2 z-995 h-[410px] w-[92%] max-w-sm -translate-x-1/2 -translate-y-1/2 animate-[menuOpen_0.3s_ease-out_forwards] overflow-y-auto rounded-2xl bg-[#141414] px-6 py-4">
+        <Content className="fixed top-[45%] left-1/2 z-800 h-[410px] w-[92%] max-w-sm -translate-x-1/2 -translate-y-1/2 animate-[menuOpen_0.3s_ease-out_forwards] overflow-y-auto rounded-2xl bg-white px-6 py-4">
           <DialogTitle />
           <Description asChild>
             <section className="flex h-full flex-col gap-10">
@@ -65,7 +68,7 @@ export const MobileMenu = () => {
                   Renvex
                 </Title>
                 <Close>
-                  <CloseIcon />
+                  <CloseIcon size={24} />
                 </Close>
               </header>
               <section className="flex flex-col gap-4">
@@ -78,6 +81,33 @@ export const MobileMenu = () => {
                     {item.label}
                   </NavigationItem>
                 ))}
+                <Dropdown label="Legal" titleClassName="text-2xl">
+                  {({ setOpen }) => (
+                    <>
+                      <Link href="/terms-of-use">
+                        <DropdownItem onClick={() => setOpen(false)}>
+                          <Text weight={600} color="black">
+                            Terms of Use
+                          </Text>
+                        </DropdownItem>
+                      </Link>
+                      <Link href="/privacy-policy">
+                        <DropdownItem onClick={() => setOpen(false)}>
+                          <Text weight={600} color="black">
+                            Privacy Policy
+                          </Text>
+                        </DropdownItem>
+                      </Link>
+                      <Link href="/cookie-policy">
+                        <DropdownItem onClick={() => setOpen(false)}>
+                          <Text weight={600} color="black">
+                            Cookie Policy
+                          </Text>
+                        </DropdownItem>
+                      </Link>
+                    </>
+                  )}
+                </Dropdown>
               </section>
             </section>
           </Description>
@@ -100,6 +130,7 @@ const NavigationItem = ({
     <Title
       as="h6"
       size="2xl"
+      color="black"
       className={cn(active && 'text-blue-70', 'py-1.5')}
     >
       {children}
