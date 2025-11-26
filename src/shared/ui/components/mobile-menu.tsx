@@ -54,7 +54,7 @@ export const MobileMenu = () => {
   return (
     <Root open={open} onOpenChange={setOpen}>
       <Trigger asChild>
-        <button className="bg-grey-8 flex h-10 items-center justify-center rounded-2xl px-6">
+        <button className="flex h-[44px] items-center justify-center rounded-2xl bg-white px-6">
           <CategoryIcon />
         </button>
       </Trigger>

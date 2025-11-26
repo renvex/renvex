@@ -3,33 +3,50 @@
 export const GbIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="12"
-    height="8"
-    viewBox="0 0 12 8"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
     fill="none"
+    className="shrink-0"
   >
-    <g clipPath="url(#clip0_158_3361)">
-      <path d="M-0.5 -0.53125H12.5V8.53088H-0.5V-0.53125Z" fill="#0B55B1" />
+    <g clipPath="url(#clip0_341_7078)">
+      <rect width="20" height="20" rx="10" fill="#1A47B8" />
       <path
-        d="M12.5 -0.53125H10.642L6 2.70463L1.358 -0.53125H-0.5V0.764L4.142 3.99988L-0.5 7.23575V8.531H1.358L6 5.29513L10.642 8.531H12.5V7.23575L7.858 3.99988L12.5 0.764V-0.53125Z"
-        fill="#F0F0F0"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M-1.02137 0H-4V3.33333L21.0052 20L24 20V16.6667L-1.02137 0Z"
+        fill="white"
       />
       <path
-        d="M12.5 -0.53125H12.4464L6 3.9625L-0.446375 -0.53125H-0.5V0.0570002L5.55125 4.27525L-0.5 8.49362V8.531H0.343875L6 4.58813L11.6561 8.531H12.5V8.49362L6.44875 4.27525L12.5 0.0570002V-0.53125Z"
-        fill="#D60A2E"
+        d="M-3.00654 0L24 18.0472V20H23.0298L-4 1.93408V0H-3.00654Z"
+        fill="#F93939"
       />
       <path
-        d="M12.5 2.83325H7.16663V-0.53125H4.83337V2.83325H-0.5V5.1665H4.83337V8.531H7.16663V5.1665H12.5V2.83325Z"
-        fill="#F0F0F0"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21.3333 0H24V3.33333C24 3.33333 6.67974 14.4374 -1.33333 20H-4V16.6667L21.3333 0Z"
+        fill="white"
       />
       <path
-        d="M5.45837 7.906V4.5415H0.125V3.45825H5.45837V0.09375H6.54163V3.45825H11.875V4.5415H6.54163V7.906H5.45837Z"
-        fill="#D60A2E"
+        d="M24 0H23.0957L-4 18.0628V20H-3.00654L24 1.94868V0Z"
+        fill="#F93939"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M6.18277 0H13.8405V6.16909H24V13.8268H13.8405V20H6.18277V13.8268H-4V6.16909H6.18277V0Z"
+        fill="white"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M7.78947 0H12.2105V7.69231H24V12.3077H12.2105V20H7.78947V12.3077H-4V7.69231H7.78947V0Z"
+        fill="#F93939"
       />
     </g>
     <defs>
-      <clipPath id="clip0_158_3361">
-        <rect width="12" height="8" fill="white" />
+      <clipPath id="clip0_341_7078">
+        <rect width="20" height="20" rx="10" fill="white" />
       </clipPath>
     </defs>
   </svg>
