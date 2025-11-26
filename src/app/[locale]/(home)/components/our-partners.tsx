@@ -59,7 +59,7 @@ export const OurPartners = () => {
 
   const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start' }, [
     Autoplay({
-      delay: 3000,
+      delay: 1500,
       stopOnInteraction: false,
       stopOnMouseEnter: true,
     }),
