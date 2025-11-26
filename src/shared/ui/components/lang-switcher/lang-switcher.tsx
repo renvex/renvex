@@ -19,8 +19,8 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './lang-switcher.module.css';
 
 const languages = [
-  { code: 'en', name: 'English' },
-  { code: 'es', name: 'Español' },
+  { code: 'en', name: 'English', icon: GbIcon },
+  { code: 'es', name: 'Español', icon: EsIcon },
 ];
 
 export const LangSwitcher = () => {
@@ -46,15 +46,16 @@ export const LangSwitcher = () => {
   );
 
   const currentLanguage = useMemo(
-    () => languages.find(language => language.code === locale)?.name,
+    () => languages.find(language => language.code === locale),
     [locale],
   );
 
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="outline-0">
-        <span className="flex h-[32px] items-center justify-center rounded-2xl bg-white/10 px-6 text-center">
-          <Text>{currentLanguage}</Text>
+        <span className="flex h-[44px] cursor-pointer items-center justify-center gap-1 rounded-2xl bg-white/50 px-6 text-center transition duration-300 ease-in-out hover:bg-white">
+          {currentLanguage?.icon()}
+          <ChevronDown />
         </span>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
@@ -71,9 +72,7 @@ export const LangSwitcher = () => {
               }}
             >
               <GbIcon />
-              <Text size="xs" color="black">
-                EN
-              </Text>
+              <Text color="black">EN</Text>
             </DropdownItem>
             <DropdownItem
               onClick={() => {
@@ -82,9 +81,7 @@ export const LangSwitcher = () => {
               }}
             >
               <EsIcon />
-              <Text size="xs" color="black">
-                ES
-              </Text>
+              <Text color="black">ES</Text>
             </DropdownItem>
           </section>
         </DropdownMenu.Content>
@@ -114,3 +111,18 @@ export const DropdownItem = ({
     </DropdownMenu.Item>
   );
 };
+
+const ChevronDown = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+  >
+    <path
+      d="M11.9467 5.45312H7.79341H4.05341C3.41341 5.45312 3.09341 6.22646 3.54674 6.67979L7.00008 10.1331C7.55341 10.6865 8.45341 10.6865 9.00674 10.1331L10.3201 8.81979L12.4601 6.67979C12.9067 6.22646 12.5867 5.45312 11.9467 5.45312Z"
+      fill="black"
+    />
+  </svg>
+);
