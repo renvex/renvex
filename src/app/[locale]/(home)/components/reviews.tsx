@@ -59,12 +59,7 @@ export const Reviews = () => {
                 })}
               </Text>
             </Chip>
-            <Title
-              as="h3"
-              size="6xl"
-              color="black"
-              className="max-md:text-[52px]"
-            >
+            <Title as="h3" size="6xl" color="black">
               {t('title.0', { fallback: 'Partners Rated by' })}{' '}
               <span>{t('title.1', { fallback: 'Traders' })}</span>
             </Title>
