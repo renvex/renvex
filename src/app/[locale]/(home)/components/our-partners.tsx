@@ -144,9 +144,12 @@ const PartnerCard = ({
           width={img.size.width}
           height={img.size.height}
           unoptimized
+          style={{ filter: 'invert(0)' }}
         />
       </section>
-      <Text size="lg">{text}</Text>
+      <Text size="lg" className="text-[#ADBFFF]">
+        {text}
+      </Text>
     </div>
   );
 };

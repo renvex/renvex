@@ -124,14 +124,14 @@ const ReviewCard = ({ imgUrl }: { imgUrl: string }) => (
       <TrustPilotIcon />
     </div>
     <Image
-      className="absolute bottom-0 left-10 opacity-10 max-md:left-6 max-md:h-[70px] max-md:w-[70px]"
+      className="absolute bottom-7 left-10 opacity-10 max-md:left-6 max-md:h-[70px] max-md:w-[70px]"
       src="/images/home/star.svg"
       alt="star"
       width={95}
       height={90}
     />
     <Image
-      className="absolute right-0 bottom-0 opacity-10 max-md:-bottom-2 max-md:h-[70px] max-md:w-[210px]"
+      className="absolute right-0 bottom-5 opacity-10 max-md:-bottom-2 max-md:h-[70px] max-md:w-[210px]"
       src="/images/home/trust.svg"
       alt="star"
       width={248}

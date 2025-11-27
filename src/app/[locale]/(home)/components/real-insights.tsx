@@ -108,8 +108,9 @@ const Card = ({
       <Text size="base" className="z-20">
         {description}
       </Text>
+      <div className="absolute bottom-0 left-1/2 z-0 h-[400px] w-[400px] -translate-x-1/2 transform rounded-full bg-[#2841C1] blur-[150px]"></div>
       <Image
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 transform"
+        className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 transform"
         src={img.url}
         alt={title}
         width={img.width}
