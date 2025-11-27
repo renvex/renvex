@@ -22,7 +22,7 @@ export const Header = () => {
 
   return (
     <header className="relative z-50 flex flex-col">
-      <section className="absolute top-10 left-1/2 container flex -translate-x-1/2 items-center justify-between py-5 max-md:top-0">
+      <section className="absolute top-2 left-1/2 container flex -translate-x-1/2 items-center justify-between py-5 max-md:top-0">
         <Link href="/">
           <Image
             className="max-md:h-[31px] max-md:w-[85px]"

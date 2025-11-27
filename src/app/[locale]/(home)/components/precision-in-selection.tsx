@@ -135,9 +135,9 @@ const Card = ({
   index: number;
 }) => (
   <li
-    className="sticky flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5 max-md:!relative max-md:!top-0"
+    className="sticky flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5 [box-shadow:0_-623px_174px_0_rgba(255,255,255,0.00),0_-399px_159px_0_rgba(255,255,255,0.03),0_-224px_135px_0_rgba(255,255,255,0.09),0_-100px_100px_0_rgba(255,255,255,0.15),0_-25px_55px_0_rgba(255,255,255,0.18)] max-md:!relative max-md:!top-0"
     style={{
-      top: `${index * 60}px`, // how much each card stacks down
+      top: `${index * 60}px`,
       zIndex: index,
     }}
   >
