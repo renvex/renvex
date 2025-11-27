@@ -16,7 +16,11 @@ export const Header = () => {
   const locale = useLocale();
 
   const isLightLogo = useMemo(
-    () => pathname === `/${locale}/contact-us` || pathname === '/contact-us',
+    () =>
+      pathname === `/${locale}/contact-us` ||
+      pathname === '/contact-us' ||
+      pathname === '/heatmaps' ||
+      pathname === `/${locale}/heatmaps`,
     [pathname, locale],
   );
 

@@ -30,7 +30,7 @@ const Ball = () => (
   <span
     className={cn(
       st.ball,
-      'absolute -top-[650px] left-1/2 h-[816px] w-[816px] -translate-x-1/2',
+      'absolute -top-[650px] left-1/2 h-[816px] w-[816px] -translate-x-1/2 max-md:-top-[790px]',
     )}
   />
 );

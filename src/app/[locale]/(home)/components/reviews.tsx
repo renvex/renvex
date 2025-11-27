@@ -48,7 +48,12 @@ export const Reviews = () => {
         <div className="flex flex-col gap-10">
           <section className="flex flex-col items-center gap-4 text-center">
             <Chip variant="light">
-              <Text size="lg" weight={500} color="blue">
+              <Text
+                size="lg"
+                weight={500}
+                color="blue"
+                className="max-md:text-sm"
+              >
                 {t('chip', {
                   fallback: 'Verified reputation through independent insight',
                 })}
@@ -89,7 +94,7 @@ export const Reviews = () => {
                 {reviews.map(reviewImgUrl => (
                   <div
                     key={reviewImgUrl}
-                    className="flex min-w-[400px] shrink-0 justify-center max-md:min-w-[330px]"
+                    className="flex min-w-[400px] shrink-0 justify-center max-md:max-w-[330px] max-md:min-w-[350px]"
                   >
                     <ReviewCard imgUrl={reviewImgUrl} />
                   </div>
@@ -131,7 +136,7 @@ const ReviewCard = ({ imgUrl }: { imgUrl: string }) => (
       height={90}
     />
     <Image
-      className="absolute right-0 bottom-5 opacity-10 max-md:-bottom-2 max-md:h-[70px] max-md:w-[210px]"
+      className="absolute right-0 bottom-5 opacity-10 max-md:h-[70px] max-md:w-[210px]"
       src="/images/home/trust.svg"
       alt="star"
       width={248}

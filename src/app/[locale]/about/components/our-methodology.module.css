@@ -22,11 +22,10 @@
 
 .visionBg {
   background:
-    linear-gradient(280deg, #fff -23.84%, rgba(255, 255, 255, 0) 35.79%),
     linear-gradient(
-      258deg,
-      rgba(51, 51, 51, 0) 21.08%,
-      var(--color-blue-46, #2841c1) 77.38%
+      227deg,
+      rgba(51, 51, 51, 0) -17.9%,
+      var(--color-blue-46, #2841c1) 52.97%
     ),
     url('/images/about/vision.jpg') lightgray 50% / cover no-repeat;
 }

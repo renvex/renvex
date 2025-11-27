@@ -50,7 +50,7 @@ export const ContactForm = ({
     <form
       className={cn(
         st.bg,
-        'flex flex-col gap-10 rounded-[48px] p-10 max-md:px-5',
+        'relative z-20 flex flex-col gap-10 rounded-[48px] p-10 max-md:px-5',
       )}
       onSubmit={e => {
         e.preventDefault();

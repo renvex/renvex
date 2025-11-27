@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
       <OurFoundation />
       <OurRole />

@@ -89,7 +89,7 @@ export const PrecisionInSelection = () => {
             <Text
               size="lg"
               weight={500}
-              className="max-md:text-base max-md:wrap-break-word"
+              className="max-md:text-sm max-md:wrap-break-word"
               color="blue"
             >
               {t('subtitle', {
@@ -97,7 +97,12 @@ export const PrecisionInSelection = () => {
               })}
             </Text>
           </Chip>
-          <Title as="h3" size="6xl" color="black">
+          <Title
+            as="h3"
+            size="6xl"
+            color="black"
+            className="max-md:text-[52px]"
+          >
             {t('title.0', { fallback: 'Precision in' })}{' '}
             <span>{t('title.1', { fallback: 'Selection' })}</span>
           </Title>

@@ -21,11 +21,11 @@ export const Market = ({
     <section className="container flex flex-col gap-10 py-20">
       <section className="flex flex-col items-center gap-4 text-center">
         <Chip>
-          <Text size="lg" color="primary">
+          <Text size="lg" color="primary" className="max-md:text-sm">
             {chip}
           </Text>
         </Chip>
-        <Title as="h3" size="6xl">
+        <Title as="h3" size="6xl" className="max-md:text-[40px]">
           {title}
         </Title>
         <Text color="grey" className="w-[700px] text-center max-md:w-full">
