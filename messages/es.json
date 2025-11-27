@@ -419,39 +419,35 @@
           "description": "Hacemos un seguimiento del procesamiento de órdenes en tiempo real y de la capacidad de respuesta del sistema durante los periodos de mayor actividad comercial.",
           "subtitle": "Coherencia y estabilidad en condiciones de mercado reales.",
           "title": {
-            "0": "Ejecución",
-            "1": "Latencia"
+            "0": "Ejecución"
           }
         },
         "1": {
-          "description": "Todos los diferenciales, comisiones y gastos nocturnos se documentan y comparan entre proveedores.",
+          "description": "Siempre a la vanguardia gracias a nuestros colaboradores que ofrecen los costes mas bajos del mercado.",
           "subtitle": "Total transparencia sin costes ocultos.",
           "title": {
-            "0": "Tasa",
-            "1": "Estructuras"
+            "0": "Tasas"
           }
         },
         "2": {
           "description": "Cada plataforma se prueba frente a eventos de volatilidad y fluctuaciones de liquidez.",
           "subtitle": "Profundidad de mercado verificada y calidad de ejecución sostenible.",
           "title": {
-            "0": "Liquidez",
-            "1": "Coherencia"
+            "0": "Coherencia"
           }
         },
         "3": {
-          "description": "Las calificaciones se recalibran periódicamente para reflejar experiencias comerciales auténticas.",
-          "subtitle": "Información basada en los comentarios verificados de los usuarios y en las métricas de participación.",
+          "description": "Opiniones autenticas en un mercado real.",
+          "subtitle": "Información basada en las experiencias de otros usuarios que ya están aprovechándose de este servicio.",
           "title": {
-            "0": "Cliente",
-            "1": "Satisfacción"
+            "0": "Satisfacción"
           }
         }
       },
-      "description": "Renvex aplica un sistema de supervisión continua para evaluar y verificar el rendimiento de los corredores en tiempo real. Cada plataforma se analiza utilizando flujos de datos verificados y criterios mensurables, lo que garantiza que solo permanezcan visibles los corredores más coherentes y transparentes.",
+      "description": "Renvex aplica un sistema de supervisión actualizado para evaluar y verificar el rendimiento de los usuarios a tiempo real. Cada plataforma se analiza corroborando datos y criterios oficiales en el mercado global, lo que garantiza que el usuario obtenga un servicio optimizado.",
       "outcome": {
-        "description": "Una refinada red de corredores que cumplen las normas institucionales de rendimiento, transparencia y fiabilidad. Cada inclusión se gana, nunca se compra.",
-        "title": "Resultado"
+        "description": "Cada usuario pueda encontrar su lugar a través de diferentes opciones que ofrecen rendimiento, transparencia y fiabilidad.",
+        "title": "Eficacia"
       },
       "subtitle": "Un marco basado en datos para la evaluación de los intermediarios",
       "title": {
