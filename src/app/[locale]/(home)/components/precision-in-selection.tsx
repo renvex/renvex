@@ -105,12 +105,7 @@ export const PrecisionInSelection = () => {
               })}
             </Text>
           </Chip>
-          <Title
-            as="h3"
-            size="6xl"
-            color="black"
-            className="max-md:text-[52px]"
-          >
+          <Title as="h3" size="6xl" color="black">
             {t('title.0', { fallback: 'Precision in' })}{' '}
             <span>{t('title.1', { fallback: 'Selection' })}</span>
           </Title>

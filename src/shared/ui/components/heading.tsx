@@ -21,7 +21,7 @@ export const Heading = ({
         {chip}
       </Text>
     </Chip>
-    <Title as="h3" size="6xl" className="max-md:text-[52px]">
+    <Title as="h3" size="6xl">
       {title}
     </Title>
     <Text

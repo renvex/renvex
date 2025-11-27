@@ -82,12 +82,7 @@ export const OurPartners = () => {
                 {t('subtitle', { fallback: 'Confidence built on evidence' })}
               </Text>
             </Chip>
-            <Title
-              as="h3"
-              size="6xl"
-              className="max-md:text-[52px]"
-              color="black"
-            >
+            <Title as="h3" size="6xl" color="black">
               {t('title', { fallback: 'Our Partners' })}
             </Title>
             <Text className="text-black/90">
