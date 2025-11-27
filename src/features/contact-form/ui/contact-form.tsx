@@ -13,6 +13,7 @@ import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Title } from '@/shared/ui/kit/title';
 
+import { sendForm } from '../api/send-form';
 import { getContactFormSchema } from '../model/schema';
 import st from './contact-form.module.css';
 
@@ -40,9 +41,12 @@ export const ContactForm = ({
       onChange: schema,
     },
     onSubmit: async data => {
-      console.log(data);
-      reset();
-      onSuccess?.();
+      const { success } = await sendForm(data.value);
+
+      if (success) {
+        reset();
+        onSuccess?.();
+      }
     },
   });
 
