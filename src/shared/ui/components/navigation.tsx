@@ -23,31 +23,47 @@ export const Navigation = () => {
   return (
     <nav className="flex items-center gap-4 rounded-2xl bg-[#F6F6F6] px-6 py-1.5">
       {links.map(link => (
-        <Link key={link.href} href={link.href} className="py-1.5">
+        <Link
+          key={link.href}
+          href={link.href}
+          className="py-1.5 transition duration-300 ease-in-out hover:opacity-50"
+        >
           <Text weight={600} color="black">
             {link.label}
           </Text>
         </Link>
       ))}
-      <Dropdown label="Legal">
+      <Dropdown
+        label="Legal"
+        titleClassName="transition duration-300 ease-in-out hover:opacity-50"
+      >
         {({ setOpen }) => (
           <>
             <Link href="/terms-of-use">
-              <DropdownItem onClick={() => setOpen(false)}>
+              <DropdownItem
+                onClick={() => setOpen(false)}
+                className="transition duration-300 ease-in-out hover:opacity-50"
+              >
                 <Text weight={600} color="black">
                   Terms of Use
                 </Text>
               </DropdownItem>
             </Link>
             <Link href="/privacy-policy">
-              <DropdownItem onClick={() => setOpen(false)}>
+              <DropdownItem
+                onClick={() => setOpen(false)}
+                className="transition duration-300 ease-in-out hover:opacity-50"
+              >
                 <Text weight={600} color="black">
                   Privacy Policy
                 </Text>
               </DropdownItem>
             </Link>
             <Link href="/cookie-policy">
-              <DropdownItem onClick={() => setOpen(false)}>
+              <DropdownItem
+                onClick={() => setOpen(false)}
+                className="transition duration-300 ease-in-out hover:opacity-50"
+              >
                 <Text weight={600} color="black">
                   Cookie Policy
                 </Text>

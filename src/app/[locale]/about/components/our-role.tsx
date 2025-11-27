@@ -85,7 +85,7 @@ export const OurRole = () => {
             unoptimized
           />
           <Image
-            className="absolute bottom-0 z-10 w-full max-md:object-cover"
+            className="absolute bottom-0 z-10 h-[560px] w-full max-md:object-cover"
             src="/images/faded-light-b.svg"
             alt="faded"
             width={100}

@@ -86,7 +86,7 @@ export const OurMethodology = () => {
           >
             {t('ourVision.title', { fallback: 'Our Vision' })}
           </Title>
-          <Text color="black" size="lg">
+          <Text color="white" weight={600} size="lg">
             {t('ourVision.subtitle', {
               fallback:
                 'Engineering transparency for the next generation of traders',
@@ -136,6 +136,7 @@ const Card = ({
       <Title
         as="h5"
         size="3xl"
+        weight={color === 'purple' ? 600 : 400}
         color={color === 'purple' ? 'white' : 'primary'}
       >
         {title}

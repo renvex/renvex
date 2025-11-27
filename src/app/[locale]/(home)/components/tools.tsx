@@ -49,7 +49,12 @@ export const Tools = () => {
       <section className="container flex flex-col gap-10 py-[120px]">
         <section className="flex flex-col items-center gap-4 text-center">
           <Chip variant="light">
-            <Text size="lg" weight={500} color="blue">
+            <Text
+              size="lg"
+              weight={500}
+              color="blue"
+              className="max-md:text-sm"
+            >
               {t('chip', {
                 fallback: 'Technology and expertise aligned to your strategy',
               })}

@@ -14,10 +14,10 @@ export const OurFoundation = () => {
   const t = useTranslations('about.ourFoundation');
 
   return (
-    <section className="container flex flex-col gap-10 overflow-hidden py-20">
+    <section className="flex flex-col gap-10 py-20">
       <div className="flex flex-col items-center gap-4 text-center">
         <Chip>
-          <Text size="lg" color="primary">
+          <Text size="lg" color="primary" className="max-md:text-sm">
             {t('chip', { fallback: 'Where clarity meets accountability' })}
           </Text>
         </Chip>
@@ -36,7 +36,7 @@ export const OurFoundation = () => {
           })}
         </Text>
       </div>
-      <section className="relative flex flex-col gap-6">
+      <section className="relative container flex flex-col gap-6">
         <Text size="2xl" color="primary" className="z-20 text-center">
           {t('corePillars', { fallback: 'Core Pillars' })}
         </Text>
@@ -110,7 +110,7 @@ const Card = ({
       size="5xl"
       weight={600}
       color="black"
-      className="leading-[120%] tracking-[-1.12px]"
+      className="leading-[120%] tracking-[-1.12px] max-md:text-[32px] max-md:font-normal"
     >
       {title}
     </Title>

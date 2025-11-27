@@ -15,7 +15,7 @@ const textFieldVariants = cva(
         primary:
           'bg-[#141414] text-white/60 placeholder:text-white/60 border-[#141414]',
         secondary:
-          'bg-[#F6F6F6] border-[#F6F6F6] text-black/60 placeholder:text-black/60',
+          'bg-[#F6F6F6] border-[#F6F6F6] text-black/50 placeholder:text-black/60',
       },
       intent: {
         primary: '',

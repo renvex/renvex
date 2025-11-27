@@ -50,7 +50,7 @@ export const Banners = () => {
   const banners = getBanners(t);
 
   return (
-    <section className="container flex flex-col gap-10 py-20">
+    <section className="container flex flex-col gap-10 py-20 pb-[100px] max-md:pb-10">
       <div className="relative flex h-[350px] flex-col justify-end overflow-hidden rounded-4xl p-10">
         <Image
           src="/images/contact-us/support.jpg"
@@ -69,7 +69,7 @@ export const Banners = () => {
           as="h3"
           size="6xl"
           color="white"
-          className="z-20 max-md:text-[52px]"
+          className="z-20 max-md:text-[50px]"
         >
           {t('title', { fallback: 'Get Expert Support' })}
         </Title>
@@ -103,9 +103,10 @@ const Card = ({
     >
       <Title
         as="h5"
+        weight={color === 'purple' ? 600 : 400}
         size="4xl"
         color={color === 'purple' ? 'white' : 'primary'}
-        className="max-md:text-3xl"
+        className="max-md:text-[32px]"
       >
         {title}
       </Title>

@@ -13,7 +13,7 @@ export const Support = () => {
   const t = useTranslations('contactUs.support');
 
   return (
-    <section className={cn('relative container flex flex-col gap-10 py-20')}>
+    <section className="relative flex flex-col gap-10 py-20">
       <Image
         className="object-cover"
         src="/images/contact-us/brok.jpg"
@@ -28,7 +28,7 @@ export const Support = () => {
         width={100}
         height={560}
       />
-      <div className="z-20 flex gap-10 max-md:flex-col max-md:gap-5">
+      <div className="z-20 container flex gap-10 max-md:flex-col max-md:gap-5">
         <InfoCard
           label={t('info.0.label', { fallback: 'Monday to Friday:' })}
           value={t('info.0.value', { fallback: '9:00 AM – 6:00 PM (GMT)' })}
@@ -38,7 +38,7 @@ export const Support = () => {
           value={t('info.1.value', { fallback: 'Support available via email' })}
         />
       </div>
-      <div className="z-20 flex flex-col gap-5 max-md:flex-col">
+      <div className="z-20 container flex flex-col gap-5 max-md:flex-col">
         <Card
           title={t('cards.0.title', { fallback: 'Email Support' })}
           subtitle={t('cards.0.subtitle', {
@@ -86,7 +86,7 @@ const Card = ({
 }) => (
   <article
     className={cn(
-      'flex w-max flex-col gap-5 rounded-[48px] px-20 py-10 max-lg:w-full max-md:px-5',
+      'flex w-max flex-col gap-5 rounded-[48px] px-10 py-20 max-lg:w-full max-md:px-5',
       st.cardBg,
     )}
   >

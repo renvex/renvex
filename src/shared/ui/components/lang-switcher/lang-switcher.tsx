@@ -53,7 +53,7 @@ export const LangSwitcher = () => {
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="outline-0">
-        <span className="flex h-[44px] cursor-pointer items-center justify-center gap-1 rounded-2xl bg-white/50 px-6 text-center transition duration-300 ease-in-out hover:bg-white">
+        <span className="flex h-[44px] cursor-pointer items-center justify-center gap-1 rounded-2xl bg-white/50 px-6 text-center transition duration-300 ease-in-out hover:bg-white max-md:bg-white">
           {currentLanguage?.icon()}
           <ChevronDown />
         </span>

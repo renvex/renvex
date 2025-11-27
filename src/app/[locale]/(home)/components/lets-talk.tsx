@@ -21,13 +21,21 @@ export const LetsTalk = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="relative bg-white">
       <section className="container flex gap-10 py-20 max-lg:flex-col">
         <Banner />
         <section className="w-1/2 max-lg:w-full">
           <ContactForm onSuccess={onSuccessForm} showPrivacyNote />
         </section>
       </section>
+      <Image
+        className="absolute bottom-0 left-0 z-10 h-[790px] max-lg:hidden"
+        src="/images/home/lets-bg.svg"
+        alt="lets-bg"
+        width={815}
+        height={750}
+        unoptimized
+      />
     </div>
   );
 };
@@ -56,13 +64,6 @@ const Banner = () => {
             'From broker fit to strategy calibration and tooling, we will help you move with precision.',
         })}
       </Text>
-      <Image
-        className="max-lg:hidden"
-        src="/images/home/lets-bg.svg"
-        alt="lets-bg"
-        fill
-        unoptimized
-      />
     </section>
   );
 };

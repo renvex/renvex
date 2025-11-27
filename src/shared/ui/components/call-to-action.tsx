@@ -39,20 +39,20 @@ export const CallToAction = ({
           <Title
             as="h2"
             color="black"
-            className="z-20 text-[80px] leading-[88px] max-lg:text-3xl max-lg:leading-[120%]"
+            className="z-20 text-[80px] leading-[88px] max-lg:text-3xl max-lg:leading-[120%] max-md:text-[52px]"
           >
             {title}
           </Title>
           <Text
             size="lg"
-            color="black"
+            color="primary"
             className="z-20 opacity-90"
             weight={600}
           >
             {description}
           </Text>
           <Activity mode={text ? 'visible' : 'hidden'}>
-            <Text color="grey" className="z-20">
+            <Text color="black" className="z-20">
               {text}
             </Text>
           </Activity>
