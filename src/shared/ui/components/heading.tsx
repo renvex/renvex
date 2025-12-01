@@ -17,11 +17,11 @@ export const Heading = ({
 }) => (
   <section className="flex flex-col items-center gap-4 text-center">
     <Chip variant="light">
-      <Text size="lg" weight={500} color="primary">
+      <Text size="lg" weight={500} color="primary" className="max-md:text-sm">
         {chip}
       </Text>
     </Chip>
-    <Title as="h3" size="6xl" className="max-md:text-[52px]">
+    <Title as="h3" size="6xl">
       {title}
     </Title>
     <Text

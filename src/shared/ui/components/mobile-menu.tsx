@@ -2,6 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import {
@@ -54,19 +55,23 @@ export const MobileMenu = () => {
   return (
     <Root open={open} onOpenChange={setOpen}>
       <Trigger asChild>
-        <button className="bg-grey-8 flex h-10 items-center justify-center rounded-2xl px-6">
+        <button className="flex h-[44px] items-center justify-center rounded-2xl bg-white px-6">
           <CategoryIcon />
         </button>
       </Trigger>
       <Portal>
-        <Content className="fixed top-[45%] left-1/2 z-800 h-[410px] w-[92%] max-w-sm -translate-x-1/2 -translate-y-1/2 animate-[menuOpen_0.3s_ease-out_forwards] overflow-y-auto rounded-2xl bg-white px-6 py-4">
+        <Content className="fixed top-[33%] left-1/2 z-800 h-[410px] w-[92%] max-w-sm -translate-x-1/2 -translate-y-1/2 animate-[menuOpen_0.3s_ease-out_forwards] overflow-y-auto rounded-2xl bg-white px-6 py-4">
           <DialogTitle />
           <Description asChild>
             <section className="flex h-full flex-col gap-10">
               <header className="flex items-center justify-between">
-                <Title as="h5" size="2xl">
-                  Renvex
-                </Title>
+                <Image
+                  className="max-md:h-[31px] max-md:w-[85px]"
+                  src="/logo.svg"
+                  alt="Renvex Logo"
+                  width={113}
+                  height={32}
+                />
                 <Close>
                   <CloseIcon size={24} />
                 </Close>

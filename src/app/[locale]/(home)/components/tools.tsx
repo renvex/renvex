@@ -18,7 +18,7 @@ import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const Tools = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
@@ -44,23 +44,31 @@ export const Tools = () => {
     };
   }, [emblaApi, onSelect]);
 
+  const nextSlide = () => {
+    emblaApi?.scrollNext();
+  };
+
+  const prevSlide = () => {
+    emblaApi?.scrollPrev();
+  };
+
   return (
-    <div className="bg-white">
+    <div className="overflow-hidden bg-white">
       <section className="container flex flex-col gap-10 py-[120px]">
         <section className="flex flex-col items-center gap-4 text-center">
           <Chip variant="light">
-            <Text size="lg" weight={500} color="blue">
+            <Text
+              size="lg"
+              weight={500}
+              color="blue"
+              className="max-md:text-sm"
+            >
               {t('chip', {
                 fallback: 'Technology and expertise aligned to your strategy',
               })}
             </Text>
           </Chip>
-          <Title
-            as="h3"
-            size="6xl"
-            color="black"
-            className="max-md:text-[52px]"
-          >
+          <Title as="h3" size="6xl" color="black">
             {t('title.0', { fallback: 'Strategic Tools for' })}{' '}
             <span>{t('title.1', { fallback: 'Smarter Decisions' })}</span>
           </Title>
@@ -71,7 +79,7 @@ export const Tools = () => {
             })}
           </Text>
         </section>
-        <section className="flex flex-col gap-5">
+        <section className="relative flex flex-col gap-5">
           <Text
             size="2xl"
             color="primary"
@@ -81,6 +89,7 @@ export const Tools = () => {
               fallback: 'How Renvex supports your trading decisions',
             })}
           </Text>
+          <PrevArrow onClick={prevSlide} />
           <div
             className="overflow-hidden rounded-xl bg-white p-4 [box-shadow:0_209px_59px_0_rgba(0,0,0,0),0_134px_54px_0_rgba(0,0,0,0.01),0_75px_45px_0_rgba(0,0,0,0.05),0_33px_33px_0_rgba(0,0,0,0.09),0_8px_18px_0_rgba(0,0,0,0.10)] max-md:p-2"
             ref={emblaRef}
@@ -100,6 +109,7 @@ export const Tools = () => {
               </SlideLayout>
             </div>
           </div>
+          <NextArrow onClick={nextSlide} />
           <div className="flex justify-center gap-2 pt-2">
             {scrollSnaps.map((_, index) =>
               index === selectedIndex ? (
@@ -118,6 +128,74 @@ export const Tools = () => {
         </section>
       </section>
     </div>
+  );
+};
+
+const PrevArrow = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <button
+      className="absolute top-1/2 -left-10 z-10 flex h-[52px] w-[70px] -translate-y-1/2 cursor-pointer items-center justify-center rounded-[43px] bg-[#2841C1] max-lg:top-[110%] max-lg:left-[38%] max-md:left-[28%]"
+      onClick={onClick}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M9.56995 18.0703L3.49995 12.0003L9.56995 5.93031"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M20.5 12H3.67"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
+  );
+};
+
+const NextArrow = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <button
+      className="absolute top-1/2 -right-10 z-10 flex h-[52px] w-[70px] -translate-y-1/2 cursor-pointer items-center justify-center rounded-[43px] bg-[#2841C1] max-lg:top-[110%] max-lg:right-[38%] max-md:right-[28%]"
+      onClick={onClick}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M14.4299 5.92969L20.4999 11.9997L14.4299 18.0697"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M3.5 12H20.33"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
   );
 };
 

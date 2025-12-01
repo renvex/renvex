@@ -337,7 +337,7 @@
   "home": {
     "builtOn": {
       "description": "Una base de precisión y pruebas",
-      "description2": "Trabajamos con los principales proveedores de datos y plataformas reguladas para mantener una información fiable, mensurable e imparcial. Nuestro marco se basa en la precisión y la transparencia, garantizando que cada decisión comience con confianza y claridad.",
+      "description2": "Colaboramos con los principales proveedores de datos y plataformas reguladas para mantener una información fiable, medida e imparcial. Nuestro marco se basa en la precisión y la transparencia, garantizando que cada decisión comience con confianza y claridad.",
       "title": {
         "0": "Construido sobre",
         "1": "Datos verificados"
@@ -409,7 +409,7 @@
       "title": "Hablemos"
     },
     "ourPartners": {
-      "description": "Renvex colabora con plataformas de negociación reconocidas en todo el mundo y con proveedores de datos verificados para garantizar la precisión y la transparencia en cada comparación.",
+      "description": "Renvex colabora con las plataformas de negociación mas reconocidas en todo el mundo y con proveedores de datos verificados para garantizar siempre precisión y transparencia en cada servicio.",
       "subtitle": "Confianza basada en pruebas",
       "title": "Nuestros socios"
     },
@@ -419,39 +419,35 @@
           "description": "Hacemos un seguimiento del procesamiento de órdenes en tiempo real y de la capacidad de respuesta del sistema durante los periodos de mayor actividad comercial.",
           "subtitle": "Coherencia y estabilidad en condiciones de mercado reales.",
           "title": {
-            "0": "Ejecución",
-            "1": "Latencia"
+            "0": "Ejecución"
           }
         },
         "1": {
-          "description": "Todos los diferenciales, comisiones y gastos nocturnos se documentan y comparan entre proveedores.",
+          "description": "Siempre a la vanguardia gracias a nuestros colaboradores que ofrecen los costes mas bajos del mercado.",
           "subtitle": "Total transparencia sin costes ocultos.",
           "title": {
-            "0": "Tasa",
-            "1": "Estructuras"
+            "0": "Tasas"
           }
         },
         "2": {
           "description": "Cada plataforma se prueba frente a eventos de volatilidad y fluctuaciones de liquidez.",
           "subtitle": "Profundidad de mercado verificada y calidad de ejecución sostenible.",
           "title": {
-            "0": "Liquidez",
-            "1": "Coherencia"
+            "0": "Coherencia"
           }
         },
         "3": {
-          "description": "Las calificaciones se recalibran periódicamente para reflejar experiencias comerciales auténticas.",
-          "subtitle": "Información basada en los comentarios verificados de los usuarios y en las métricas de participación.",
+          "description": "Opiniones autenticas en un mercado real.",
+          "subtitle": "Información basada en las experiencias de otros usuarios que ya están aprovechándose de este servicio.",
           "title": {
-            "0": "Cliente",
-            "1": "Satisfacción"
+            "0": "Satisfacción"
           }
         }
       },
-      "description": "Renvex aplica un sistema de supervisión continua para evaluar y verificar el rendimiento de los corredores en tiempo real. Cada plataforma se analiza utilizando flujos de datos verificados y criterios mensurables, lo que garantiza que solo permanezcan visibles los corredores más coherentes y transparentes.",
+      "description": "Renvex aplica un sistema de supervisión actualizado para evaluar y verificar el rendimiento de los usuarios a tiempo real. Cada plataforma se analiza corroborando datos y criterios oficiales en el mercado global, lo que garantiza que el usuario obtenga un servicio optimizado.",
       "outcome": {
-        "description": "Una refinada red de corredores que cumplen las normas institucionales de rendimiento, transparencia y fiabilidad. Cada inclusión se gana, nunca se compra.",
-        "title": "Resultado"
+        "description": "Cada usuario pueda encontrar su lugar a través de diferentes opciones que ofrecen rendimiento, transparencia y fiabilidad.",
+        "title": "Eficacia"
       },
       "subtitle": "Un marco basado en datos para la evaluación de los intermediarios",
       "title": {
@@ -483,14 +479,14 @@
           "title": "Experiencias comerciales auténticas"
         },
         "1": {
-          "description": "Los datos muestran la estructura, pero las reacciones muestran la realidad. Registramos cómo se comportan las plataformas cuando llega la volatilidad.",
-          "title": "El rendimiento en la práctica"
+          "description": "Siempre al corriente de las noticias mas importantes a través de alertas en tu movil, mejores cursos de aprendizaje y análisis diarios.",
+          "title": "El rendimiento en la practica"
         }
       },
-      "chip": "Experiencias auténticas que superan la especulación",
+      "chip": "Experiencias autenticas que superan la realidad",
       "description": {
         "0": "Los mercados los configuran quienes comercian con ellos.",
-        "1": "Renvex reúne perspectivas verificadas de usuarios reales: profesionales que operan a diario en las plataformas que usted compara. Sus puntos de vista revelan lo que los números no pueden: coherencia, fiabilidad y experiencia de usuario en condiciones reales."
+        "1": "Los profesionales que invierten a diario optimizan las aplicaciones con las que usted invierte de la forma mas rápida y eficaz posible para que nada se escape en el momento exacto."
       },
       "description2": "Lo que recopilamos y verificamos:",
       "footer": {
@@ -504,8 +500,8 @@
         }
       },
       "title": {
-        "0": "Real Insight,",
-        "1": "Comerciantes reales"
+        "0": "Ahorra,",
+        "1": "invierte y gana en una sola aplicación"
       }
     },
     "reviews": {

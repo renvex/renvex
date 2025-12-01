@@ -41,3 +41,7 @@ export const getContactFormSchema = (t: ReturnType<typeof useTranslations>) =>
     ),
     message: v.pipe(v.string()),
   });
+
+export type ContactFormSchema = v.InferOutput<
+  ReturnType<typeof getContactFormSchema>
+>;

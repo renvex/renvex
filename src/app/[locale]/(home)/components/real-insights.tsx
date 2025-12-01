@@ -43,18 +43,18 @@ export const RealInsights = () => {
       <section className="container flex flex-col gap-10 py-[120px]">
         <div className="flex flex-col items-center gap-4 text-center">
           <Chip variant="light">
-            <Text size="lg" weight={500} color="blue">
+            <Text
+              size="lg"
+              weight={500}
+              color="blue"
+              className="max-md:text-sm"
+            >
               {t('chip', {
                 fallback: 'Authentic experiences that cut through speculation',
               })}
             </Text>
           </Chip>
-          <Title
-            as="h3"
-            size="6xl"
-            color="black"
-            className="max-md:text-[52px]"
-          >
+          <Title as="h3" size="6xl" color="black">
             {t('title.0', { fallback: 'Real Insight,' })}{' '}
             <span>{t('title.1', { fallback: 'Real Traders' })}</span>
           </Title>
@@ -101,15 +101,16 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] bg-[#6885ED] px-[100px] py-[60px] text-center max-md:h-[450px] max-md:w-full max-md:p-5">
+    <article className="relative flex h-[600px] w-1/2 flex-col gap-2 overflow-hidden rounded-[48px] bg-[#6885ED] px-[100px] py-[60px] text-center max-md:h-[380px] max-md:w-full max-md:p-5">
       <Title size="3xl" weight={600} color="white" className="z-20">
         {title}
       </Title>
-      <Text size="base" className="z-20">
+      <Text size="base" className="z-20 max-md:text-xs">
         {description}
       </Text>
+      <div className="absolute bottom-0 left-1/2 z-0 h-[400px] w-[400px] -translate-x-1/2 transform rounded-full bg-[#2841C1] blur-[150px]"></div>
       <Image
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 transform"
+        className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 transform"
         src={img.url}
         alt={title}
         width={img.width}

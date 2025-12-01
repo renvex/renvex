@@ -30,7 +30,7 @@ export const OurCommitment = () => {
                 'Our standards are built to exceed regulation — prioritizing reliability, data integrity, and user security.',
             })}
           </Text>
-          <Text size="lg">
+          <Text size="lg" color="black">
             {t('appendix', {
               fallback:
                 'At Renvex, every statement can be traced, every recommendation justified. That is how precision becomes trust.',
@@ -39,7 +39,7 @@ export const OurCommitment = () => {
         </section>
       </div>
       <Image
-        className="object-cover max-md:object-fill"
+        className="object-cover"
         src="/images/about/comit.jpg"
         alt="comit"
         fill

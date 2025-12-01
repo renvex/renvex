@@ -49,16 +49,16 @@ export const ClarityInSteps = () => {
       <section className="container flex flex-col gap-10 py-[120px]">
         <div className="flex flex-col items-center gap-4 text-center">
           <Chip variant="light">
-            <Text size="lg" weight={500} color="blue">
+            <Text
+              size="lg"
+              weight={500}
+              color="blue"
+              className="max-md:text-sm"
+            >
               {t('chip', { fallback: 'Built for structured decision-making' })}
             </Text>
           </Chip>
-          <Title
-            as="h3"
-            size="6xl"
-            color="black"
-            className="max-md:text-[52px]"
-          >
+          <Title as="h3" size="6xl" color="black">
             {t('title', { fallback: 'Clarity in Three Moves' })}
           </Title>
         </div>

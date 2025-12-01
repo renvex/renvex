@@ -48,18 +48,18 @@ export const Reviews = () => {
         <div className="flex flex-col gap-10">
           <section className="flex flex-col items-center gap-4 text-center">
             <Chip variant="light">
-              <Text size="lg" weight={500} color="blue">
+              <Text
+                size="lg"
+                weight={500}
+                color="blue"
+                className="max-md:text-sm"
+              >
                 {t('chip', {
                   fallback: 'Verified reputation through independent insight',
                 })}
               </Text>
             </Chip>
-            <Title
-              as="h3"
-              size="6xl"
-              color="black"
-              className="max-md:text-[52px]"
-            >
+            <Title as="h3" size="6xl" color="black">
               {t('title.0', { fallback: 'Partners Rated by' })}{' '}
               <span>{t('title.1', { fallback: 'Traders' })}</span>
             </Title>
@@ -89,7 +89,7 @@ export const Reviews = () => {
                 {reviews.map(reviewImgUrl => (
                   <div
                     key={reviewImgUrl}
-                    className="flex min-w-[400px] shrink-0 justify-center max-md:min-w-[330px]"
+                    className="flex min-w-[400px] shrink-0 justify-center max-md:max-w-[330px] max-md:min-w-[350px]"
                   >
                     <ReviewCard imgUrl={reviewImgUrl} />
                   </div>
@@ -124,14 +124,14 @@ const ReviewCard = ({ imgUrl }: { imgUrl: string }) => (
       <TrustPilotIcon />
     </div>
     <Image
-      className="absolute bottom-0 left-10 opacity-10 max-md:left-6 max-md:h-[70px] max-md:w-[70px]"
+      className="absolute bottom-7 left-10 opacity-10 max-md:left-6 max-md:h-[70px] max-md:w-[70px]"
       src="/images/home/star.svg"
       alt="star"
       width={95}
       height={90}
     />
     <Image
-      className="absolute right-0 bottom-0 opacity-10 max-md:-bottom-2 max-md:h-[70px] max-md:w-[210px]"
+      className="absolute right-0 bottom-5 opacity-10 max-md:h-[70px] max-md:w-[210px]"
       src="/images/home/trust.svg"
       alt="star"
       width={248}

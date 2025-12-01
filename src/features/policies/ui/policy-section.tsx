@@ -12,7 +12,11 @@ export const PolicySection = ({
   children: ReactNode;
 }) => (
   <section className="flex flex-col gap-4">
-    <Title as="h3" className="text-[40px] max-md:text-[32px]" weight={600}>
+    <Title
+      as="h3"
+      className="text-[40px] max-md:text-[32px] max-md:font-normal"
+      weight={600}
+    >
       {title}
     </Title>
     <div className="flex flex-col">{children}</div>

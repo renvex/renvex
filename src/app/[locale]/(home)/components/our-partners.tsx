@@ -12,45 +12,45 @@ import { Title } from '@/shared/ui/kit/title';
 const getPartners = () => [
   {
     img: {
-      url: '/images/partners/fxpro.svg',
+      url: '/images/partners/fxpro-b.svg',
       size: { width: 65, height: 65 },
     },
     text: 'Fxpro',
   },
   {
     img: {
-      url: '/images/partners/xtb.svg',
+      url: '/images/partners/xtb-b.svg',
       size: { width: 148, height: 57 },
     },
     text: 'Xtb',
   },
   {
     img: {
-      url: '/images/partners/swiss.svg',
+      url: '/images/partners/swiss-b.svg',
       size: { width: 201, height: 50 },
     },
     text: 'Swissquote',
   },
   {
     img: {
-      url: '/images/partners/markets-global.svg',
+      url: '/images/partners/markets-global-b.svg',
       size: { width: 228, height: 29 },
     },
     text: 'IC Markets',
   },
   {
     img: {
-      url: '/images/partners/trade.svg',
-      size: { width: 121, height: 50 },
+      url: '/images/partners/ig-b.svg',
+      size: { width: 47, height: 40 },
     },
-    text: 'Trade Republic',
+    text: 'IG Group',
   },
   {
     img: {
-      url: '/images/partners/revolut.svg',
-      size: { width: 163, height: 36 },
+      url: '/images/partners/pepper-b.svg',
+      size: { width: 191, height: 37 },
     },
-    text: 'Revolut',
+    text: 'Pepperstone',
   },
 ];
 
@@ -59,7 +59,7 @@ export const OurPartners = () => {
 
   const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start' }, [
     Autoplay({
-      delay: 3000,
+      delay: 1500,
       stopOnInteraction: false,
       stopOnMouseEnter: true,
     }),
@@ -73,16 +73,16 @@ export const OurPartners = () => {
         <div className="flex flex-col gap-[55px]">
           <section className="flex flex-col items-center gap-4 text-center">
             <Chip variant="light">
-              <Text size="lg" weight={500} color="blue">
+              <Text
+                size="lg"
+                weight={500}
+                color="blue"
+                className="max-md:text-sm"
+              >
                 {t('subtitle', { fallback: 'Confidence built on evidence' })}
               </Text>
             </Chip>
-            <Title
-              as="h3"
-              size="6xl"
-              className="max-md:text-[52px]"
-              color="black"
-            >
+            <Title as="h3" size="6xl" color="black">
               {t('title', { fallback: 'Our Partners' })}
             </Title>
             <Text className="text-black/90">
@@ -144,9 +144,12 @@ const PartnerCard = ({
           width={img.size.width}
           height={img.size.height}
           unoptimized
+          style={{ filter: 'invert(0)' }}
         />
       </section>
-      <Text size="lg">{text}</Text>
+      <Text size="lg" className="text-[#ADBFFF]">
+        {text}
+      </Text>
     </div>
   );
 };

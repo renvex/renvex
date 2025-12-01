@@ -96,14 +96,14 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-white p-10 shadow-[219px_185px_80px_0_rgba(41,66,193,0.00),140px_119px_73px_0_rgba(41,66,193,0.01),79px_67px_62px_0_rgba(41,66,193,0.05),35px_30px_46px_0_rgba(41,66,193,0.08),9px_7px_25px_0_rgba(41,66,193,0.09)] transition duration-300 ease-in-out max-md:h-[90px] max-md:h-auto max-md:text-center">
+    <article className="flex h-[200px] flex-col justify-center gap-2.5 rounded-[48px] bg-white p-10 shadow-[219px_185px_80px_0_rgba(41,66,193,0.00),140px_119px_73px_0_rgba(41,66,193,0.01),79px_67px_62px_0_rgba(41,66,193,0.05),35px_30px_46px_0_rgba(41,66,193,0.08),9px_7px_25px_0_rgba(41,66,193,0.09)] transition duration-300 ease-in-out max-md:h-auto max-md:py-10 max-md:text-center">
       <Title
         weight={600}
         className="text-[52px] text-[#2841C1] max-md:text-2xl"
       >
         {title}
       </Title>
-      <Text size="base" className="text-black/90">
+      <Text size="base" className="text-black/90 max-md:text-sm">
         {description}
       </Text>
     </article>

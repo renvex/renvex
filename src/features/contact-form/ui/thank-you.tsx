@@ -12,7 +12,7 @@ export const ThankYou = () => {
   const t = useTranslations('thankYou');
 
   return (
-    <section className="relative flex h-[350px] flex-col justify-center gap-10 overflow-hidden p-10">
+    <section className="relative flex h-[350px] flex-col justify-center gap-10 overflow-hidden bg-white p-10">
       <Title as="h5" size="3xl" className="max-md:text-2xl">
         {t('title.0', { fallback: 'Thank you for reaching out to Renvex.' })}{' '}
         <br />

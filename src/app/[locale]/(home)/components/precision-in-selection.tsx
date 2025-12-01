@@ -2,18 +2,18 @@
 
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Chip } from '@/shared/ui/kit/chip';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-const getCards = (t: ReturnType<typeof useTranslations>) => [
+const getCards = (t: ReturnType<typeof useTranslations>, locale: string) => [
   {
     title: (
       <>
         {t('cards.0.title.0', { fallback: 'Execution' })} <br />
-        {t('cards.0.title.1', { fallback: 'Latency' })}
+        {locale === 'es' ? '' : t('cards.0.title.1', { fallback: 'Latency' })}
       </>
     ),
     subtitle: t('cards.0.subtitle', {
@@ -30,7 +30,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
       <>
         {t('cards.1.title.0', { fallback: 'Fee' })}
         <br />
-        {t('cards.1.title.1', { fallback: 'Structures' })}
+        {locale === 'es'
+          ? ''
+          : t('cards.1.title.1', { fallback: 'Structures' })}
       </>
     ),
     subtitle: t('cards.1.subtitle', {
@@ -46,7 +48,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
     title: (
       <>
         {t('cards.2.title.0', { fallback: 'Liquidity' })} <br />
-        {t('cards.2.title.1', { fallback: 'Consistency' })}
+        {locale === 'es'
+          ? ''
+          : t('cards.2.title.1', { fallback: 'Consistency' })}
       </>
     ),
     subtitle: t('cards.2.subtitle', {
@@ -62,7 +66,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
     title: (
       <>
         {t('cards.3.title.0', { fallback: 'Client' })} <br />
-        {t('cards.3.title.1', { fallback: 'Satisfaction' })}
+        {locale === 'es'
+          ? ''
+          : t('cards.3.title.1', { fallback: 'Satisfaction' })}
       </>
     ),
     subtitle: t('cards.3.subtitle', {
@@ -79,7 +85,9 @@ const getCards = (t: ReturnType<typeof useTranslations>) => [
 
 export const PrecisionInSelection = () => {
   const t = useTranslations('home.precisionInSelection');
-  const cards = getCards(t);
+  const locale = useLocale();
+
+  const cards = getCards(t, locale);
 
   return (
     <div className="bg-white">
@@ -89,7 +97,7 @@ export const PrecisionInSelection = () => {
             <Text
               size="lg"
               weight={500}
-              className="max-md:text-base max-md:wrap-break-word"
+              className="max-md:text-sm max-md:wrap-break-word"
               color="blue"
             >
               {t('subtitle', {
@@ -135,9 +143,9 @@ const Card = ({
   index: number;
 }) => (
   <li
-    className="sticky flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5 max-md:!relative max-md:!top-0"
+    className="sticky flex h-[600px] flex-col justify-between overflow-hidden rounded-4xl p-5 [box-shadow:0_-623px_174px_0_rgba(255,255,255,0.00),0_-399px_159px_0_rgba(255,255,255,0.03),0_-224px_135px_0_rgba(255,255,255,0.09),0_-100px_100px_0_rgba(255,255,255,0.15),0_-25px_55px_0_rgba(255,255,255,0.18)] max-md:!relative max-md:!top-0"
     style={{
-      top: `${index * 60}px`, // how much each card stacks down
+      top: `${index * 60}px`,
       zIndex: index,
     }}
   >
