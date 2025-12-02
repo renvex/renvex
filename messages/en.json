@@ -114,14 +114,14 @@
       }
     },
     "realInsights": {
-      "chip": "Authentic experiences that cut through speculation",
+      "chip": "Authentic experiences that go beyond reality",
       "title": {
         "0": "Real Insight,",
         "1": "Real Traders"
       },
       "description": {
-        "0": "Markets are shaped by those who trade them.",
-        "1": "Renvex brings together verified perspectives from real users — professionals who operate daily within the platforms you compare. Their insights reveal what numbers can’t: consistency, reliability, and user experience under real conditions."
+        "0": "Save, invest, and earn in a single application.",
+        "1": "Markets are shaped by the people who trade in them. The professionals who invest daily optimise the applications you use so you can invest as quickly and efficiently as possible, ensuring nothing slips by at the exact moment it matters."
       },
       "description2": "What we collect and verify:",
       "cards": {
@@ -131,17 +131,15 @@
         },
         "1": {
           "title": "Performance in Practice",
-          "description": "Data shows structure, but feedback shows reality. We record how platforms behave when volatility hits."
+          "description": "Always stay up to date with the most important news through mobile alerts, better learning courses, and daily analysis."
         }
       },
       "footer": {
         "title": {
-          "0": "Independent Reviews,",
-          "1": "Always Current"
+          "0": "Pure utility"
         },
         "description": {
-          "0": "As brokers evolve, our assessments evolve with them — every update is reviewed and validated.",
-          "1": "Renvex bridges quantitative data with qualitative truth, giving you a complete picture before you commit."
+          "0": "Control everything you invest in instantly and effortlessly."
         }
       }
     },
