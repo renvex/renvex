@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Chip } from '@/shared/ui/kit/chip';
 import { Text } from '@/shared/ui/kit/text';
@@ -124,6 +124,8 @@ const Card = ({
 const Footer = () => {
   const t = useTranslations('home.realInsights.footer');
 
+  const locale = useLocale();
+
   return (
     <footer
       className="relative flex h-[300px] flex-col justify-center gap-2 overflow-hidden rounded-[48px] px-[100px] max-md:p-5"
@@ -134,7 +136,7 @@ const Footer = () => {
     >
       <Title as="h6" size="3xl" color="white" className="max-md:text-2xl">
         {t('title.0', { fallback: 'Independent Reviews,' })} <br />
-        {t('title.1', { fallback: 'Always Current' })}
+        {locale === 'es' ? null : t('title.1', { fallback: 'Always Current' })}
       </Title>
       <Text size="base" className="z-10 max-md:text-sm">
         {t('description.0', {
@@ -142,10 +144,12 @@ const Footer = () => {
             'As brokers evolve, our assessments evolve with them — every update is reviewed and validated.',
         })}{' '}
         <br />
-        {t('description.1', {
-          fallback:
-            'Renvex bridges quantitative data with qualitative truth, giving you a complete picture before you commit.',
-        })}
+        {locale === 'es'
+          ? null
+          : t('description.1', {
+              fallback:
+                'Renvex bridges quantitative data with qualitative truth, giving you a complete picture before you commit.',
+            })}
       </Text>
       <Image
         className="absolute right-0 bottom-0 max-md:-bottom-20"
