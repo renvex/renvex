@@ -12,7 +12,6 @@ import {
   ReadyToNavigate,
   RealInsights,
   Reviews,
-  Strategy,
   Tools,
 } from './components';
 
@@ -44,7 +43,7 @@ export default function Home() {
       <Reviews />
       <Tools />
       <FullControl />
-      <Strategy />
+      {/* <Strategy /> */}
       <ClarityInSteps />
       <Quantify />
       <LetsTalk />
