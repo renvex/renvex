@@ -347,7 +347,7 @@
       "cards": {
         "0": {
           "description": "Pongase en contacto con un especialista de Renvex para definir sus objetivos, tolerancia al riesgo y su posible rendimiento. Le ayudamos a establecer una base, traduciendo los objetivos en parametros procesables antes de hacer cualquier movimiento.",
-          "title": "Alinear"
+          "title": "Analice"
         },
         "1": {
           "description": "Compare en tiempo real comentarios de otros clientes y la fiabilidad de la plataforma, todo en la misma consulta.",
@@ -355,7 +355,7 @@
         },
         "2": {
           "description": "Active sus herramientas, controle la volatilidad y ajuste dinámicamente su marco de ejecución. Establezca alertas, perfeccione su estrategia con análisis en tiempo real y haga evolucionar sus decisiones a medida que cambian los mercados.",
-          "title": "Actuar"
+          "title": "Actúe"
         }
       },
       "chip": "Diseñado para una toma de decisiones estructurada",
