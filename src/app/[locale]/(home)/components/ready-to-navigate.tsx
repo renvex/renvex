@@ -19,7 +19,7 @@ export const ReadyToNavigate = () => {
   return (
     <CallToAction
       title={t('title', {
-        fallback: 'Ready to Navigate the Markets with Confidence?',
+        fallback: 'It has never been so easy to own your financial future.',
       })}
       description={t('description', {
         fallback: 'Your path to informed trading starts here.',
