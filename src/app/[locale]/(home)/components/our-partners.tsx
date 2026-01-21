@@ -19,10 +19,31 @@ const getPartners = () => [
   },
   {
     img: {
+      url: '/images/partners/markets-global-b.svg',
+      size: { width: 228, height: 29 },
+    },
+    text: 'IC Markets',
+  },
+  {
+    img: {
+      url: '/images/partners/revolut-b.svg',
+      size: { width: 180, height: 20 },
+    },
+    text: 'Revolut',
+  },
+  {
+    img: {
       url: '/images/partners/xtb-b.svg',
       size: { width: 148, height: 57 },
     },
     text: 'Xtb',
+  },
+  {
+    img: {
+      url: '/images/partners/trade.svg',
+      size: { width: 140, height: 50 },
+    },
+    text: 'Trade Republic',
   },
   {
     img: {
@@ -33,12 +54,12 @@ const getPartners = () => [
   },
   {
     img: {
-      url: '/images/partners/markets-global-b.svg',
-      size: { width: 228, height: 29 },
+      url: '/images/partners/jadetrax-b.svg',
+      size: { width: 201, height: 40 },
     },
-    text: 'IC Markets',
+    text: 'JadeTrax',
   },
-  {
+  /*{
     img: {
       url: '/images/partners/ig-b.svg',
       size: { width: 47, height: 40 },
@@ -51,7 +72,7 @@ const getPartners = () => [
       size: { width: 191, height: 37 },
     },
     text: 'Pepperstone',
-  },
+  },*/
 ];
 
 export const OurPartners = () => {
