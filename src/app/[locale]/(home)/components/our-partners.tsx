@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -16,6 +17,7 @@ const getPartners = () => [
       size: { width: 65, height: 65 },
     },
     text: 'Fxpro',
+    webUrl: "https://www.fxpro.com/",
   },
   {
     img: {
@@ -23,6 +25,7 @@ const getPartners = () => [
       size: { width: 228, height: 29 },
     },
     text: 'IC Markets',
+    webUrl: "https://www.icmarkets.com/",
   },
   {
     img: {
@@ -30,6 +33,7 @@ const getPartners = () => [
       size: { width: 180, height: 20 },
     },
     text: 'Revolut',
+    webUrl: "https://www.revolut.com/",
   },
   {
     img: {
@@ -37,6 +41,7 @@ const getPartners = () => [
       size: { width: 148, height: 57 },
     },
     text: 'Xtb',
+    webUrl: "https://www.xtb.com/",
   },
   {
     img: {
@@ -44,6 +49,7 @@ const getPartners = () => [
       size: { width: 140, height: 50 },
     },
     text: 'Trade Republic',
+    webUrl: "https://traderepublic.com/",
   },
   {
     img: {
@@ -51,6 +57,7 @@ const getPartners = () => [
       size: { width: 201, height: 50 },
     },
     text: 'Swissquote',
+    webUrl: "https://www.swissquote.com/",
   },
   {
     img: {
@@ -58,6 +65,7 @@ const getPartners = () => [
       size: { width: 201, height: 40 },
     },
     text: 'JadeTrax',
+    webUrl: "https://jadetrax.live/",
   },
   /*{
     img: {
@@ -152,12 +160,14 @@ export const OurPartners = () => {
 const PartnerCard = ({
   img,
   text,
+  webUrl,
 }: {
   img: { url: string; size: { width: number; height: number } };
   text: string;
+  webUrl: string;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-1.5 px-5 text-center">
+    <Link href={webUrl} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 px-5 text-center">
       <section className="flex h-[85px] w-[300px] items-center justify-center rounded-[40px] bg-[#ADBFFF]">
         <Image
           src={img.url}
@@ -171,6 +181,6 @@ const PartnerCard = ({
       <Text size="lg" className="text-[#ADBFFF]">
         {text}
       </Text>
-    </div>
+    </Link>
   );
 };
