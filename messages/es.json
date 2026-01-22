@@ -268,7 +268,7 @@
       "0": "Inicio",
       "1": "Mapas de calor",
       "2": "Acerca de",
-      "3": "Póngase en contacto con"
+      "3": "Contacte con nosotros"
     },
     "policies": {
       "0": "Política de cookies",
@@ -284,7 +284,7 @@
     },
     "navigation": {
       "about": "Acerca de",
-      "contact": "Póngase en contacto con",
+      "contact": "Contacte con nosotros",
       "heatmaps": "Mapas de calor",
       "home": "Inicio"
     }
@@ -340,7 +340,7 @@
       "description2": "Colaboramos con los principales proveedores de datos y plataformas reguladas para mantener una información fiable, medida e imparcial. Nuestro marco se basa en la precisión y la transparencia, garantizando que cada decisión comience con confianza y claridad.",
       "title": {
         "0": "Construido sobre",
-        "1": "Datos verificados"
+        "1": "Datos Verificados"
       }
     },
     "clarityInSteps": {
@@ -381,9 +381,9 @@
       "description": {
         "0": "Su",
         "1": "estrategia",
-        "2": "define el camino. Tu plataforma lo sigue. Su",
+        "2": "define el camino. Tu plataforma lo sigue. Sus",
         "3": "normas",
-        "4": "permanecen intactos.",
+        "4": "permanecen intactas",
         "5": "Renvex es sinónimo de total autonomía financiera: sin condiciones ocultas, sin restricciones, sin interferencias. Usted negocia en sus propios términos; nosotros nos aseguramos de que el marco sea transparente y fiable."
       },
       "subtitle": "Nos comprometemos a:",
@@ -476,7 +476,7 @@
       "cards": {
         "0": {
           "description": "Aumenta tus oportunidades de ahorro e inversión desde el mismo lugar.",
-          "title": "Todo el mercado en una misma aplicación."
+          "title": "Todo el mercado en una misma aplicación"
         },
         "1": {
           "description": "Siempre al corriente de las noticias mas importantes a través de alertas en tu movil, mejores cursos de aprendizaje y análisis diarios.",
@@ -485,7 +485,7 @@
       },
       "chip": "Experiencias autenticas que superan la realidad",
       "description": {
-        "0": "Ahorra, invierte y gana en una sola aplicación",
+        "0": "Ahorra, invierte y gana en una sola aplicación.",
         "1": "Los mercados los configuran quienes comercian con ellos. Los profesionales que invierten a diario optimizan las aplicaciones con las que usted invierte de la forma mas rápida y eficaz posible para que nada se escape en el momento exacto."
       },
       "description2": "Lo que recopilamos y verificamos:",
@@ -499,7 +499,7 @@
       },
       "title": {
         "0": "Ahorra,",
-        "1": "invierte y gana en una sola aplicación"
+        "1": "invierte y gana en una sola aplicación."
       }
     },
     "reviews": {
