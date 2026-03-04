@@ -36,14 +36,14 @@ const getPartners = () => [
     text: "Revolut",
     webUrl: "https://www.revolut.com/",
   },
-  {
+  /*{
     img: {
       url: "/images/partners/xtb-b.svg",
       size: { width: 148, height: 57 },
     },
     text: "Xtb",
     webUrl: "https://www.xtb.com/",
-  },
+  },*/
   {
     img: {
       url: "/images/partners/trade.svg",

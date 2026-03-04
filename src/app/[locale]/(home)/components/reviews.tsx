@@ -69,11 +69,11 @@ const getReviews = () => [
     link: "https://es.trustpilot.com/review/www.revolut.com",
     starsUrl: "/images/home/stars-revolut.svg",
   },
-  {
+  /*{
     imgUrl: "/images/home/partner-5.svg",
     link: "https://es.trustpilot.com/review/xtb.com",
     starsUrl: "/images/home/stars-xtb.svg",
-  },
+  },*/
   {
     imgUrl: "/images/home/trade-republic.svg",
     link: "https://es.trustpilot.com/review/www.traderepublic.com",
